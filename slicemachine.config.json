@@ -1,0 +1,5 @@
+{
+  "repositoryName": "hdpe",
+  "adapter": "@slicemachine/adapter-next",
+  "libraries": ["./slices"]
+}
