@@ -16,6 +16,7 @@
     "@prismicio/helpers": "^2.3.9",
     "@prismicio/next": "^1.1.0",
     "@prismicio/react": "^2.6.0",
+    "@prismicio/slice-simulator-react": "^0.2.3",
     "autoprefixer": "10.4.14",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",

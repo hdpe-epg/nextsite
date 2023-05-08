@@ -1,0 +1,24 @@
+{
+  "id": "homepage",
+  "label": "Homepage",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": { "choices": { "content": { "type": "SharedSlice" } } }
+      }
+    },
+    "SEO": {
+      "metadescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "Tell search engines what you do"
+        }
+      }
+    }
+  }
+}

@@ -792,6 +792,13 @@
     fp-ts "^2.13.1"
     io-ts "^2.2.19"
 
+"@prismicio/slice-simulator-react@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@prismicio/slice-simulator-react/-/slice-simulator-react-0.2.3.tgz#01d7bfb598d0cbe950356ec2c9c8b88201ee020b"
+  integrity sha512-v9fBg/QZnlByBV0SyH5UVHay30TgX3y1JYZUkVIq4mNxQMqzetd+W/If/mh2qZeVF5NyQiNbENvqJkeNkY3fMw==
+  dependencies:
+    "@prismicio/slice-simulator-core" "^0.2.7"
+
 "@prismicio/types-internal@2.0.0-alpha.7":
   version "2.0.0-alpha.7"
   resolved "https://registry.yarnpkg.com/@prismicio/types-internal/-/types-internal-2.0.0-alpha.7.tgz#e3078944977d3bee08b7a8a557838801e0588cc7"

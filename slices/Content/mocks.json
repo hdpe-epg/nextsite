@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Mollit nulla ex Lorem amet ipsum elit ea reprehenderit id ex id reprehenderit in occaecat qui. Ullamco elit ut officia aliqua enim voluptate aliqua ex sint aute duis do."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

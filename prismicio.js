@@ -21,10 +21,6 @@ const routes = [
     type: 'homepage',
     path: '/',
   },
-  // {
-  //   type: "page",
-  //   path: "/:uid",
-  // },
 ]
 
 /**
@@ -34,8 +30,10 @@ const routes = [
  * @param {prismicNext.CreateClientConfig} config - Configuration for the Prismic client.
  */
 export const createClient = (config = {}) => {
+  const accessToken = process.env.PRISMIC_ACCESS_TOKEN
   const client = prismic.createClient(repositoryName, {
     routes,
+    accessToken,
     ...config,
   })
 
