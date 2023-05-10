@@ -6,6 +6,10 @@
   @apply bg-black shadow-sm;
 }
 
-a.button {
-    @apply bg-brand-primary text-white px-4 py-2 uppercase mt-1;
+button {
+    @apply bg-brand-primary text-white px-4 py-2 uppercase mt-1 mx-4 hover:bg-blue-800;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    @apply px-4;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import {PrismicNextLink} from "@prismicio/next";
 import {PrismicRichText} from '@prismicio/react'
+import Heading from "@/components/Heading";
 
 /**
  * @typedef {import("@prismicio/client").Content.HerosSlice} HerosSlice
@@ -20,36 +21,57 @@ export default Heros
 
 function DefaultHeroRender(index, slice) {
     return (
-        <section className={`grid `}>
-            <div className={`z-0`}>
-                {slice.primary.bgimage &&
-                    <Image
-                        priority={index === 0 ? true : false}
-                        alt={slice.primary.bgimage.alt}
-                        src={slice.primary.bgimage.url}
-                        fill={true}
-                        // className={`bg-amber-400`}
-                    />}
-            </div>
-            <div className={`z-10 mx-auto border-2 border-red-400`}>
-                {slice.primary.heading &&
-                    <PrismicRichText
-                        field={slice.primary.heading}/>}
-                {slice.primary.description &&
-                    <PrismicRichText
-                        field={slice.primary.description}/>}
-                <div>
-                    {slice.primary.buttontext &&
-                        <PrismicNextLink
-                            alt={slice.primary.buttontext}
-                            field={slice.primary.buttonlink}
-                            className={`button`}>
-                            {slice.primary.buttontext}
-                        </PrismicNextLink>}
+        <section className={`relative flex justify-start items-center min-h-screen`}>
+            <div className={`max-w-screen-xl mx-auto`}>
+                <div className={`absolute inset-0 z-[-1]`}>
+                    {slice.primary.bgimage &&
+                        <Image
+                            priority={index === 0 ? true : false}
+                            alt={slice.primary.bgimage.alt || ''}
+                            src={slice.primary.bgimage.url}
+                            fill={true}
+                            sizes="100vw"
+                            className="z-[-2] object-cover"
+                        />}
+                </div>
+                <div className={`mx-auto border-2 border-red-400`}>
+                    {slice.primary.heading &&
+                        <PrismicRichText
+                            components={{
+                                heading1: ({ children }) => (
+                                    <Heading as="h1" size="7xl" className={`text-white`}>{children}</Heading>
+                                ),
+                                heading2: ({ children }) => (
+                                    <Heading as="h2" size="7xl" className={`text-white`}>{children}</Heading>
+                                ),
+                            }}
+
+
+                            field={slice.primary.heading}/>}
+                    {slice.primary.description &&
+                        <PrismicRichText
+                            components={{
+                                heading2: ({ children }) => (
+                                    <Heading as="h2" size="7xl" className={`text-white`}>{children}</Heading>
+                                ),
+                                paragraph: ({ children }) => (
+                                    <p className={`text-white text-4xl md:w-2/3`}>{children}</p>
+                                ),
+                            }}
+                            field={slice.primary.description}/>}
+                    <div className={`my-8`}>
+                        {slice.primary.buttontext &&
+                            <button>
+                            <PrismicNextLink
+                                alt={slice.primary.buttontext}
+                                field={slice.primary.buttonlink}
+                                className={`button`}>
+                                {slice.primary.buttontext}
+                            </PrismicNextLink>
+                            </button>}
+                    </div>
                 </div>
             </div>
-
-
         </section>
     )
 }

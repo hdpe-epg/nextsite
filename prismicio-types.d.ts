@@ -46,7 +46,7 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = ContentSlice;
+type HomepageDocumentDataSlicesSlice = ContentSlice | HerosSlice;
 /**
  * Homepage document from Prismic
  *

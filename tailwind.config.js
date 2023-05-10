@@ -11,7 +11,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // correct
         'brand-primary': 'rgb(20,44,74)',
+        'brand-font-color': '#2d3748',
+        // incorrect
         'brand-secondary': 'rgb(80, 163, 92)',
         'brand-reuse': 'rgb(154,196,84)',
         'brand-recycle': 'rgb(219, 224, 74)',
@@ -19,7 +22,6 @@ module.exports = {
         'brand-residuals': 'rgb(223, 112,51)',
         'brand-accent': 'rgb(55, 113, 82)',
         'brand-dark': '#0F2202',
-        'brand-font-color': '#2d3748',
       },
     }
   },
