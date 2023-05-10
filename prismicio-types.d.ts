@@ -20,6 +20,17 @@ interface HomepageDocumentData {
    */
   slices: prismicT.SliceZone<HomepageDocumentDataSlicesSlice>;
   /**
+   * Title field in *Homepage*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: Enter page title
+   * - **API ID Path**: homepage.title
+   * - **Tab**: SEO
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  title: prismicT.TitleField;
+  /**
    * Meta Description field in *Homepage*
    *
    * - **Field Type**: Text
@@ -51,7 +62,156 @@ export type HomepageDocument<Lang extends string = string> =
     "homepage",
     Lang
   >;
-export type AllDocumentTypes = HomepageDocument;
+/** Content for MainMenu documents */
+type MainmenuDocumentData = Record<string, never>;
+/**
+ * MainMenu document from Prismic
+ *
+ * - **API ID**: `mainmenu`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type MainmenuDocument<Lang extends string = string> =
+  prismicT.PrismicDocumentWithoutUID<
+    Simplify<MainmenuDocumentData>,
+    "mainmenu",
+    Lang
+  >;
+/** Content for Page documents */
+interface PageDocumentData {
+  /**
+   * Title field in *Page*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: Enter the page title
+   * - **API ID Path**: page.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  title: prismicT.TitleField;
+  /**
+   * Subdirectory field in *Page*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page.subdirectory
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  subdirectory: prismicT.RelationField<"subdirectory">;
+}
+/**
+ * Page document from Prismic
+ *
+ * - **API ID**: `page`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type PageDocument<Lang extends string = string> =
+  prismicT.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
+/** Content for SiteMetadata documents */
+interface SitemetadataDocumentData {
+  /**
+   * SiteTitle field in *SiteMetadata*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sitemetadata.sitetitle
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  sitetitle: prismicT.KeyTextField;
+  /**
+   * SiteMetaDescription field in *SiteMetadata*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sitemetadata.sitemetadescription
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  sitemetadescription: prismicT.KeyTextField;
+  /**
+   * SiteMetaImage field in *SiteMetadata*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sitemetadata.sitemetaimage
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  sitemetaimage: prismicT.ImageField<never>;
+  /**
+   * SiteCanonicalUrl field in *SiteMetadata*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sitemetadata.sitecanonicalurl
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  sitecanonicalurl: prismicT.KeyTextField;
+}
+/**
+ * SiteMetadata document from Prismic
+ *
+ * - **API ID**: `sitemetadata`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type SitemetadataDocument<Lang extends string = string> =
+  prismicT.PrismicDocumentWithoutUID<
+    Simplify<SitemetadataDocumentData>,
+    "sitemetadata",
+    Lang
+  >;
+/** Content for Subdirectory documents */
+interface SubdirectoryDocumentData {
+  /**
+   * Title field in *Subdirectory*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: subdirectory.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismicT.KeyTextField;
+}
+/**
+ * Subdirectory document from Prismic
+ *
+ * - **API ID**: `subdirectory`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type SubdirectoryDocument<Lang extends string = string> =
+  prismicT.PrismicDocumentWithUID<
+    Simplify<SubdirectoryDocumentData>,
+    "subdirectory",
+    Lang
+  >;
+export type AllDocumentTypes =
+  | HomepageDocument
+  | MainmenuDocument
+  | PageDocument
+  | SitemetadataDocument
+  | SubdirectoryDocument;
 /**
  * Primary content in Content → Primary
  *
@@ -110,6 +270,14 @@ declare module "@prismicio/client" {
       HomepageDocumentData,
       HomepageDocumentDataSlicesSlice,
       HomepageDocument,
+      MainmenuDocumentData,
+      MainmenuDocument,
+      PageDocumentData,
+      PageDocument,
+      SitemetadataDocumentData,
+      SitemetadataDocument,
+      SubdirectoryDocumentData,
+      SubdirectoryDocument,
       AllDocumentTypes,
       ContentSliceDefaultPrimary,
       ContentSliceDefault,

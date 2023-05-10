@@ -12,6 +12,15 @@
       }
     },
     "SEO": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "Enter page title",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
       "metadescription": {
         "type": "Text",
         "config": {
