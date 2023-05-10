@@ -5,3 +5,7 @@
 .headroom-wrapper > div {
   @apply bg-black shadow-sm;
 }
+
+a.button {
+    @apply bg-brand-primary text-white px-4 py-2 uppercase mt-1;
+}

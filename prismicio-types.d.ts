@@ -258,6 +258,89 @@ export type ContentSlice = prismicT.SharedSlice<
   "content",
   ContentSliceVariation
 >;
+/**
+ * Primary content in Heros → Primary
+ *
+ */
+interface HerosSliceDefaultPrimary {
+  /**
+   * bgImage field in *Heros → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: heros.primary.bgimage
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  bgimage: prismicT.ImageField<never>;
+  /**
+   * heading field in *Heros → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: heros.primary.heading
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  heading: prismicT.TitleField;
+  /**
+   * description field in *Heros → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: What are we saying here?
+   * - **API ID Path**: heros.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  description: prismicT.RichTextField;
+  /**
+   * buttonLink field in *Heros → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: heros.primary.buttonlink
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  buttonlink: prismicT.LinkField;
+  /**
+   * buttonText field in *Heros → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: heros.primary.buttontext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  buttontext: prismicT.KeyTextField;
+}
+/**
+ * Default variation for Heros Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HerosSliceDefault = prismicT.SharedSliceVariation<
+  "default",
+  Simplify<HerosSliceDefaultPrimary>,
+  never
+>;
+/**
+ * Slice variation for *Heros*
+ *
+ */
+type HerosSliceVariation = HerosSliceDefault;
+/**
+ * Heros Shared Slice
+ *
+ * - **API ID**: `heros`
+ * - **Description**: `Heros`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HerosSlice = prismicT.SharedSlice<"heros", HerosSliceVariation>;
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -283,6 +366,10 @@ declare module "@prismicio/client" {
       ContentSliceDefault,
       ContentSliceVariation,
       ContentSlice,
+      HerosSliceDefaultPrimary,
+      HerosSliceDefault,
+      HerosSliceVariation,
+      HerosSlice,
     };
   }
 }

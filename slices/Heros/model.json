@@ -1,0 +1,49 @@
+{
+  "id": "heros",
+  "type": "SharedSlice",
+  "name": "Heros",
+  "description": "Heros",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "bgimage": {
+          "type": "Image",
+          "config": { "label": "bgImage", "constraint": {}, "thumbnails": [] }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1,heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "description",
+            "placeholder": "What are we saying here?",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,strong,em,rtl"
+          }
+        },
+        "buttonlink": {
+          "type": "Link",
+          "config": { "label": "buttonLink", "placeholder": "", "select": null }
+        },
+        "buttontext": {
+          "type": "Text",
+          "config": { "label": "buttonText", "placeholder": "" }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

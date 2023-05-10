@@ -24,25 +24,35 @@ const richTextComponents = {
     </Heading>
   ),
   heading4: ({ children }) => (
-    <Heading as="h4" size="xl" className="mb-7 last:mb-0">
+    <Heading as="h4" size="2xl" className="mb-7 last:mb-0">
       {children}
     </Heading>
   ),
-  paragraph: ({ children }) => <p className="mb-7 last:mb-0">{children}</p>,
+  heading5: ({ children }) => (
+      <Heading as="h5" size="2xl" className="mb-7 last:mb-0">
+        {children}
+      </Heading>
+  ),
+  heading6: ({ children }) => (
+      <Heading as="h6" size="2xl" className="mb-7 last:mb-0">
+        {children}
+      </Heading>
+  ),
+  paragraph: ({ children }) => <p className="text-brand-font-color text-xl mb-7 last:mb-0">{children}</p>,
   oList: ({ children }) => (
-    <ol className="mb-7 pl-4 last:mb-0 md:pl-6">{children}</ol>
+    <ol className="text-brand-font-color text-xl mb-7 pl-4 last:mb-0 md:pl-6">{children}</ol>
   ),
   oListItem: ({ children }) => (
-    <li className="mb-1 list-decimal pl-1 last:mb-0 md:pl-2">{children}</li>
+    <li className="text-brand-font-color text-xl mb-1 list-decimal pl-1 last:mb-0 md:pl-2">{children}</li>
   ),
   list: ({ children }) => (
-    <ul className="mb-7 pl-4 last:mb-0 md:pl-6">{children}</ul>
+    <ul className="text-brand-font-color text-xl mb-7 pl-4 last:mb-0 md:pl-6">{children}</ul>
   ),
   listItem: ({ children }) => (
-    <li className="mb-1 list-disc pl-1 last:mb-0 md:pl-2">{children}</li>
+    <li className="text-brand-font-color text-xl mb-1 list-disc pl-1 last:mb-0 md:pl-2">{children}</li>
   ),
   preformatted: ({ children }) => (
-    <pre className="mb-7 rounded bg-slate-100 p-4 text-sm last:mb-0 md:p-8 md:text-lg">
+    <pre className="text-brand-font-color text-xl mb-7 rounded bg-slate-100 p-4 text-sm last:mb-0 md:p-8 md:text-lg">
       <code>{children}</code>
     </pre>
   ),
@@ -52,7 +62,7 @@ const richTextComponents = {
   hyperlink: ({ children, node }) => (
     <PrismicLink
       field={node.data}
-      className="underline decoration-1 underline-offset-2"
+      className="text-brand-font-color text-xl underline decoration-1 underline-offset-2"
     >
       {children}
     </PrismicLink>
