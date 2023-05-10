@@ -7,7 +7,6 @@ import { SliceZone } from '@prismicio/react'
 import Layout from '@/components/Layout'
 
 export default function Home({ page, navigation, siteMetadata }) {
-  console.log(siteMetadata)
   return (
     <Layout>
       <Head>
