@@ -12,6 +12,10 @@ import Heading from "@/components/Heading";
 const Content = ({slice}) => {
     if (slice.variation === `halfHalf`) {
         return HalfHalfRender(slice)
+    } else if (slice.variation === `oneThirdTwoThird`)  {
+        return OneThirdTwoThirdRender(slice)
+    } else if (slice.variation === `quarters`)  {
+        return QuartersRender(slice)
     }
     return DefaultRender(slice)
 }
@@ -29,6 +33,56 @@ function HalfHalfRender(slice) {
                 </div>
                 <div>
                     <PrismicRichText field={slice.primary.righthalf}/>
+                </div>
+            </div>
+
+        </section>
+    )
+}
+
+function OneThirdTwoThirdRender(slice) {
+    return (
+        <section className={`max-w-screen-xl mx-auto`}>
+            {/*TODO: Code for Toggle*/}
+            {/*<>{slice.primary.reversethis}</>*/}
+            {/*TODO: Code for color toggle*/}
+            {/*<>{slice.primary.hascolor}</>*/}
+            <PrismicRichText field={slice.primary.titleContent}/>
+
+            <div className={`grid gap-4 lg:grid-cols-2 justify-center align-top`}>
+                <div>
+                    <PrismicRichText field={slice.primary.onethird}/>
+                </div>
+                <div>
+                    <PrismicRichText field={slice.primary.twothird}/>
+                </div>
+            </div>
+
+        </section>
+    )
+}
+
+function QuartersRender(slice) {
+    return (
+        <section className={`max-w-screen-xl mx-auto`}>
+            {/*TODO: Code for Toggle*/}
+            {/*<>{slice.primary.reversethis}</>*/}
+            {/*TODO: Code for color toggle*/}
+            {/*<>{slice.primary.hascolor}</>*/}
+            <PrismicRichText field={slice.primary.titleContent}/>
+
+            <div className={`grid gap-4 lg:grid-cols-2 justify-center align-top`}>
+                <div>
+                    <PrismicRichText field={slice.primary.firstquarter}/>
+                </div>
+                <div>
+                    <PrismicRichText field={slice.primary.secondquarter}/>
+                </div>
+                <div>
+                    <PrismicRichText field={slice.primary.thirdquarter}/>
+                </div>
+                <div>
+                    <PrismicRichText field={slice.primary.fourthquarter}/>
                 </div>
             </div>
 

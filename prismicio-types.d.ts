@@ -291,10 +291,176 @@ export type ContentSliceHalfHalf = prismicT.SharedSliceVariation<
   never
 >;
 /**
+ * Primary content in Content → Primary
+ *
+ */
+interface ContentSliceOneThirdTwoThirdPrimary {
+  /**
+   * Title field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter your SubHeading
+   * - **API ID Path**: content.primary.titleContent
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  titleContent: prismicT.RichTextField;
+  /**
+   * lefthalf field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Left half of the content
+   * - **API ID Path**: content.primary.lefthalf
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  lefthalf: prismicT.RichTextField;
+  /**
+   * rightHalf field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: right half of the content
+   * - **API ID Path**: content.primary.righthalf
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  righthalf: prismicT.RichTextField;
+  /**
+   * Reverse the Row field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.reversethis
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  reversethis: prismicT.BooleanField;
+  /**
+   * Background Color Toggle field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.hascolor
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  hascolor: prismicT.BooleanField;
+}
+/**
+ * OneThirdTwoThird variation for Content Slice
+ *
+ * - **API ID**: `oneThirdTwoThird`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ContentSliceOneThirdTwoThird = prismicT.SharedSliceVariation<
+  "oneThirdTwoThird",
+  Simplify<ContentSliceOneThirdTwoThirdPrimary>,
+  never
+>;
+/**
+ * Primary content in Content → Primary
+ *
+ */
+interface ContentSliceQuartersPrimary {
+  /**
+   * Title field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter your SubHeading
+   * - **API ID Path**: content.primary.titleContent
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  titleContent: prismicT.RichTextField;
+  /**
+   * First Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: First Quarter Content
+   * - **API ID Path**: content.primary.firstquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  firstquarter: prismicT.RichTextField;
+  /**
+   * Second Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Second Quater content
+   * - **API ID Path**: content.primary.secondquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  secondquarter: prismicT.RichTextField;
+  /**
+   * Third Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Third Quarter Content
+   * - **API ID Path**: content.primary.thirdquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  thirdquarter: prismicT.RichTextField;
+  /**
+   * Fourth Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Fourth Quarter Content
+   * - **API ID Path**: content.primary.fourthquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  fourthquarter: prismicT.RichTextField;
+  /**
+   * Reverse the Row field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.reversethis
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  reversethis: prismicT.BooleanField;
+  /**
+   * Background Color Toggle field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.hascolor
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  hascolor: prismicT.BooleanField;
+}
+/**
+ * Quarters variation for Content Slice
+ *
+ * - **API ID**: `quarters`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ContentSliceQuarters = prismicT.SharedSliceVariation<
+  "quarters",
+  Simplify<ContentSliceQuartersPrimary>,
+  never
+>;
+/**
  * Slice variation for *Content*
  *
  */
-type ContentSliceVariation = ContentSliceDefault | ContentSliceHalfHalf;
+type ContentSliceVariation =
+  | ContentSliceDefault
+  | ContentSliceHalfHalf
+  | ContentSliceOneThirdTwoThird
+  | ContentSliceQuarters;
 /**
  * Content Shared Slice
  *
@@ -415,6 +581,10 @@ declare module "@prismicio/client" {
       ContentSliceDefault,
       ContentSliceHalfHalfPrimary,
       ContentSliceHalfHalf,
+      ContentSliceOneThirdTwoThirdPrimary,
+      ContentSliceOneThirdTwoThird,
+      ContentSliceQuartersPrimary,
+      ContentSliceQuarters,
       ContentSliceVariation,
       ContentSlice,
       HerosSliceDefaultPrimary,

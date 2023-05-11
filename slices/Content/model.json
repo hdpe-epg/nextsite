@@ -61,6 +61,136 @@
         }
       },
       "items": {}
+    },
+    {
+      "id": "oneThirdTwoThird",
+      "name": "OneThirdTwoThird",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "titleContent": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Enter your SubHeading",
+            "allowTargetBlank": true,
+            "multi": "heading2,paragraph"
+          }
+        },
+        "lefthalf": {
+          "type": "StructuredText",
+          "config": {
+            "label": "lefthalf",
+            "placeholder": "Left half of the content",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "righthalf": {
+          "type": "StructuredText",
+          "config": {
+            "label": "rightHalf",
+            "placeholder": "right half of the content",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,paragraph,preformatted"
+          }
+        },
+        "reversethis": {
+          "type": "Boolean",
+          "config": {
+            "label": "Reverse the Row",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "hascolor": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background Color Toggle",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "quarters",
+      "name": "Quarters",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "titleContent": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Enter your SubHeading",
+            "allowTargetBlank": true,
+            "multi": "heading2,paragraph"
+          }
+        },
+        "firstquarter": {
+          "type": "StructuredText",
+          "config": {
+            "label": "First Quarter",
+            "placeholder": "First Quarter Content",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "secondquarter": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Second Quarter",
+            "placeholder": "Second Quater content",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "thirdquarter": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Third Quarter",
+            "placeholder": "Third Quarter Content",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "fourthquarter": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Fourth Quarter",
+            "placeholder": "Fourth Quarter Content",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "reversethis": {
+          "type": "Boolean",
+          "config": {
+            "label": "Reverse the Row",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "hascolor": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background Color Toggle",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
     }
   ]
 }
