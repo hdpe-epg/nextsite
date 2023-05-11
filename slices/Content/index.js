@@ -24,7 +24,7 @@ export default Content
 
 function HalfHalfRender(slice) {
     return (
-        <section className={`max-w-screen-xl mx-auto`}>
+        <section className={`max-w-screen-xl mx-auto ${slice.primary.hascolor && ''}`}>
             {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
 
             <div className={`grid gap-4 lg:grid-cols-2 justify-center align-top`}>
@@ -42,7 +42,7 @@ function HalfHalfRender(slice) {
 
 function OneThirdTwoThirdRender(slice) {
     return (
-        <section className={`max-w-screen-xl mx-auto ${slice.primary.hascolor ? 'brand-primary' : ''}`}>
+        <section className={`max-w-screen-xl mx-auto ${slice.primary.hascolor && ''}`}>
             {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent} />}
             <div className={`flex flex-col gap-4 xl:flex-row ${slice.primary.reversethis ? 'flex-col-reverse xl:flex-row-reverse' : ''}`}>
                 <div className={`xl:w-1/3`}>
@@ -58,11 +58,8 @@ function OneThirdTwoThirdRender(slice) {
 
 function QuartersRender(slice) {
     return (
-        <section className={`max-w-screen-xl mx-auto`}>
-            {/*TODO: Code for Toggle*/}
+        <section className={`max-w-screen-xl mx-auto ${slice.primary.hascolor && ''}`}>
             {/*<>{slice.primary.reversethis}</>*/}
-            {/*TODO: Code for color toggle*/}
-            {/*<>{slice.primary.hascolor}</>*/}
             {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
 
             <div className={`grid gap-4 lg:grid-cols-2 justify-center align-top`}>
@@ -95,5 +92,3 @@ function DefaultRender(slice) {
         </section>
     )
 }
-
-

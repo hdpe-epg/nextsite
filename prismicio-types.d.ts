@@ -276,6 +276,17 @@ interface ContentSliceHalfHalfPrimary {
    *
    */
   righthalf: prismicT.RichTextField;
+  /**
+   * Background Color Toggle field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.hascolor
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  hascolor: prismicT.BooleanField;
 }
 /**
  * HalfHalf variation for Content Slice

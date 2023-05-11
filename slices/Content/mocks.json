@@ -109,6 +109,10 @@
 						"direction": "ltr"
 					}
 				]
+			},
+			"hascolor": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": [
@@ -171,11 +175,11 @@
 			},
 			"reversethis": {
 				"__TYPE__": "BooleanContent",
-				"value": false
+				"value": true
 			},
 			"hascolor": {
 				"__TYPE__": "BooleanContent",
-				"value": false
+				"value": true
 			}
 		},
 		"items": [
