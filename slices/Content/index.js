@@ -62,7 +62,7 @@ function QuartersRender(slice) {
             {/*<>{slice.primary.reversethis}</>*/}
             {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
 
-            <div className={`grid gap-4 lg:grid-cols-2 justify-center align-top`}>
+            <div className={`grid gap-4 lg:grid-cols-4 justify-center align-top`}>
                 <div>
                     <PrismicRichText field={slice.primary.firstquarter}/>
                 </div>
