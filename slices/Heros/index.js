@@ -22,7 +22,7 @@ export default Heros
 function DefaultHeroRender(index, slice) {
     return (
         <section className={`relative flex justify-start items-center min-h-screen`}>
-            <div className={`max-w-screen-xl mx-auto`}>
+            <div className={`max-w-screen-2xl mx-auto`}>
                 <div className={`absolute inset-0 z-[-1]`}>
                     {slice.primary.bgimage &&
                         <Image
@@ -34,7 +34,7 @@ function DefaultHeroRender(index, slice) {
                             className="z-[-2] object-cover"
                         />}
                 </div>
-                <div className={`mx-auto border-2 border-red-400`}>
+                <div className={`mx-auto`}>
                     {slice.primary.heading &&
                         <PrismicRichText
                             components={{
