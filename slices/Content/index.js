@@ -25,7 +25,7 @@ export default Content
 function HalfHalfRender(slice) {
     return (
         <section className={`max-w-screen-xl mx-auto`}>
-            <PrismicRichText field={slice.primary.titleContent}/>
+            {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
 
             <div className={`grid gap-4 lg:grid-cols-2 justify-center align-top`}>
                 <div>
@@ -47,7 +47,7 @@ function OneThirdTwoThirdRender(slice) {
             {/*<>{slice.primary.reversethis}</>*/}
             {/*TODO: Code for color toggle*/}
             {/*<>{slice.primary.hascolor}</>*/}
-            <PrismicRichText field={slice.primary.titleContent}/>
+            {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
 
             <div className={`grid gap-4 lg:grid-cols-2 justify-center align-top`}>
                 <div>
@@ -69,7 +69,7 @@ function QuartersRender(slice) {
             {/*<>{slice.primary.reversethis}</>*/}
             {/*TODO: Code for color toggle*/}
             {/*<>{slice.primary.hascolor}</>*/}
-            <PrismicRichText field={slice.primary.titleContent}/>
+            {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
 
             <div className={`grid gap-4 lg:grid-cols-2 justify-center align-top`}>
                 <div>
