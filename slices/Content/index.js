@@ -43,21 +43,17 @@ function HalfHalfRender(slice) {
 function OneThirdTwoThirdRender(slice) {
     return (
         <section className={`max-w-screen-xl mx-auto`}>
-            {/*TODO: Code for Toggle*/}
-            {/*<>{slice.primary.reversethis}</>*/}
             {/*TODO: Code for color toggle*/}
             {/*<>{slice.primary.hascolor}</>*/}
-            {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
-
-            <div className={`grid gap-4 lg:grid-cols-2 justify-center align-top`}>
-                <div>
-                    <PrismicRichText field={slice.primary.onethird}/>
+            {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent} />}
+            <div className={`flex flex-col gap-4 xl:flex-row ${slice.primary.reversethis ? 'flex-col-reverse xl:flex-row-reverse' : ''}`}>
+                <div className={`xl:w-1/3`}>
+                    <PrismicRichText field={slice.primary.lefthalf} />
                 </div>
-                <div>
-                    <PrismicRichText field={slice.primary.twothird}/>
+                <div className={`xl:w-2/3`}>
+                    <PrismicRichText field={slice.primary.righthalf} />
                 </div>
             </div>
-
         </section>
     )
 }
