@@ -273,6 +273,54 @@
 						"direction": "ltr"
 					}
 				]
+			},
+			"buttontextfirstquarter": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Learn More"
+			},
+			"buttontextsecondquarter": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Learn More"
+			},
+			"buttontextthirdquarter": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Learn More"
+			},
+			"buttonlinkfirstquarter": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "#"
+				}
+			},
+			"buttonlinksecondquarter": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "#"
+				}
+			},
+			"buttonlinkthirdquarter": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "#"
+				}
+			},
+			"buttonlinkfourthquarter": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "#"
+				}
+			},
+			"buttontextfourthquarter": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Learn More"
 			}
 		},
 		"items": [

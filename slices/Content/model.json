@@ -153,6 +153,22 @@
             "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
+        "buttonlinkfirstquarter": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link First Quarter",
+            "placeholder": "Button Link",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        },
+        "buttontextfirstquarter": {
+          "type": "Text",
+          "config": {
+            "label": "Button Text First Quarter",
+            "placeholder": "Button Text"
+          }
+        },
         "secondquarter": {
           "type": "StructuredText",
           "config": {
@@ -161,6 +177,19 @@
             "allowTargetBlank": true,
             "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
+        },
+        "buttonlinksecondquarter": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link Second Quarter",
+            "placeholder": "Button Link",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        },
+        "buttontextsecondquarter": {
+          "type": "Text",
+          "config": { "label": "Button Text Second Quarter", "placeholder": "" }
         },
         "thirdquarter": {
           "type": "StructuredText",
@@ -171,6 +200,18 @@
             "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
+        "buttonlinkthirdquarter": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link Third Quarter",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "buttontextthirdquarter": {
+          "type": "Text",
+          "config": { "label": "Button Text Third Quarter", "placeholder": "" }
+        },
         "fourthquarter": {
           "type": "StructuredText",
           "config": {
@@ -179,6 +220,18 @@
             "allowTargetBlank": true,
             "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
+        },
+        "buttonlinkfourthquarter": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link Fourth Quarter",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "buttontextfourthquarter": {
+          "type": "Text",
+          "config": { "label": "Button Text Fourth Quarter", "placeholder": "" }
         },
         "reversethis": {
           "type": "Boolean",

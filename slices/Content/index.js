@@ -65,15 +65,47 @@ function QuartersRender(slice) {
             <div className={`grid gap-4 lg:grid-cols-4 justify-center align-top`}>
                 <div>
                     <PrismicRichText field={slice.primary.firstquarter}/>
+                    <button>
+                    <PrismicNextLink
+                        alt={slice.primary.buttontextfirstquarter}
+                        field={slice.primary.buttonlinkfirstquarter}
+                        className={`button`}>
+                        {slice.primary.buttontextfirstquarter}
+                    </PrismicNextLink>
+                    </button>
                 </div>
                 <div>
                     <PrismicRichText field={slice.primary.secondquarter}/>
+                    <button>
+                        <PrismicNextLink
+                            alt={slice.primary.buttontextsecondquarter}
+                            field={slice.primary.buttonlinksecondquarter}
+                            className={`button`}>
+                            {slice.primary.buttontextsecondquarter}
+                        </PrismicNextLink>
+                    </button>
                 </div>
                 <div>
                     <PrismicRichText field={slice.primary.thirdquarter}/>
+                    <button>
+                        <PrismicNextLink
+                            alt={slice.primary.buttontextthirdquarter}
+                            field={slice.primary.buttonlinkthirdquarter}
+                            className={`button`}>
+                            {slice.primary.buttontextthirdquarter}
+                        </PrismicNextLink>
+                    </button>
                 </div>
                 <div>
                     <PrismicRichText field={slice.primary.fourthquarter}/>
+                    <button>
+                        <PrismicNextLink
+                            alt={slice.primary.buttontextfourthquarter}
+                            field={slice.primary.buttonlinkfourthquarter}
+                            className={`button`}>
+                            {slice.primary.buttontextfourthquarter}
+                        </PrismicNextLink>
+                    </button>
                 </div>
             </div>
 

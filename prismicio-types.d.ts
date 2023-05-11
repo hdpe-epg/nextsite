@@ -398,6 +398,26 @@ interface ContentSliceQuartersPrimary {
    */
   firstquarter: prismicT.RichTextField;
   /**
+   * Button Link First Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: Button Link
+   * - **API ID Path**: content.primary.buttonlinkfirstquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  buttonlinkfirstquarter: prismicT.LinkField;
+  /**
+   * Button Text First Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Button Text
+   * - **API ID Path**: content.primary.buttontextfirstquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  buttontextfirstquarter: prismicT.KeyTextField;
+  /**
    * Second Quarter field in *Content → Primary*
    *
    * - **Field Type**: Rich Text
@@ -407,6 +427,26 @@ interface ContentSliceQuartersPrimary {
    *
    */
   secondquarter: prismicT.RichTextField;
+  /**
+   * Button Link Second Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: Button Link
+   * - **API ID Path**: content.primary.buttonlinksecondquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  buttonlinksecondquarter: prismicT.LinkField;
+  /**
+   * Button Text Second Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.buttontextsecondquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  buttontextsecondquarter: prismicT.KeyTextField;
   /**
    * Third Quarter field in *Content → Primary*
    *
@@ -418,6 +458,26 @@ interface ContentSliceQuartersPrimary {
    */
   thirdquarter: prismicT.RichTextField;
   /**
+   * Button Link Third Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.buttonlinkthirdquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  buttonlinkthirdquarter: prismicT.LinkField;
+  /**
+   * Button Text Third Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.buttontextthirdquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  buttontextthirdquarter: prismicT.KeyTextField;
+  /**
    * Fourth Quarter field in *Content → Primary*
    *
    * - **Field Type**: Rich Text
@@ -427,6 +487,26 @@ interface ContentSliceQuartersPrimary {
    *
    */
   fourthquarter: prismicT.RichTextField;
+  /**
+   * Button Link Fourth Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.buttonlinkfourthquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  buttonlinkfourthquarter: prismicT.LinkField;
+  /**
+   * Button Text Fourth Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.buttontextfourthquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  buttontextfourthquarter: prismicT.KeyTextField;
   /**
    * Reverse the Row field in *Content → Primary*
    *
