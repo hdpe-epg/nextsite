@@ -242,10 +242,59 @@ export type ContentSliceDefault = prismicT.SharedSliceVariation<
   never
 >;
 /**
+ * Primary content in Content → Primary
+ *
+ */
+interface ContentSliceHalfHalfPrimary {
+  /**
+   * Title field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter your SubHeading
+   * - **API ID Path**: content.primary.titleContent
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  titleContent: prismicT.RichTextField;
+  /**
+   * lefthalf field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Left half of the content
+   * - **API ID Path**: content.primary.lefthalf
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  lefthalf: prismicT.RichTextField;
+  /**
+   * rightHalf field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: right half of the content
+   * - **API ID Path**: content.primary.righthalf
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  righthalf: prismicT.RichTextField;
+}
+/**
+ * HalfHalf variation for Content Slice
+ *
+ * - **API ID**: `halfHalf`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ContentSliceHalfHalf = prismicT.SharedSliceVariation<
+  "halfHalf",
+  Simplify<ContentSliceHalfHalfPrimary>,
+  never
+>;
+/**
  * Slice variation for *Content*
  *
  */
-type ContentSliceVariation = ContentSliceDefault;
+type ContentSliceVariation = ContentSliceDefault | ContentSliceHalfHalf;
 /**
  * Content Shared Slice
  *
@@ -364,6 +413,8 @@ declare module "@prismicio/client" {
       AllDocumentTypes,
       ContentSliceDefaultPrimary,
       ContentSliceDefault,
+      ContentSliceHalfHalfPrimary,
+      ContentSliceHalfHalf,
       ContentSliceVariation,
       ContentSlice,
       HerosSliceDefaultPrimary,

@@ -15,7 +15,7 @@ import Heading from "@/components/Heading";
 
 const Heros = ({index, slice}) => {
     return DefaultHeroRender(index, slice)
-};
+}
 
 export default Heros
 

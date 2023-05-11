@@ -23,6 +23,44 @@
         }
       },
       "items": {}
+    },
+    {
+      "id": "halfHalf",
+      "name": "HalfHalf",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "titleContent": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Enter your SubHeading",
+            "allowTargetBlank": true,
+            "multi": "heading2,paragraph"
+          }
+        },
+        "lefthalf": {
+          "type": "StructuredText",
+          "config": {
+            "label": "lefthalf",
+            "placeholder": "Left half of the content",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "righthalf": {
+          "type": "StructuredText",
+          "config": {
+            "label": "rightHalf",
+            "placeholder": "right half of the content",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,paragraph,preformatted"
+          }
+        }
+      },
+      "items": {}
     }
   ]
 }

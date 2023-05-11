@@ -42,5 +42,80 @@
 			}
 		},
 		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "halfHalf",
+		"primary": {
+			"titleContent": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Heading Two",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Some Paragraph text for it",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"lefthalf": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Velit sunt veniam consectetur fugiat et ut et voluptate dolore reprehenderit elit ea. Et non laboris consectetur laboris ullamco. Aliqua veniam quis eu ipsum ipsum occaecat sunt dolor ut nisi eiusmod.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Velit sunt veniam consectetur fugiat et ut et voluptate dolore reprehenderit elit ea. Et non laboris consectetur laboris ullamco. Aliqua veniam quis eu ipsum ipsum occaecat sunt dolor ut nisi eiusmod.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"righthalf": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Velit sunt veniam consectetur fugiat et ut et voluptate dolore reprehenderit elit ea. Et non laboris consectetur laboris ullamco. Aliqua veniam quis eu ipsum ipsum occaecat sunt dolor ut nisi eiusmod.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Velit sunt veniam consectetur fugiat et ut et voluptate dolore reprehenderit elit ea. Et non laboris consectetur laboris ullamco. Aliqua veniam quis eu ipsum ipsum occaecat sunt dolor ut nisi eiusmod.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
 	}
 ]
