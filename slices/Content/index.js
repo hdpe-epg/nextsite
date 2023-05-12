@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import {PrismicNextLink} from "@prismicio/next";
 import {PrismicRichText} from '@prismicio/react'
+import { nanoid } from 'nanoid';
 import Heading from "@/components/Heading";
 
 /**
@@ -144,7 +145,7 @@ function QuartersRender(slice) {
             {/*inner row -----------*/}
             <div className={`grid gap-8 lg:grid-cols-4 justify-center align-top`}>
                 {quarters.map((quarter, index) => (
-                    <div key={index}>
+                    <div key={quarter.id || nanoid()}>
                         {quarter.image.url && (
                             <div className="aspect-h-9 aspect-w-16 mb-8">
                                 <Image
