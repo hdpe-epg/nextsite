@@ -458,6 +458,28 @@ export type ContentSliceOneThirdTwoThird = prismicT.SharedSliceVariation<
  */
 interface ContentSliceQuartersPrimary {
   /**
+   * Background Color Toggle field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.hascolor
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  hascolor: prismicT.BooleanField;
+  /**
+   * Reverse the Row field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.reversethis
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  reversethis: prismicT.BooleanField;
+  /**
    * Title field in *Content → Primary*
    *
    * - **Field Type**: Rich Text
@@ -467,6 +489,16 @@ interface ContentSliceQuartersPrimary {
    *
    */
   titleContent: prismicT.RichTextField;
+  /**
+   * First Quarter Image field in *Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.first_quarter_image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  first_quarter_image: prismicT.ImageField<never>;
   /**
    * First Quarter field in *Content → Primary*
    *
@@ -498,6 +530,16 @@ interface ContentSliceQuartersPrimary {
    */
   buttontextfirstquarter: prismicT.KeyTextField;
   /**
+   * Second Quarter Image field in *Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.second_quarter_image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  second_quarter_image: prismicT.ImageField<never>;
+  /**
    * Second Quarter field in *Content → Primary*
    *
    * - **Field Type**: Rich Text
@@ -527,6 +569,16 @@ interface ContentSliceQuartersPrimary {
    *
    */
   buttontextsecondquarter: prismicT.KeyTextField;
+  /**
+   * Third Quarter Image field in *Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.third_quarter_image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  third_quarter_image: prismicT.ImageField<never>;
   /**
    * Third Quarter field in *Content → Primary*
    *
@@ -558,6 +610,16 @@ interface ContentSliceQuartersPrimary {
    */
   buttontextthirdquarter: prismicT.KeyTextField;
   /**
+   * Fourth Quarter Image field in *Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.fourth_quarter_image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  fourth_quarter_image: prismicT.ImageField<never>;
+  /**
    * Fourth Quarter field in *Content → Primary*
    *
    * - **Field Type**: Rich Text
@@ -587,28 +649,6 @@ interface ContentSliceQuartersPrimary {
    *
    */
   buttontextfourthquarter: prismicT.KeyTextField;
-  /**
-   * Reverse the Row field in *Content → Primary*
-   *
-   * - **Field Type**: Boolean
-   * - **Placeholder**: *None*
-   * - **Default Value**: false
-   * - **API ID Path**: content.primary.reversethis
-   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
-   *
-   */
-  reversethis: prismicT.BooleanField;
-  /**
-   * Background Color Toggle field in *Content → Primary*
-   *
-   * - **Field Type**: Boolean
-   * - **Placeholder**: *None*
-   * - **Default Value**: false
-   * - **API ID Path**: content.primary.hascolor
-   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
-   *
-   */
-  hascolor: prismicT.BooleanField;
 }
 /**
  * Quarters variation for Content Slice

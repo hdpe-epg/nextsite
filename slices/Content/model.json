@@ -193,6 +193,24 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "hascolor": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background Color Toggle",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "reversethis": {
+          "type": "Boolean",
+          "config": {
+            "label": "Reverse the Row",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
         "titleContent": {
           "type": "StructuredText",
           "config": {
@@ -200,6 +218,14 @@
             "placeholder": "Enter your SubHeading",
             "allowTargetBlank": true,
             "multi": "heading2,paragraph"
+          }
+        },
+        "first_quarter_image": {
+          "type": "Image",
+          "config": {
+            "label": "First Quarter Image",
+            "constraint": {},
+            "thumbnails": []
           }
         },
         "firstquarter": {
@@ -227,6 +253,14 @@
             "placeholder": "Button Text"
           }
         },
+        "second_quarter_image": {
+          "type": "Image",
+          "config": {
+            "label": "Second Quarter Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
         "secondquarter": {
           "type": "StructuredText",
           "config": {
@@ -249,6 +283,14 @@
           "type": "Text",
           "config": { "label": "Button Text Second Quarter", "placeholder": "" }
         },
+        "third_quarter_image": {
+          "type": "Image",
+          "config": {
+            "label": "Third Quarter Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
         "thirdquarter": {
           "type": "StructuredText",
           "config": {
@@ -270,6 +312,14 @@
           "type": "Text",
           "config": { "label": "Button Text Third Quarter", "placeholder": "" }
         },
+        "fourth_quarter_image": {
+          "type": "Image",
+          "config": {
+            "label": "Fourth Quarter Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
         "fourthquarter": {
           "type": "StructuredText",
           "config": {
@@ -290,24 +340,6 @@
         "buttontextfourthquarter": {
           "type": "Text",
           "config": { "label": "Button Text Fourth Quarter", "placeholder": "" }
-        },
-        "reversethis": {
-          "type": "Boolean",
-          "config": {
-            "label": "Reverse the Row",
-            "placeholder_false": "false",
-            "placeholder_true": "true",
-            "default_value": false
-          }
-        },
-        "hascolor": {
-          "type": "Boolean",
-          "config": {
-            "label": "Background Color Toggle",
-            "placeholder_false": "false",
-            "placeholder_true": "true",
-            "default_value": false
-          }
         }
       },
       "items": {}

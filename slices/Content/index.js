@@ -111,58 +111,68 @@ function OneThirdTwoThirdRender(slice) {
 }
 
 function QuartersRender(slice) {
+    const quarters = [
+        {
+            image: slice.primary.first_quarter_image,
+            content: slice.primary.firstquarter,
+            buttonText: slice.primary.buttontextfirstquarter,
+            buttonLink: slice.primary.buttonlinkfirstquarter,
+        },
+        {
+            image: slice.primary.second_quarter_image,
+            content: slice.primary.secondquarter,
+            buttonText: slice.primary.buttontextsecondquarter,
+            buttonLink: slice.primary.buttonlinksecondquarter,
+        },
+        {
+            image: slice.primary.third_quarter_image,
+            content: slice.primary.thirdquarter,
+            buttonText: slice.primary.buttontextthirdquarter,
+            buttonLink: slice.primary.buttonlinkthirdquarter,
+        },
+        {
+            image: slice.primary.fourth_quarter_image,
+            content: slice.primary.fourthquarter,
+            buttonText: slice.primary.buttontextfourthquarter,
+            buttonLink: slice.primary.buttonlinkfourthquarter,
+        },
+    ]
+
     return (
         <section className={`max-w-screen-xl mx-auto ${slice.primary.hascolor && ''}`}>
-            {/*<>{slice.primary.reversethis}</>*/}
             {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
-
-            <div className={`grid gap-4 lg:grid-cols-4 justify-center align-top`}>
-                <div>
-                    <PrismicRichText field={slice.primary.firstquarter}/>
-                    <button>
-                        <PrismicNextLink
-                            alt={slice.primary.buttontextfirstquarter}
-                            field={slice.primary.buttonlinkfirstquarter}
-                            className={`button`}>
-                            {slice.primary.buttontextfirstquarter}
-                        </PrismicNextLink>
-                    </button>
-                </div>
-                <div>
-                    <PrismicRichText field={slice.primary.secondquarter}/>
-                    <button>
-                        <PrismicNextLink
-                            alt={slice.primary.buttontextsecondquarter}
-                            field={slice.primary.buttonlinksecondquarter}
-                            className={`button`}>
-                            {slice.primary.buttontextsecondquarter}
-                        </PrismicNextLink>
-                    </button>
-                </div>
-                <div>
-                    <PrismicRichText field={slice.primary.thirdquarter}/>
-                    <button>
-                        <PrismicNextLink
-                            alt={slice.primary.buttontextthirdquarter}
-                            field={slice.primary.buttonlinkthirdquarter}
-                            className={`button`}>
-                            {slice.primary.buttontextthirdquarter}
-                        </PrismicNextLink>
-                    </button>
-                </div>
-                <div>
-                    <PrismicRichText field={slice.primary.fourthquarter}/>
-                    <button>
-                        <PrismicNextLink
-                            alt={slice.primary.buttontextfourthquarter}
-                            field={slice.primary.buttonlinkfourthquarter}
-                            className={`button`}>
-                            {slice.primary.buttontextfourthquarter}
-                        </PrismicNextLink>
-                    </button>
-                </div>
+            {/*inner row -----------*/}
+            <div className={`grid gap-8 lg:grid-cols-4 justify-center align-top`}>
+                {quarters.map((quarter, index) => (
+                    <div key={index}>
+                        {quarter.image.url && (
+                            <div className="aspect-h-9 aspect-w-16 mb-8">
+                                <Image
+                                    src={quarter.image.url}
+                                    field={quarter.image.url}
+                                    alt={quarter.image.alt || ''}
+                                    fill={true}
+                                    className="z-[-2] object-cover"
+                                />
+                            </div>
+                        )}
+                        {quarter.content && <PrismicRichText field={quarter.content}/>}
+                        {quarter.buttonText && (
+                            <div className={`text-center`}>
+                                <button>
+                                    <PrismicNextLink
+                                        alt={quarter.buttonText}
+                                        field={quarter.buttonLink}
+                                        className={`button`}
+                                    >
+                                        {quarter.buttonText}
+                                    </PrismicNextLink>
+                                </button>
+                            </div>
+                        )}
+                    </div>
+                ))}
             </div>
-
         </section>
     )
 }
