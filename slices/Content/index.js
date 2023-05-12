@@ -12,9 +12,9 @@ import Heading from "@/components/Heading";
 const Content = ({slice}) => {
     if (slice.variation === `halfHalf`) {
         return HalfHalfRender(slice)
-    } else if (slice.variation === `oneThirdTwoThird`)  {
+    } else if (slice.variation === `oneThirdTwoThird`) {
         return OneThirdTwoThirdRender(slice)
-    } else if (slice.variation === `quarters`)  {
+    } else if (slice.variation === `quarters`) {
         return QuartersRender(slice)
     }
     return DefaultRender(slice)
@@ -29,9 +29,10 @@ function HalfHalfRender(slice) {
         <section className={`max-w-screen-xl mx-auto ${slice.primary.hascolor && ''}`}>
             {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
 
-            <div className={`grid gap-16 lg:grid-cols-2 justify-center align-top my-24 ${slice.primary.leftimageoptional.url || slice.primary.rightimageoptional.url && 'align-center'}`}>
+            <div
+                className={`grid gap-16 lg:grid-cols-2 justify-center align-top my-24 ${slice.primary.leftimageoptional.url || slice.primary.rightimageoptional.url && 'align-center'}`}>
                 <div className={``}>
-                    {slice.primary.lefttitleoptional && <PrismicRichText field={slice.primary.lefttitleoptional} />}
+                    {slice.primary.lefttitleoptional && <PrismicRichText field={slice.primary.lefttitleoptional}/>}
                     {slice.primary.leftimageoptional.url && (
                         <div className="aspect-h-9 aspect-w-16 mb-8">
                             <Image
@@ -43,7 +44,7 @@ function HalfHalfRender(slice) {
                             />
                         </div>
                     )}
-                    {slice.primary.lefthalf && <PrismicRichText field={slice.primary.lefthalf} />}
+                    {slice.primary.lefthalf && <PrismicRichText field={slice.primary.lefthalf}/>}
 
                     {slice.primary.leftbuttonoptional && slice.primary.leftbuttontext ? (
                         <div className={`my-8 text-center`}>
@@ -62,7 +63,7 @@ function HalfHalfRender(slice) {
                 {/*Right half box*/}
                 {/*------------------------------*/}
                 <div>
-                    {slice.primary.righttitleoptional && <PrismicRichText field={slice.primary.righttitleoptional} />}
+                    {slice.primary.righttitleoptional && <PrismicRichText field={slice.primary.righttitleoptional}/>}
                     {slice.primary.rightimageoptional.url && (
                         <div className="aspect-h-9 aspect-w-16 mb-8">
                             <Image
@@ -97,13 +98,14 @@ function HalfHalfRender(slice) {
 function OneThirdTwoThirdRender(slice) {
     return (
         <section className={`max-w-screen-xl mx-auto ${slice.primary.hascolor && ''}`}>
-            {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent} />}
-            <div className={`flex flex-col gap-4 xl:flex-row ${slice.primary.reversethis ? 'flex-col-reverse xl:flex-row-reverse' : ''}`}>
+            {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
+            <div
+                className={`flex flex-col gap-4 xl:flex-row ${slice.primary.reversethis ? 'flex-col-reverse xl:flex-row-reverse' : ''}`}>
                 <div className={`xl:w-1/3`}>
-                    <PrismicRichText field={slice.primary.lefthalf} />
+                    <PrismicRichText field={slice.primary.lefthalf}/>
                 </div>
                 <div className={`xl:w-2/3`}>
-                    <PrismicRichText field={slice.primary.righthalf} />
+                    <PrismicRichText field={slice.primary.righthalf}/>
                 </div>
             </div>
         </section>
@@ -120,12 +122,12 @@ function QuartersRender(slice) {
                 <div>
                     <PrismicRichText field={slice.primary.firstquarter}/>
                     <button>
-                    <PrismicNextLink
-                        alt={slice.primary.buttontextfirstquarter}
-                        field={slice.primary.buttonlinkfirstquarter}
-                        className={`button`}>
-                        {slice.primary.buttontextfirstquarter}
-                    </PrismicNextLink>
+                        <PrismicNextLink
+                            alt={slice.primary.buttontextfirstquarter}
+                            field={slice.primary.buttonlinkfirstquarter}
+                            className={`button`}>
+                            {slice.primary.buttontextfirstquarter}
+                        </PrismicNextLink>
                     </button>
                 </div>
                 <div>
