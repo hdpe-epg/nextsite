@@ -23,8 +23,6 @@ const Content = ({slice}) => {
 export default Content
 
 function HalfHalfRender(slice) {
-    console.log("slice.primary.leftimageoptional:", slice.primary.leftimageoptional);
-
     return (
         <section className={`max-w-screen-xl mx-auto ${slice.primary.hascolor && ''}`}>
             {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
