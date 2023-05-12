@@ -202,15 +202,6 @@
             "default_value": false
           }
         },
-        "reversethis": {
-          "type": "Boolean",
-          "config": {
-            "label": "Reverse the Row",
-            "placeholder_false": "false",
-            "placeholder_true": "true",
-            "default_value": false
-          }
-        },
         "titleContent": {
           "type": "StructuredText",
           "config": {

@@ -303,10 +303,6 @@
 					}
 				]
 			},
-			"reversethis": {
-				"__TYPE__": "BooleanContent",
-				"value": false
-			},
 			"hascolor": {
 				"__TYPE__": "BooleanContent",
 				"value": true

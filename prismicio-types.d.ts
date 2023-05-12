@@ -469,17 +469,6 @@ interface ContentSliceQuartersPrimary {
    */
   hascolor: prismicT.BooleanField;
   /**
-   * Reverse the Row field in *Content → Primary*
-   *
-   * - **Field Type**: Boolean
-   * - **Placeholder**: *None*
-   * - **Default Value**: false
-   * - **API ID Path**: content.primary.reversethis
-   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
-   *
-   */
-  reversethis: prismicT.BooleanField;
-  /**
    * Title field in *Content → Primary*
    *
    * - **Field Type**: Rich Text
