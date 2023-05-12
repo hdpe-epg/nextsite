@@ -24,7 +24,7 @@ export default Content
 
 function HalfHalfRender(slice) {
     return (
-        <section className={`max-w-screen-xl mx-auto ${slice.primary.hascolor && ''}`}>
+        <section className={`max-w-screen-xl mx-auto ${slice.primary.hascolor ? 'bg-brand-primary py-24': 'my-24'}`}>
             {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
             <div
                 className={`grid gap-16 lg:grid-cols-2 justify-center align-top ${slice.primary.leftimageoptional.url || slice.primary.rightimageoptional.url && 'align-center'}`}>
