@@ -23,28 +23,29 @@ const Content = ({slice}) => {
 export default Content
 
 function HalfHalfRender(slice) {
+    console.log("slice.primary.leftimageoptional:", slice.primary.leftimageoptional);
+
     return (
         <section className={`max-w-screen-xl mx-auto ${slice.primary.hascolor && ''}`}>
             {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
 
-            <div className={`grid gap-4 lg:grid-cols-2 justify-center align-top`}>
+            <div className={`grid gap-16 lg:grid-cols-2 justify-center align-top my-24 ${slice.primary.leftimageoptional.url || slice.primary.rightimageoptional.url && 'align-center'}`}>
                 <div className={``}>
                     {slice.primary.lefttitleoptional && <PrismicRichText field={slice.primary.lefttitleoptional} />}
-                    {slice.primary.leftimageoptional && (
+                    {slice.primary.leftimageoptional.url && (
                         <div className="aspect-h-9 aspect-w-16 mb-8">
                             <Image
                                 src={slice.primary.leftimageoptional.url}
                                 field={slice.primary.leftimageoptional.url}
                                 alt={slice.primary.leftimageoptional.alt || ''}
                                 fill={true}
-                                objectFit="cover"
-                                className="z-[-2]"
+                                className="z-[-2] object-cover"
                             />
                         </div>
                     )}
                     {slice.primary.lefthalf && <PrismicRichText field={slice.primary.lefthalf} />}
 
-                    {slice.primary.leftbuttonoptional &&
+                    {slice.primary.leftbuttonoptional && slice.primary.leftbuttontext ? (
                         <div className={`my-8 text-center`}>
                             <button>
                                 <PrismicNextLink
@@ -55,27 +56,26 @@ function HalfHalfRender(slice) {
                                 </PrismicNextLink>
                             </button>
                         </div>
-                    }
+                    ) : null}
                 </div>
-                {/*----------*/}
+                {/*------------------------------*/}
                 {/*Right half box*/}
-                {/*----------*/}
+                {/*------------------------------*/}
                 <div>
                     {slice.primary.righttitleoptional && <PrismicRichText field={slice.primary.righttitleoptional} />}
-                    {slice.primary.rightimageoptional && (
-                        <div className="aspect-h-9 aspect-w-16  mb-8">
+                    {slice.primary.rightimageoptional.url && (
+                        <div className="aspect-h-9 aspect-w-16 mb-8">
                             <Image
                                 src={slice.primary.rightimageoptional.url}
                                 field={slice.primary.rightimageoptional.url}
                                 alt={slice.primary.rightimageoptional.alt || ''}
                                 fill={true}
-                                objectFit="cover"
-                                className="z-[-2]"
+                                className="z-[-2] object-cover"
                             />
                         </div>
                     )}
                     {slice.primary.righthalf && <PrismicRichText field={slice.primary.righthalf}/>}
-                    {slice.primary.rightbuttonoptional &&
+                    {slice.primary.rightbuttonoptional && slice.primary.rightbuttontext ? (
                         <div className={`my-8 text-center`}>
                             <button>
                                 <PrismicNextLink
@@ -86,7 +86,7 @@ function HalfHalfRender(slice) {
                                 </PrismicNextLink>
                             </button>
                         </div>
-                    }
+                    ) : null}
                 </div>
             </div>
 
