@@ -32,6 +32,15 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "hascolor": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background Color Toggle",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
         "titleContent": {
           "type": "StructuredText",
           "config": {
@@ -39,6 +48,23 @@
             "placeholder": "Enter your SubHeading",
             "allowTargetBlank": true,
             "multi": "heading2,paragraph"
+          }
+        },
+        "lefttitleoptional": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Left Title Optional",
+            "placeholder": "Optional Title Paragraph",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading2"
+          }
+        },
+        "leftimageoptional": {
+          "type": "Image",
+          "config": {
+            "label": "Left Image Optional",
+            "constraint": {},
+            "thumbnails": []
           }
         },
         "lefthalf": {
@@ -50,6 +76,35 @@
             "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
+        "leftbuttonoptional": {
+          "type": "Link",
+          "config": {
+            "label": "Left Button Optional",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "leftbuttontext": {
+          "type": "Text",
+          "config": { "label": "Left Button Text", "placeholder": "" }
+        },
+        "righttitleoptional": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Right Title Optional",
+            "placeholder": "Optional Title Paragraph",
+            "allowTargetBlank": true,
+            "multi": "heading2,paragraph"
+          }
+        },
+        "rightimageoptional": {
+          "type": "Image",
+          "config": {
+            "label": "Right Image Optional",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
         "righthalf": {
           "type": "StructuredText",
           "config": {
@@ -59,14 +114,17 @@
             "multi": "heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,paragraph,preformatted"
           }
         },
-        "hascolor": {
-          "type": "Boolean",
+        "rightbuttonoptional": {
+          "type": "Link",
           "config": {
-            "label": "Background Color Toggle",
-            "placeholder_false": "false",
-            "placeholder_true": "true",
-            "default_value": false
+            "label": "Right Button Optional",
+            "placeholder": "",
+            "select": null
           }
+        },
+        "rightbuttontext": {
+          "type": "Text",
+          "config": { "label": "Right Button Text", "placeholder": "" }
         }
       },
       "items": {}

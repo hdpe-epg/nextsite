@@ -28,11 +28,65 @@ function HalfHalfRender(slice) {
             {slice.primary.titleContent && <PrismicRichText field={slice.primary.titleContent}/>}
 
             <div className={`grid gap-4 lg:grid-cols-2 justify-center align-top`}>
-                <div>
-                    <PrismicRichText field={slice.primary.lefthalf}/>
+                <div className={``}>
+                    {slice.primary.lefttitleoptional && <PrismicRichText field={slice.primary.lefttitleoptional} />}
+                    {slice.primary.leftimageoptional && (
+                        <div className="aspect-h-9 aspect-w-16 mb-8">
+                            <Image
+                                src={slice.primary.leftimageoptional.url}
+                                field={slice.primary.leftimageoptional.url}
+                                alt={slice.primary.leftimageoptional.alt || ''}
+                                fill={true}
+                                objectFit="cover"
+                                className="z-[-2]"
+                            />
+                        </div>
+                    )}
+                    {slice.primary.lefthalf && <PrismicRichText field={slice.primary.lefthalf} />}
+
+                    {slice.primary.leftbuttonoptional &&
+                        <div className={`my-8 text-center`}>
+                            <button>
+                                <PrismicNextLink
+                                    alt={slice.primary.leftbuttontext}
+                                    field={slice.primary.leftbuttonoptional}
+                                    className={`button`}>
+                                    {slice.primary.leftbuttontext}
+                                </PrismicNextLink>
+                            </button>
+                        </div>
+                    }
                 </div>
+                {/*----------*/}
+                {/*Right half box*/}
+                {/*----------*/}
                 <div>
-                    <PrismicRichText field={slice.primary.righthalf}/>
+                    {slice.primary.righttitleoptional && <PrismicRichText field={slice.primary.righttitleoptional} />}
+                    {slice.primary.rightimageoptional && (
+                        <div className="aspect-h-9 aspect-w-16  mb-8">
+                            <Image
+                                src={slice.primary.rightimageoptional.url}
+                                field={slice.primary.rightimageoptional.url}
+                                alt={slice.primary.rightimageoptional.alt || ''}
+                                fill={true}
+                                objectFit="cover"
+                                className="z-[-2]"
+                            />
+                        </div>
+                    )}
+                    {slice.primary.righthalf && <PrismicRichText field={slice.primary.righthalf}/>}
+                    {slice.primary.rightbuttonoptional &&
+                        <div className={`my-8 text-center`}>
+                            <button>
+                                <PrismicNextLink
+                                    alt={slice.primary.rightbuttontext}
+                                    field={slice.primary.rightbuttonoptional}
+                                    className={`button`}>
+                                    {slice.primary.rightbuttontext}
+                                </PrismicNextLink>
+                            </button>
+                        </div>
+                    }
                 </div>
             </div>
 

@@ -247,6 +247,17 @@ export type ContentSliceDefault = prismicT.SharedSliceVariation<
  */
 interface ContentSliceHalfHalfPrimary {
   /**
+   * Background Color Toggle field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.hascolor
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  hascolor: prismicT.BooleanField;
+  /**
    * Title field in *Content → Primary*
    *
    * - **Field Type**: Rich Text
@@ -256,6 +267,26 @@ interface ContentSliceHalfHalfPrimary {
    *
    */
   titleContent: prismicT.RichTextField;
+  /**
+   * Left Title Optional field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Optional Title Paragraph
+   * - **API ID Path**: content.primary.lefttitleoptional
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  lefttitleoptional: prismicT.RichTextField;
+  /**
+   * Left Image Optional field in *Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.leftimageoptional
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  leftimageoptional: prismicT.ImageField<never>;
   /**
    * lefthalf field in *Content → Primary*
    *
@@ -267,6 +298,46 @@ interface ContentSliceHalfHalfPrimary {
    */
   lefthalf: prismicT.RichTextField;
   /**
+   * Left Button Optional field in *Content → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.leftbuttonoptional
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  leftbuttonoptional: prismicT.LinkField;
+  /**
+   * Left Button Text field in *Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.leftbuttontext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  leftbuttontext: prismicT.KeyTextField;
+  /**
+   * Right Title Optional field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Optional Title Paragraph
+   * - **API ID Path**: content.primary.righttitleoptional
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  righttitleoptional: prismicT.RichTextField;
+  /**
+   * Right Image Optional field in *Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.rightimageoptional
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  rightimageoptional: prismicT.ImageField<never>;
+  /**
    * rightHalf field in *Content → Primary*
    *
    * - **Field Type**: Rich Text
@@ -277,16 +348,25 @@ interface ContentSliceHalfHalfPrimary {
    */
   righthalf: prismicT.RichTextField;
   /**
-   * Background Color Toggle field in *Content → Primary*
+   * Right Button Optional field in *Content → Primary*
    *
-   * - **Field Type**: Boolean
+   * - **Field Type**: Link
    * - **Placeholder**: *None*
-   * - **Default Value**: false
-   * - **API ID Path**: content.primary.hascolor
-   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   * - **API ID Path**: content.primary.rightbuttonoptional
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
    *
    */
-  hascolor: prismicT.BooleanField;
+  rightbuttonoptional: prismicT.LinkField;
+  /**
+   * Right Button Text field in *Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.rightbuttontext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  rightbuttontext: prismicT.KeyTextField;
 }
 /**
  * HalfHalf variation for Content Slice
