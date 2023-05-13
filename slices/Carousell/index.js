@@ -10,7 +10,7 @@ import {PrismicNextImage} from '@prismicio/next';
  */
 const Carousell = ({slice}) => {
     return (
-        <section className={`mx-auto max-w-screen-xl`}>
+        <section className={`mx-auto max-w-screen-xl my-24`}>
             {slice.primary.content &&
                 <div className={`mb-4`}>
                 <PrismicRichText
@@ -26,7 +26,7 @@ const Carousell = ({slice}) => {
                 />
                 </div>
             }
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="grid grid-cols-1 gap-4 justify-center sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
                 {slice.items.map((item, index) => (
                     <PrismicNextImage key={index} field={item.images} width={162} height={75} />
                 ))}
