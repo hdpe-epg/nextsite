@@ -9,32 +9,32 @@ import Heading from '@/components/Heading'
 
 const richTextComponents = {
   heading1: ({ children }) => (
-    <Heading as="h1" size="5xl" className="mb-7 mt-12 first:mt-0 last:mb-0">
+    <Heading as="h1" size="5xl" className="font-bold mb-7 mt-12 first:mt-0 last:mb-0">
       {children}
     </Heading>
   ),
   heading2: ({ children }) => (
-    <Heading as="h2" size="4xl" className="mb-7 last:mb-0">
+    <Heading as="h2" size="4xl" className="font-bold mb-7 last:mb-0">
       {children}
     </Heading>
   ),
   heading3: ({ children }) => (
-    <Heading as="h3" size="2xl" className="mb-7 last:mb-0">
+    <Heading as="h3" size="2xl" className="font-bold mb-7 last:mb-0">
       {children}
     </Heading>
   ),
   heading4: ({ children }) => (
-    <Heading as="h4" size="2xl" className="mb-7 last:mb-0">
+    <Heading as="h4" size="2xl" className="font-bold mb-7 last:mb-0">
       {children}
     </Heading>
   ),
   heading5: ({ children }) => (
-      <Heading as="h5" size="2xl" className="mb-7 last:mb-0">
+      <Heading as="h5" size="2xl" className="font-bold mb-7 last:mb-0">
         {children}
       </Heading>
   ),
   heading6: ({ children }) => (
-      <Heading as="h6" size="2xl" className="mb-7 last:mb-0">
+      <Heading as="h6" size="2xl" className="font-bold mb-7 last:mb-0">
         {children}
       </Heading>
   ),

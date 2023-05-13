@@ -32,6 +32,111 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "hascolor": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background Color Toggle",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "titleContent": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Enter your SubHeading",
+            "allowTargetBlank": true,
+            "multi": "heading2,paragraph"
+          }
+        },
+        "lefttitleoptional": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Left Title Optional",
+            "placeholder": "Optional Title Paragraph",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading2"
+          }
+        },
+        "leftimageoptional": {
+          "type": "Image",
+          "config": {
+            "label": "Left Image Optional",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "lefthalf": {
+          "type": "StructuredText",
+          "config": {
+            "label": "lefthalf",
+            "placeholder": "Left half of the content",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "leftbuttonoptional": {
+          "type": "Link",
+          "config": {
+            "label": "Left Button Optional",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "leftbuttontext": {
+          "type": "Text",
+          "config": { "label": "Left Button Text", "placeholder": "" }
+        },
+        "righttitleoptional": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Right Title Optional",
+            "placeholder": "Optional Title Paragraph",
+            "allowTargetBlank": true,
+            "multi": "heading2,paragraph"
+          }
+        },
+        "rightimageoptional": {
+          "type": "Image",
+          "config": {
+            "label": "Right Image Optional",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "righthalf": {
+          "type": "StructuredText",
+          "config": {
+            "label": "rightHalf",
+            "placeholder": "right half of the content",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,paragraph,preformatted"
+          }
+        },
+        "rightbuttonoptional": {
+          "type": "Link",
+          "config": {
+            "label": "Right Button Optional",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "rightbuttontext": {
+          "type": "Text",
+          "config": { "label": "Right Button Text", "placeholder": "" }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "oneThirdTwoThird",
+      "name": "OneThirdTwoThird",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
         "titleContent": {
           "type": "StructuredText",
           "config": {
@@ -58,6 +163,174 @@
             "allowTargetBlank": true,
             "multi": "heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,paragraph,preformatted"
           }
+        },
+        "reversethis": {
+          "type": "Boolean",
+          "config": {
+            "label": "Reverse the Row",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "hascolor": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background Color Toggle",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "quarters",
+      "name": "Quarters",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "hascolor": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background Color Toggle",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "titleContent": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Enter your SubHeading",
+            "allowTargetBlank": true,
+            "multi": "heading2,paragraph"
+          }
+        },
+        "first_quarter_image": {
+          "type": "Image",
+          "config": {
+            "label": "First Quarter Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "firstquarter": {
+          "type": "StructuredText",
+          "config": {
+            "label": "First Quarter",
+            "placeholder": "First Quarter Content",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "buttonlinkfirstquarter": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link First Quarter",
+            "placeholder": "Button Link",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        },
+        "buttontextfirstquarter": {
+          "type": "Text",
+          "config": {
+            "label": "Button Text First Quarter",
+            "placeholder": "Button Text"
+          }
+        },
+        "second_quarter_image": {
+          "type": "Image",
+          "config": {
+            "label": "Second Quarter Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "secondquarter": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Second Quarter",
+            "placeholder": "Second Quater content",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "buttonlinksecondquarter": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link Second Quarter",
+            "placeholder": "Button Link",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        },
+        "buttontextsecondquarter": {
+          "type": "Text",
+          "config": { "label": "Button Text Second Quarter", "placeholder": "" }
+        },
+        "third_quarter_image": {
+          "type": "Image",
+          "config": {
+            "label": "Third Quarter Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "thirdquarter": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Third Quarter",
+            "placeholder": "Third Quarter Content",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "buttonlinkthirdquarter": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link Third Quarter",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "buttontextthirdquarter": {
+          "type": "Text",
+          "config": { "label": "Button Text Third Quarter", "placeholder": "" }
+        },
+        "fourth_quarter_image": {
+          "type": "Image",
+          "config": {
+            "label": "Fourth Quarter Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "fourthquarter": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Fourth Quarter",
+            "placeholder": "Fourth Quarter Content",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "buttonlinkfourthquarter": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link Fourth Quarter",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "buttontextfourthquarter": {
+          "type": "Text",
+          "config": { "label": "Button Text Fourth Quarter", "placeholder": "" }
         }
       },
       "items": {}

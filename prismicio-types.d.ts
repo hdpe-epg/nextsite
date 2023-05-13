@@ -46,7 +46,11 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = ContentSlice | HerosSlice;
+type HomepageDocumentDataSlicesSlice =
+  | ContentSlice
+  | HerosSlice
+  | SeperatorSlice
+  | CarousellSlice;
 /**
  * Homepage document from Prismic
  *
@@ -103,7 +107,27 @@ interface PageDocumentData {
    *
    */
   subdirectory: prismicT.RelationField<"subdirectory">;
+  /**
+   * Slice Zone field in *Page*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+   *
+   */
+  slices: prismicT.SliceZone<PageDocumentDataSlicesSlice>;
 }
+/**
+ * Slice for *Page → Slice Zone*
+ *
+ */
+type PageDocumentDataSlicesSlice =
+  | ContentSlice
+  | HerosSlice
+  | SeperatorSlice
+  | CarousellSlice;
 /**
  * Page document from Prismic
  *
@@ -213,6 +237,68 @@ export type AllDocumentTypes =
   | SitemetadataDocument
   | SubdirectoryDocument;
 /**
+ * Primary content in Carousell → Primary
+ *
+ */
+interface CarousellSliceDefaultPrimary {
+  /**
+   * content field in *Carousell → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Optional Title / Paragraph
+   * - **API ID Path**: carousell.primary.content
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  content: prismicT.RichTextField;
+}
+/**
+ * Item in Carousell → Items
+ *
+ */
+export interface CarousellSliceDefaultItem {
+  /**
+   * Images field in *Carousell → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousell.items[].images
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  images: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for Carousell Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CarousellSliceDefault = prismicT.SharedSliceVariation<
+  "default",
+  Simplify<CarousellSliceDefaultPrimary>,
+  Simplify<CarousellSliceDefaultItem>
+>;
+/**
+ * Slice variation for *Carousell*
+ *
+ */
+type CarousellSliceVariation = CarousellSliceDefault;
+/**
+ * Carousell Shared Slice
+ *
+ * - **API ID**: `carousell`
+ * - **Description**: `Carousell`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CarousellSlice = prismicT.SharedSlice<
+  "carousell",
+  CarousellSliceVariation
+>;
+/**
  * Primary content in Content → Primary
  *
  */
@@ -247,6 +333,146 @@ export type ContentSliceDefault = prismicT.SharedSliceVariation<
  */
 interface ContentSliceHalfHalfPrimary {
   /**
+   * Background Color Toggle field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.hascolor
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  hascolor: prismicT.BooleanField;
+  /**
+   * Title field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter your SubHeading
+   * - **API ID Path**: content.primary.titleContent
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  titleContent: prismicT.RichTextField;
+  /**
+   * Left Title Optional field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Optional Title Paragraph
+   * - **API ID Path**: content.primary.lefttitleoptional
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  lefttitleoptional: prismicT.RichTextField;
+  /**
+   * Left Image Optional field in *Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.leftimageoptional
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  leftimageoptional: prismicT.ImageField<never>;
+  /**
+   * lefthalf field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Left half of the content
+   * - **API ID Path**: content.primary.lefthalf
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  lefthalf: prismicT.RichTextField;
+  /**
+   * Left Button Optional field in *Content → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.leftbuttonoptional
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  leftbuttonoptional: prismicT.LinkField;
+  /**
+   * Left Button Text field in *Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.leftbuttontext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  leftbuttontext: prismicT.KeyTextField;
+  /**
+   * Right Title Optional field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Optional Title Paragraph
+   * - **API ID Path**: content.primary.righttitleoptional
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  righttitleoptional: prismicT.RichTextField;
+  /**
+   * Right Image Optional field in *Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.rightimageoptional
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  rightimageoptional: prismicT.ImageField<never>;
+  /**
+   * rightHalf field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: right half of the content
+   * - **API ID Path**: content.primary.righthalf
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  righthalf: prismicT.RichTextField;
+  /**
+   * Right Button Optional field in *Content → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.rightbuttonoptional
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  rightbuttonoptional: prismicT.LinkField;
+  /**
+   * Right Button Text field in *Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.rightbuttontext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  rightbuttontext: prismicT.KeyTextField;
+}
+/**
+ * HalfHalf variation for Content Slice
+ *
+ * - **API ID**: `halfHalf`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ContentSliceHalfHalf = prismicT.SharedSliceVariation<
+  "halfHalf",
+  Simplify<ContentSliceHalfHalfPrimary>,
+  never
+>;
+/**
+ * Primary content in Content → Primary
+ *
+ */
+interface ContentSliceOneThirdTwoThirdPrimary {
+  /**
    * Title field in *Content → Primary*
    *
    * - **Field Type**: Rich Text
@@ -276,25 +502,251 @@ interface ContentSliceHalfHalfPrimary {
    *
    */
   righthalf: prismicT.RichTextField;
+  /**
+   * Reverse the Row field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.reversethis
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  reversethis: prismicT.BooleanField;
+  /**
+   * Background Color Toggle field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.hascolor
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  hascolor: prismicT.BooleanField;
 }
 /**
- * HalfHalf variation for Content Slice
+ * OneThirdTwoThird variation for Content Slice
  *
- * - **API ID**: `halfHalf`
+ * - **API ID**: `oneThirdTwoThird`
  * - **Description**: `Default`
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type ContentSliceHalfHalf = prismicT.SharedSliceVariation<
-  "halfHalf",
-  Simplify<ContentSliceHalfHalfPrimary>,
+export type ContentSliceOneThirdTwoThird = prismicT.SharedSliceVariation<
+  "oneThirdTwoThird",
+  Simplify<ContentSliceOneThirdTwoThirdPrimary>,
+  never
+>;
+/**
+ * Primary content in Content → Primary
+ *
+ */
+interface ContentSliceQuartersPrimary {
+  /**
+   * Background Color Toggle field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.hascolor
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  hascolor: prismicT.BooleanField;
+  /**
+   * Title field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter your SubHeading
+   * - **API ID Path**: content.primary.titleContent
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  titleContent: prismicT.RichTextField;
+  /**
+   * First Quarter Image field in *Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.first_quarter_image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  first_quarter_image: prismicT.ImageField<never>;
+  /**
+   * First Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: First Quarter Content
+   * - **API ID Path**: content.primary.firstquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  firstquarter: prismicT.RichTextField;
+  /**
+   * Button Link First Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: Button Link
+   * - **API ID Path**: content.primary.buttonlinkfirstquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  buttonlinkfirstquarter: prismicT.LinkField;
+  /**
+   * Button Text First Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Button Text
+   * - **API ID Path**: content.primary.buttontextfirstquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  buttontextfirstquarter: prismicT.KeyTextField;
+  /**
+   * Second Quarter Image field in *Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.second_quarter_image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  second_quarter_image: prismicT.ImageField<never>;
+  /**
+   * Second Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Second Quater content
+   * - **API ID Path**: content.primary.secondquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  secondquarter: prismicT.RichTextField;
+  /**
+   * Button Link Second Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: Button Link
+   * - **API ID Path**: content.primary.buttonlinksecondquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  buttonlinksecondquarter: prismicT.LinkField;
+  /**
+   * Button Text Second Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.buttontextsecondquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  buttontextsecondquarter: prismicT.KeyTextField;
+  /**
+   * Third Quarter Image field in *Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.third_quarter_image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  third_quarter_image: prismicT.ImageField<never>;
+  /**
+   * Third Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Third Quarter Content
+   * - **API ID Path**: content.primary.thirdquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  thirdquarter: prismicT.RichTextField;
+  /**
+   * Button Link Third Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.buttonlinkthirdquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  buttonlinkthirdquarter: prismicT.LinkField;
+  /**
+   * Button Text Third Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.buttontextthirdquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  buttontextthirdquarter: prismicT.KeyTextField;
+  /**
+   * Fourth Quarter Image field in *Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.fourth_quarter_image
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  fourth_quarter_image: prismicT.ImageField<never>;
+  /**
+   * Fourth Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Fourth Quarter Content
+   * - **API ID Path**: content.primary.fourthquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  fourthquarter: prismicT.RichTextField;
+  /**
+   * Button Link Fourth Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.buttonlinkfourthquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  buttonlinkfourthquarter: prismicT.LinkField;
+  /**
+   * Button Text Fourth Quarter field in *Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.primary.buttontextfourthquarter
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  buttontextfourthquarter: prismicT.KeyTextField;
+}
+/**
+ * Quarters variation for Content Slice
+ *
+ * - **API ID**: `quarters`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ContentSliceQuarters = prismicT.SharedSliceVariation<
+  "quarters",
+  Simplify<ContentSliceQuartersPrimary>,
   never
 >;
 /**
  * Slice variation for *Content*
  *
  */
-type ContentSliceVariation = ContentSliceDefault | ContentSliceHalfHalf;
+type ContentSliceVariation =
+  | ContentSliceDefault
+  | ContentSliceHalfHalf
+  | ContentSliceOneThirdTwoThird
+  | ContentSliceQuarters;
 /**
  * Content Shared Slice
  *
@@ -390,6 +842,53 @@ type HerosSliceVariation = HerosSliceDefault;
  *
  */
 export type HerosSlice = prismicT.SharedSlice<"heros", HerosSliceVariation>;
+/**
+ * Primary content in Separator → Primary
+ *
+ */
+interface SeperatorSliceDefaultPrimary {
+  /**
+   * Need A Dividor? field in *Separator → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: true
+   * - **API ID Path**: seperator.primary.need_a_dividor
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  need_a_dividor: prismicT.BooleanField;
+}
+/**
+ * Default variation for Separator Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type SeperatorSliceDefault = prismicT.SharedSliceVariation<
+  "default",
+  Simplify<SeperatorSliceDefaultPrimary>,
+  never
+>;
+/**
+ * Slice variation for *Separator*
+ *
+ */
+type SeperatorSliceVariation = SeperatorSliceDefault;
+/**
+ * Separator Shared Slice
+ *
+ * - **API ID**: `seperator`
+ * - **Description**: `Seperator`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type SeperatorSlice = prismicT.SharedSlice<
+  "seperator",
+  SeperatorSliceVariation
+>;
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -405,22 +904,36 @@ declare module "@prismicio/client" {
       MainmenuDocumentData,
       MainmenuDocument,
       PageDocumentData,
+      PageDocumentDataSlicesSlice,
       PageDocument,
       SitemetadataDocumentData,
       SitemetadataDocument,
       SubdirectoryDocumentData,
       SubdirectoryDocument,
       AllDocumentTypes,
+      CarousellSliceDefaultPrimary,
+      CarousellSliceDefaultItem,
+      CarousellSliceDefault,
+      CarousellSliceVariation,
+      CarousellSlice,
       ContentSliceDefaultPrimary,
       ContentSliceDefault,
       ContentSliceHalfHalfPrimary,
       ContentSliceHalfHalf,
+      ContentSliceOneThirdTwoThirdPrimary,
+      ContentSliceOneThirdTwoThird,
+      ContentSliceQuartersPrimary,
+      ContentSliceQuarters,
       ContentSliceVariation,
       ContentSlice,
       HerosSliceDefaultPrimary,
       HerosSliceDefault,
       HerosSliceVariation,
       HerosSlice,
+      SeperatorSliceDefaultPrimary,
+      SeperatorSliceDefault,
+      SeperatorSliceVariation,
+      SeperatorSlice,
     };
   }
 }

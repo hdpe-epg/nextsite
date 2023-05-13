@@ -1,0 +1,33 @@
+{
+  "id": "carousell",
+  "type": "SharedSlice",
+  "name": "Carousell",
+  "description": "Carousell",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "content",
+            "placeholder": "Optional Title / Paragraph",
+            "allowTargetBlank": true,
+            "multi": "heading2,paragraph"
+          }
+        }
+      },
+      "items": {
+        "images": {
+          "type": "Image",
+          "config": { "label": "Images", "constraint": {}, "thumbnails": [] }
+        }
+      }
+    }
+  ]
+}

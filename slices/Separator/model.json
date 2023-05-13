@@ -1,0 +1,28 @@
+{
+  "id": "seperator",
+  "type": "SharedSlice",
+  "name": "Separator",
+  "description": "Seperator",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "need_a_dividor": {
+          "type": "Boolean",
+          "config": {
+            "label": "Need A Dividor?",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
