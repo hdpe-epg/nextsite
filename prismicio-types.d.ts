@@ -756,6 +756,53 @@ type HerosSliceVariation = HerosSliceDefault;
  *
  */
 export type HerosSlice = prismicT.SharedSlice<"heros", HerosSliceVariation>;
+/**
+ * Primary content in Seperator → Primary
+ *
+ */
+interface SeperatorSliceDefaultPrimary {
+  /**
+   * Need A Dividor? field in *Seperator → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: true
+   * - **API ID Path**: seperator.primary.need_a_dividor
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  need_a_dividor: prismicT.BooleanField;
+}
+/**
+ * Default variation for Seperator Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type SeperatorSliceDefault = prismicT.SharedSliceVariation<
+  "default",
+  Simplify<SeperatorSliceDefaultPrimary>,
+  never
+>;
+/**
+ * Slice variation for *Seperator*
+ *
+ */
+type SeperatorSliceVariation = SeperatorSliceDefault;
+/**
+ * Seperator Shared Slice
+ *
+ * - **API ID**: `seperator`
+ * - **Description**: `Seperator`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type SeperatorSlice = prismicT.SharedSlice<
+  "seperator",
+  SeperatorSliceVariation
+>;
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -791,6 +838,10 @@ declare module "@prismicio/client" {
       HerosSliceDefault,
       HerosSliceVariation,
       HerosSlice,
+      SeperatorSliceDefaultPrimary,
+      SeperatorSliceDefault,
+      SeperatorSliceVariation,
+      SeperatorSlice,
     };
   }
 }

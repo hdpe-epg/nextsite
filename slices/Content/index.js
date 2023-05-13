@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import { PrismicNextLink } from '@prismicio/next'
 import { PrismicRichText } from '@prismicio/react'
 import Heading from '@/components/Heading'
@@ -45,10 +45,8 @@ function HalfHalfRender(slice) {
           )}
           {slice.primary.leftimageoptional.url && (
             <div className="aspect-h-9 aspect-w-16 mb-8">
-              <Image
-                src={slice.primary.leftimageoptional.url}
-                field={slice.primary.leftimageoptional.url}
-                alt={slice.primary.leftimageoptional.alt || ''}
+              <PrismicNextImage
+                field={slice.primary.leftimageoptional}
                 fill={true}
                 className="z-[-2] object-cover"
               />
@@ -81,10 +79,8 @@ function HalfHalfRender(slice) {
           )}
           {slice.primary.rightimageoptional.url && (
             <div className="aspect-h-9 aspect-w-16 mb-8">
-              <Image
-                src={slice.primary.rightimageoptional.url}
-                field={slice.primary.rightimageoptional.url}
-                alt={slice.primary.rightimageoptional.alt || ''}
+              <PrismicNextImage
+                field={slice.primary.rightimageoptional}
                 fill={true}
                 className="z-[-2] object-cover"
               />
@@ -177,7 +173,7 @@ function QuartersRender(slice) {
       <div
         className={`mx-auto grid max-w-screen-xl gap-8 md:grid-cols-2 lg:grid-cols-4 justify-items-center`}
       >
-        {quarters.map((quarter, index) => {
+        {quarters.map((quarter) => {
           return (
             <div key={nanoid()}>
               {quarter.image.url && (

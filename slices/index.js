@@ -5,4 +5,5 @@ import dynamic from "next/dynamic";
 export const components = {
   content: dynamic(() => import("./Content")),
   heros: dynamic(() => import("./Heros")),
+  seperator: dynamic(() => import("./Seperator")),
 };
