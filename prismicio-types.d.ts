@@ -232,6 +232,68 @@ export type AllDocumentTypes =
   | SitemetadataDocument
   | SubdirectoryDocument;
 /**
+ * Primary content in Carousell → Primary
+ *
+ */
+interface CarousellSliceDefaultPrimary {
+  /**
+   * content field in *Carousell → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Optional Title / Paragraph
+   * - **API ID Path**: carousell.primary.content
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  content: prismicT.RichTextField;
+}
+/**
+ * Item in Carousell → Items
+ *
+ */
+export interface CarousellSliceDefaultItem {
+  /**
+   * Images field in *Carousell → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousell.items[].images
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  images: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for Carousell Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CarousellSliceDefault = prismicT.SharedSliceVariation<
+  "default",
+  Simplify<CarousellSliceDefaultPrimary>,
+  Simplify<CarousellSliceDefaultItem>
+>;
+/**
+ * Slice variation for *Carousell*
+ *
+ */
+type CarousellSliceVariation = CarousellSliceDefault;
+/**
+ * Carousell Shared Slice
+ *
+ * - **API ID**: `carousell`
+ * - **Description**: `Carousell`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CarousellSlice = prismicT.SharedSlice<
+  "carousell",
+  CarousellSliceVariation
+>;
+/**
  * Primary content in Content → Primary
  *
  */
@@ -844,6 +906,11 @@ declare module "@prismicio/client" {
       SubdirectoryDocumentData,
       SubdirectoryDocument,
       AllDocumentTypes,
+      CarousellSliceDefaultPrimary,
+      CarousellSliceDefaultItem,
+      CarousellSliceDefault,
+      CarousellSliceVariation,
+      CarousellSlice,
       ContentSliceDefaultPrimary,
       ContentSliceDefault,
       ContentSliceHalfHalfPrimary,

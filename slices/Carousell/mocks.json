@@ -1,0 +1,149 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Optional heading",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Optional Paragraph: Magna ea sint cupidatat sunt in veniam labore culpa officia voluptate.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"images",
+						{
+							"origin": {
+								"id": "vloKy1It5Mg",
+								"url": "https://images.unsplash.com/photo-1547039996-61c1135690c0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHx3aWRlfGVufDB8fHx8MTY4Mzk1NDEwMHww&ixlib=rb-4.0.3&q=85",
+								"width": 8192,
+								"height": 3422
+							},
+							"url": "https://images.unsplash.com/photo-1547039996-61c1135690c0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHx3aWRlfGVufDB8fHx8MTY4Mzk1NDEwMHww&ixlib=rb-4.0.3&q=85",
+							"width": 8192,
+							"height": 3422,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"images",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1532879311112-62b7188d28ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHx3aWRlfGVufDB8fHx8MTY4Mzk1NDEwMHww&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "qWQGk5mdVBU",
+								"url": "https://images.unsplash.com/photo-1532879311112-62b7188d28ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHx3aWRlfGVufDB8fHx8MTY4Mzk1NDEwMHww&ixlib=rb-4.0.3&q=85",
+								"width": 3922,
+								"height": 1448
+							},
+							"width": 3922,
+							"height": 1448,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"images",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1514589553259-ed2658dad420?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8d2lkZXxlbnwwfHx8fDE2ODM5NTQxMDB8MA&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "11IjMuza0r4",
+								"url": "https://images.unsplash.com/photo-1514589553259-ed2658dad420?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8d2lkZXxlbnwwfHx8fDE2ODM5NTQxMDB8MA&ixlib=rb-4.0.3&q=85",
+								"width": 5213,
+								"height": 1995
+							},
+							"width": 5213,
+							"height": 1995,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"images",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1601388352547-2802c6f32eb8?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw5fHx3aWRlfGVufDB8fHx8MTY4Mzk1NDEwMHww&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "hlsMuZ24rAs",
+								"url": "https://images.unsplash.com/photo-1601388352547-2802c6f32eb8?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw5fHx3aWRlfGVufDB8fHx8MTY4Mzk1NDEwMHww&ixlib=rb-4.0.3&q=85",
+								"width": 5945,
+								"height": 2530
+							},
+							"width": 5945,
+							"height": 2530,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			}
+		]
+	}
+]
