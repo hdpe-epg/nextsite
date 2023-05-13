@@ -1,7 +1,7 @@
 {
   "id": "seperator",
   "type": "SharedSlice",
-  "name": "Seperator",
+  "name": "Separator",
   "description": "Seperator",
   "variations": [
     {

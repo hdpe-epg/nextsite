@@ -843,12 +843,12 @@ type HerosSliceVariation = HerosSliceDefault;
  */
 export type HerosSlice = prismicT.SharedSlice<"heros", HerosSliceVariation>;
 /**
- * Primary content in Seperator → Primary
+ * Primary content in Separator → Primary
  *
  */
 interface SeperatorSliceDefaultPrimary {
   /**
-   * Need A Dividor? field in *Seperator → Primary*
+   * Need A Dividor? field in *Separator → Primary*
    *
    * - **Field Type**: Boolean
    * - **Placeholder**: *None*
@@ -860,7 +860,7 @@ interface SeperatorSliceDefaultPrimary {
   need_a_dividor: prismicT.BooleanField;
 }
 /**
- * Default variation for Seperator Slice
+ * Default variation for Separator Slice
  *
  * - **API ID**: `default`
  * - **Description**: `Default`
@@ -873,12 +873,12 @@ export type SeperatorSliceDefault = prismicT.SharedSliceVariation<
   never
 >;
 /**
- * Slice variation for *Seperator*
+ * Slice variation for *Separator*
  *
  */
 type SeperatorSliceVariation = SeperatorSliceDefault;
 /**
- * Seperator Shared Slice
+ * Separator Shared Slice
  *
  * - **API ID**: `seperator`
  * - **Description**: `Seperator`
