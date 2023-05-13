@@ -49,7 +49,8 @@ interface HomepageDocumentData {
 type HomepageDocumentDataSlicesSlice =
   | ContentSlice
   | HerosSlice
-  | SeperatorSlice;
+  | SeperatorSlice
+  | CarousellSlice;
 /**
  * Homepage document from Prismic
  *
@@ -122,7 +123,11 @@ interface PageDocumentData {
  * Slice for *Page → Slice Zone*
  *
  */
-type PageDocumentDataSlicesSlice = ContentSlice | HerosSlice | SeperatorSlice;
+type PageDocumentDataSlicesSlice =
+  | ContentSlice
+  | HerosSlice
+  | SeperatorSlice
+  | CarousellSlice;
 /**
  * Page document from Prismic
  *
