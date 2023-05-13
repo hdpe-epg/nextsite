@@ -32,6 +32,15 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "reverse_this_row": {
+          "type": "Boolean",
+          "config": {
+            "label": "Reverse This Row",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
         "hascolor": {
           "type": "Boolean",
           "config": {
