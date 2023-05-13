@@ -31,7 +31,9 @@ export const Navbar = ({ slices, submenu }) => {
                 <li
                   key={subitem.linktarget.id + i || subitem.linktarget.url + i}
                 >
-                  <PrismicLink>{subitem.linktext}</PrismicLink>
+                  <PrismicLink field={subitem.linktarget}>
+                    {subitem.linktext}
+                  </PrismicLink>
                 </li>
               ))}
           </ul>
