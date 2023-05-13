@@ -333,6 +333,17 @@ export type ContentSliceDefault = prismicT.SharedSliceVariation<
  */
 interface ContentSliceHalfHalfPrimary {
   /**
+   * Reverse This Row field in *Content → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: content.primary.reverse_this_row
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  reverse_this_row: prismicT.BooleanField;
+  /**
    * Background Color Toggle field in *Content → Primary*
    *
    * - **Field Type**: Boolean

@@ -24,22 +24,27 @@ const Content = ({ slice }) => {
 export default Content
 
 function HalfHalfRender(slice) {
+
+       // TODO: {slice.primary.hascolor}
   return (
     <section
-      className={`mx-auto max-w-screen-xl ${
-        slice.primary.hascolor ? 'bg-brand-primary py-24' : 'my-24'
-      }`}
+      className={`mx-auto my-24 max-w-screen-xl`}
     >
       {slice.primary.titleContent && (
         <PrismicRichText field={slice.primary.titleContent} />
       )}
+
+      {/*------------------------------*/}
+      {/*Left half box*/}
+      {/*------------------------------*/}
+
       <div
         className={`grid justify-center gap-16 align-top lg:grid-cols-2 ${
           slice.primary.leftimageoptional.url ||
           (slice.primary.rightimageoptional.url && 'align-center')
         }`}
       >
-        <div className={``}>
+        <div className={`${slice.primary.reverse_this_row && `order-2`}`}>
           {slice.primary.lefttitleoptional && (
             <PrismicRichText field={slice.primary.lefttitleoptional} />
           )}
@@ -126,6 +131,7 @@ function OneThirdTwoThirdRender(slice) {
       >
         <div className={`xl:w-1/3`}>
           <PrismicRichText field={slice.primary.lefthalf} />
+          TODO: Optional button to download things or link (example, pipe page xls download)
         </div>
         <div className={`xl:w-2/3`}>
           <PrismicRichText field={slice.primary.righthalf} />
