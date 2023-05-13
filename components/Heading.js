@@ -1,29 +1,29 @@
-import * as React from 'react'
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
-const Heading = ({ as: Comp = 'h2', size = null, children, className }) => {
+import * as React from "react";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
+const Heading = ({ as: Comp = "h2", size = null, children, className }) => {
   return (
     <Comp
       className={` ${
-        size === '7xl'
+        size === "7xl"
           ? `text-6xl leading-[4rem] lg:text-7xl`
-          : size === '6xl'
+          : size === "6xl"
           ? `text-5xl lg:text-6xl`
-          : size === '5xl'
+          : size === "5xl"
           ? `text-4xl lg:text-5xl`
-          : size === '4xl'
+          : size === "4xl"
           ? `text-3xl lg:text-4xl`
-          : size === '3xl'
+          : size === "3xl"
           ? `text-2xl lg:text-3xl`
-          : size === '2xl'
+          : size === "2xl"
           ? `text-xl lg:text-2xl`
-          : size === 'xl'
+          : size === "xl"
           ? `text-lg lg:text-xl`
-          : `prose md:prose-lg lg:prose-xl xl:prose-2xl mx-auto`
-      } font-bold leading-tight leading-6 text-brand-primary ${className}`}
+          : `prose mx-auto md:prose-lg lg:prose-xl xl:prose-2xl`
+      } font-bold leading-6 leading-tight text-brand-primary ${className}`}
     >
       {children}
     </Comp>
-  )
-}
-export default Heading
+  );
+};
+export default Heading;

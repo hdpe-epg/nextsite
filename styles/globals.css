@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .headroom-wrapper > div {
-  @apply bg-white shadow-sm;
+  @apply z-50 bg-white shadow-sm;
 }
 
 .button {

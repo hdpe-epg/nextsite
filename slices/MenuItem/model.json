@@ -1,0 +1,51 @@
+{
+  "id": "menu_item",
+  "type": "SharedSlice",
+  "name": "MenuItem",
+  "description": "MenuItem",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "linktext": {
+          "type": "Text",
+          "config": { "label": "LinkText", "placeholder": "" }
+        },
+        "linktarget": {
+          "type": "Link",
+          "config": { "label": "LinkTarget", "placeholder": "", "select": null }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "menuItemWithDropdown",
+      "name": "MenuItemWithDropdown",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "linktext": {
+          "type": "Text",
+          "config": { "label": "LinkText", "placeholder": "" }
+        }
+      },
+      "items": {
+        "linktext": {
+          "type": "Text",
+          "config": { "label": "LinkText", "placeholder": "" }
+        },
+        "linktarget": {
+          "type": "Link",
+          "config": { "label": "LinkTarget", "placeholder": "", "select": null }
+        }
+      }
+    }
+  ]
+}

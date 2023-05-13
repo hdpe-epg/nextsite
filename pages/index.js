@@ -8,7 +8,7 @@ import Layout from '@/components/Layout'
 
 export default function Home({ page, navigation, siteMetadata }) {
   return (
-    <Layout>
+    <Layout navigation={navigation}>
       <Head>
         <title>{`${prismicH.asText(page?.data?.title)} · ${
           siteMetadata?.data?.sitetitle
@@ -82,11 +82,11 @@ export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData })
   const siteMetadata = await client.getSingle('sitemetadata')
   const page = await client.getSingle('homepage')
-  // const navigation = await client.getSingle('mainmenu')
+  const navigation = await client.getSingle('mainmenu')
 
   return {
     props: {
-      // navigation,
+      navigation,
       page,
       siteMetadata,
     },

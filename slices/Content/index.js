@@ -1,9 +1,9 @@
 // import Image from 'next/image'
-import { PrismicNextLink } from '@prismicio/next'
-import { PrismicRichText } from '@prismicio/react'
-import Heading from '@/components/Heading'
-import { nanoid } from 'nanoid'
-import { PrismicNextImage } from '@prismicio/next'
+import { PrismicNextLink } from "@prismicio/next";
+import { PrismicRichText } from "@prismicio/react";
+import Heading from "@/components/Heading";
+import { nanoid } from "nanoid";
+import { PrismicNextImage } from "@prismicio/next";
 
 /**
  * @typedef {import("@prismicio/client").Content.ContentSlice} ContentSlice
@@ -12,24 +12,21 @@ import { PrismicNextImage } from '@prismicio/next'
  */
 const Content = ({ slice }) => {
   if (slice.variation === `halfHalf`) {
-    return HalfHalfRender(slice)
+    return HalfHalfRender(slice);
   } else if (slice.variation === `oneThirdTwoThird`) {
-    return OneThirdTwoThirdRender(slice)
+    return OneThirdTwoThirdRender(slice);
   } else if (slice.variation === `quarters`) {
-    return QuartersRender(slice)
+    return QuartersRender(slice);
   }
-  return DefaultRender(slice)
-}
+  return DefaultRender(slice);
+};
 
-export default Content
+export default Content;
 
 function HalfHalfRender(slice) {
-
-       // TODO: {slice.primary.hascolor}
+  // TODO: {slice.primary.hascolor}
   return (
-    <section
-      className={`mx-auto my-24 max-w-screen-xl`}
-    >
+    <section className={`mx-auto my-24 max-w-screen-xl`}>
       {slice.primary.titleContent && (
         <PrismicRichText field={slice.primary.titleContent} />
       )}
@@ -41,7 +38,7 @@ function HalfHalfRender(slice) {
       <div
         className={`grid justify-center gap-16 align-top lg:grid-cols-2 ${
           slice.primary.leftimageoptional.url ||
-          (slice.primary.rightimageoptional.url && 'align-center')
+          (slice.primary.rightimageoptional.url && "align-center")
         }`}
       >
         <div className={`${slice.primary.reverse_this_row && `order-2`}`}>
@@ -111,13 +108,13 @@ function HalfHalfRender(slice) {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function OneThirdTwoThirdRender(slice) {
   return (
     <section
-      className={`mx-auto max-w-screen-xl ${slice.primary.hascolor && ''}`}
+      className={`mx-auto max-w-screen-xl ${slice.primary.hascolor && ""}`}
     >
       {slice.primary.titleContent && (
         <PrismicRichText field={slice.primary.titleContent} />
@@ -125,20 +122,21 @@ function OneThirdTwoThirdRender(slice) {
       <div
         className={`flex flex-col gap-4 xl:flex-row ${
           slice.primary.reversethis
-            ? 'flex-col-reverse xl:flex-row-reverse'
-            : ''
+            ? "flex-col-reverse xl:flex-row-reverse"
+            : ""
         }`}
       >
         <div className={`xl:w-1/3`}>
           <PrismicRichText field={slice.primary.lefthalf} />
-          TODO: Optional button to download things or link (example, pipe page xls download)
+          TODO: Optional button to download things or link (example, pipe page
+          xls download)
         </div>
         <div className={`xl:w-2/3`}>
           <PrismicRichText field={slice.primary.righthalf} />
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function QuartersRender(slice) {
@@ -167,17 +165,17 @@ function QuartersRender(slice) {
       buttonText: slice.primary.buttontextfourthquarter,
       buttonLink: slice.primary.buttonlinkfourthquarter,
     },
-  ]
+  ];
   return (
     <section
-      className={` py-24 ${slice.primary.hascolor ? 'bg-brand-accent' : ''} `}
+      className={` py-24 ${slice.primary.hascolor ? "bg-brand-accent" : ""} `}
     >
       {slice.primary.titleContent && (
         <PrismicRichText field={slice.primary.titleContent} />
       )}
       {/*inner row -----------*/}
       <div
-        className={`mx-auto grid max-w-screen-xl gap-8 md:grid-cols-2 lg:grid-cols-4 justify-items-center`}
+        className={`mx-auto grid max-w-screen-xl justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-4`}
       >
         {quarters.map((quarter) => {
           return (
@@ -215,11 +213,11 @@ function QuartersRender(slice) {
                 </div>
               )}
             </div>
-          )
+          );
         })}
       </div>
     </section>
-  )
+  );
 }
 
 function DefaultRender(slice) {
@@ -231,5 +229,5 @@ function DefaultRender(slice) {
       Placeholder component for content (variation: {slice.variation}) Slices
       <PrismicRichText field={slice.primary.content} />
     </section>
-  )
+  );
 }

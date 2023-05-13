@@ -67,7 +67,61 @@ export type HomepageDocument<Lang extends string = string> =
     Lang
   >;
 /** Content for MainMenu documents */
-type MainmenuDocumentData = Record<string, never>;
+interface MainmenuDocumentData {
+  /**
+   * SubMenu field in *MainMenu*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mainmenu.submenu[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/group
+   *
+   */
+  submenu: prismicT.GroupField<Simplify<MainmenuDocumentDataSubmenuItem>>;
+  /**
+   * Slice Zone field in *MainMenu*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mainmenu.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+   *
+   */
+  slices: prismicT.SliceZone<MainmenuDocumentDataSlicesSlice>;
+}
+/**
+ * Item in MainMenu → SubMenu
+ *
+ */
+export interface MainmenuDocumentDataSubmenuItem {
+  /**
+   * LinkText field in *MainMenu → SubMenu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mainmenu.submenu[].linktext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  linktext: prismicT.KeyTextField;
+  /**
+   * LinkTarget field in *MainMenu → SubMenu*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mainmenu.submenu[].linktarget
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  linktarget: prismicT.LinkField;
+}
+/**
+ * Slice for *MainMenu → Slice Zone*
+ *
+ */
+type MainmenuDocumentDataSlicesSlice = MenuItemSlice;
 /**
  * MainMenu document from Prismic
  *
@@ -854,6 +908,119 @@ type HerosSliceVariation = HerosSliceDefault;
  */
 export type HerosSlice = prismicT.SharedSlice<"heros", HerosSliceVariation>;
 /**
+ * Primary content in MenuItem → Primary
+ *
+ */
+interface MenuItemSliceDefaultPrimary {
+  /**
+   * LinkText field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_item.primary.linktext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  linktext: prismicT.KeyTextField;
+  /**
+   * LinkTarget field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_item.primary.linktarget
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  linktarget: prismicT.LinkField;
+}
+/**
+ * Default variation for MenuItem Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type MenuItemSliceDefault = prismicT.SharedSliceVariation<
+  "default",
+  Simplify<MenuItemSliceDefaultPrimary>,
+  never
+>;
+/**
+ * Primary content in MenuItem → Primary
+ *
+ */
+interface MenuItemSliceMenuItemWithDropdownPrimary {
+  /**
+   * LinkText field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_item.primary.linktext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  linktext: prismicT.KeyTextField;
+}
+/**
+ * Item in MenuItem → Items
+ *
+ */
+export interface MenuItemSliceMenuItemWithDropdownItem {
+  /**
+   * LinkText field in *MenuItem → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_item.items[].linktext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  linktext: prismicT.KeyTextField;
+  /**
+   * LinkTarget field in *MenuItem → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_item.items[].linktarget
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  linktarget: prismicT.LinkField;
+}
+/**
+ * MenuItemWithDropdown variation for MenuItem Slice
+ *
+ * - **API ID**: `menuItemWithDropdown`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type MenuItemSliceMenuItemWithDropdown = prismicT.SharedSliceVariation<
+  "menuItemWithDropdown",
+  Simplify<MenuItemSliceMenuItemWithDropdownPrimary>,
+  Simplify<MenuItemSliceMenuItemWithDropdownItem>
+>;
+/**
+ * Slice variation for *MenuItem*
+ *
+ */
+type MenuItemSliceVariation =
+  | MenuItemSliceDefault
+  | MenuItemSliceMenuItemWithDropdown;
+/**
+ * MenuItem Shared Slice
+ *
+ * - **API ID**: `menu_item`
+ * - **Description**: `MenuItem`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type MenuItemSlice = prismicT.SharedSlice<
+  "menu_item",
+  MenuItemSliceVariation
+>;
+/**
  * Primary content in Separator → Primary
  *
  */
@@ -913,6 +1080,8 @@ declare module "@prismicio/client" {
       HomepageDocumentDataSlicesSlice,
       HomepageDocument,
       MainmenuDocumentData,
+      MainmenuDocumentDataSubmenuItem,
+      MainmenuDocumentDataSlicesSlice,
       MainmenuDocument,
       PageDocumentData,
       PageDocumentDataSlicesSlice,
@@ -941,6 +1110,13 @@ declare module "@prismicio/client" {
       HerosSliceDefault,
       HerosSliceVariation,
       HerosSlice,
+      MenuItemSliceDefaultPrimary,
+      MenuItemSliceDefault,
+      MenuItemSliceMenuItemWithDropdownPrimary,
+      MenuItemSliceMenuItemWithDropdownItem,
+      MenuItemSliceMenuItemWithDropdown,
+      MenuItemSliceVariation,
+      MenuItemSlice,
       SeperatorSliceDefaultPrimary,
       SeperatorSliceDefault,
       SeperatorSliceVariation,
