@@ -46,7 +46,10 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = ContentSlice | HerosSlice;
+type HomepageDocumentDataSlicesSlice =
+  | ContentSlice
+  | HerosSlice
+  | SeperatorSlice;
 /**
  * Homepage document from Prismic
  *
@@ -103,7 +106,23 @@ interface PageDocumentData {
    *
    */
   subdirectory: prismicT.RelationField<"subdirectory">;
+  /**
+   * Slice Zone field in *Page*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+   *
+   */
+  slices: prismicT.SliceZone<PageDocumentDataSlicesSlice>;
 }
+/**
+ * Slice for *Page → Slice Zone*
+ *
+ */
+type PageDocumentDataSlicesSlice = ContentSlice | HerosSlice | SeperatorSlice;
 /**
  * Page document from Prismic
  *
@@ -818,6 +837,7 @@ declare module "@prismicio/client" {
       MainmenuDocumentData,
       MainmenuDocument,
       PageDocumentData,
+      PageDocumentDataSlicesSlice,
       PageDocument,
       SitemetadataDocumentData,
       SitemetadataDocument,

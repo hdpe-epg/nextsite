@@ -11,7 +11,8 @@
         "config": {
           "choices": {
             "content": { "type": "SharedSlice" },
-            "heros": { "type": "SharedSlice" }
+            "heros": { "type": "SharedSlice" },
+            "seperator": { "type": "SharedSlice" }
           }
         }
       }
