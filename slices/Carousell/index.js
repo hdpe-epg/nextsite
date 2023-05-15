@@ -37,9 +37,7 @@ const Carousell = ({slice}) => {
                     {/*This PrismicRichText Field is limited to embed only*/}
                     {slice.items.map((item, index) => (
                         <div key={index} className={`w-full md:w-1/2 lg:w-1/2 xl:w-1/4`}>
-                            <div className="aspect-w-16 aspect-h-9">
                                 <PrismicRichText field={item.youtube_vid_link} />
-                            </div>
                         </div>
                     ))}
                 </div>
