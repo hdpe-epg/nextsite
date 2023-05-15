@@ -65,7 +65,8 @@ function DefaultHeroRender(index, slice) {
                   </Heading>
                 ),
                 paragraph: ({ children }) => (
-                  <p className={`text-4xl text-white md:w-2/3`}>{children}</p>
+                    // margin partially controled in global.css
+                  <p className={`commonTextMargins text-4xl text-white md:w-2/3`}>{children}</p>
                 ),
               }}
               field={slice.primary.description}

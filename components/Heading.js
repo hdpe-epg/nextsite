@@ -20,7 +20,7 @@ const Heading = ({ as: Comp = "h2", size = null, children, className }) => {
           : size === "xl"
           ? `text-lg lg:text-xl`
           : `prose mx-auto md:prose-lg lg:prose-xl xl:prose-2xl`
-      } font-bold leading-6 leading-tight text-brand-primary ${className}`}
+      } commonTextMargins font-bold leading-6 leading-tight text-brand-primary ${className}`}
     >
       {children}
     </Comp>

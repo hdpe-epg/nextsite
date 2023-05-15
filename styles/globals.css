@@ -10,6 +10,23 @@
   @apply mx-4 mt-1 bg-brand-primary px-4 py-2 uppercase text-white hover:bg-blue-800;
 }
 
+.styledH1 {
+  @apply mb-7 mt-12 first:mt-0;
+}
+
+.commonHeadingStyles {
+  @apply mb-7 font-bold last:mb-0;
+}
+
+.commonTextMargins {
+  @apply mx-4;
+}
+
+.commonTextStyles {
+  @apply mb-7 text-xl text-brand-font-color;
+}
+
+
 h1,
 h2,
 h3,
@@ -22,3 +39,4 @@ ol,
 li {
   /*@apply px-4;*/
 }
+
