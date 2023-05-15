@@ -114,7 +114,7 @@ function HalfHalfRender(slice) {
 function OneThirdTwoThirdRender(slice) {
   return (
     <section
-      className={`mx-auto max-w-screen-xl ${slice.primary.hascolor && ""}`}
+      className={`mx-auto py-24 max-w-screen-xl ${slice.primary.hascolor && ""}`}
     >
       {slice.primary.titleContent && (
         <PrismicRichText field={slice.primary.titleContent} />
