@@ -86,7 +86,7 @@ const richTextComponents = {
     ),
     embed: ({node, children}) => {
         return (
-            <div className="mx-auto max-w-screen-sm overflow-hidden rounded shadow-xl">
+            <div className="mx-auto max-w-screen-xs overflow-hidden rounded shadow-xl">
                 <div
                     className="aspect-w-16 aspect-h-9"
                     dangerouslySetInnerHTML={{__html: node.oembed.html}}

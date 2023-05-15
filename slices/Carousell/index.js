@@ -33,11 +33,12 @@ const Carousell = ({slice}) => {
                         />
                     </div>
                 )}
-                <div className="flex flex-wrap">
+                {/*grid grid-container--fit*/}
+                <div className="vidCarousel">
                     {/*This PrismicRichText Field is limited to embed only*/}
                     {slice.items.map((item, index) => (
-                        <div key={index} className={`w-full md:w-1/2 lg:w-1/2 xl:w-1/4`}>
-                                <PrismicRichText field={item.youtube_vid_link} />
+                        <div key={index} className={``}>
+                            <PrismicRichText field={item.youtube_vid_link}/>
                         </div>
                     ))}
                 </div>

@@ -40,3 +40,9 @@ li {
   /*@apply px-4;*/
 }
 
+.vidCarousel {
+  @apply mx-auto max-w-screen-xl gap-16;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
