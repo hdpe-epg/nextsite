@@ -336,10 +336,57 @@ export type CarousellSliceDefault = prismicT.SharedSliceVariation<
   Simplify<CarousellSliceDefaultItem>
 >;
 /**
+ * Primary content in Carousell → Primary
+ *
+ */
+interface CarousellSliceVideoCarouselPrimary {
+  /**
+   * content field in *Carousell → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Optional Title / Paragraph
+   * - **API ID Path**: carousell.primary.content
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  content: prismicT.RichTextField;
+}
+/**
+ * Item in Carousell → Items
+ *
+ */
+export interface CarousellSliceVideoCarouselItem {
+  /**
+   * YouTube Vid Link field in *Carousell → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousell.items[].youtube_vid_link
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  youtube_vid_link: prismicT.RichTextField;
+}
+/**
+ * Video Carousel variation for Carousell Slice
+ *
+ * - **API ID**: `videoCarousel`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CarousellSliceVideoCarousel = prismicT.SharedSliceVariation<
+  "videoCarousel",
+  Simplify<CarousellSliceVideoCarouselPrimary>,
+  Simplify<CarousellSliceVideoCarouselItem>
+>;
+/**
  * Slice variation for *Carousell*
  *
  */
-type CarousellSliceVariation = CarousellSliceDefault;
+type CarousellSliceVariation =
+  | CarousellSliceDefault
+  | CarousellSliceVideoCarousel;
 /**
  * Carousell Shared Slice
  *
@@ -1094,6 +1141,9 @@ declare module "@prismicio/client" {
       CarousellSliceDefaultPrimary,
       CarousellSliceDefaultItem,
       CarousellSliceDefault,
+      CarousellSliceVideoCarouselPrimary,
+      CarousellSliceVideoCarouselItem,
+      CarousellSliceVideoCarousel,
       CarousellSliceVariation,
       CarousellSlice,
       ContentSliceDefaultPrimary,

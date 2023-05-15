@@ -28,6 +28,36 @@
           "config": { "label": "Images", "constraint": {}, "thumbnails": [] }
         }
       }
+    },
+    {
+      "id": "videoCarousel",
+      "name": "Video Carousel",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "content",
+            "placeholder": "Optional Title / Paragraph",
+            "allowTargetBlank": true,
+            "multi": "heading2,paragraph"
+          }
+        }
+      },
+      "items": {
+        "youtube_vid_link": {
+          "type": "StructuredText",
+          "config": {
+            "label": "YouTube Vid Link",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "embed"
+          }
+        }
+      }
     }
   ]
 }
