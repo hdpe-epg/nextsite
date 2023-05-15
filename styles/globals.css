@@ -46,3 +46,11 @@ li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
+
+.vidCarousel__inner {
+  @apply text-center mt-4 pb-4;
+}
+
+.vidCarousel h2 {
+  @apply text-center mt-4;
+}

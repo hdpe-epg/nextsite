@@ -13,7 +13,6 @@ const Carousell = ({slice}) => {
     // BEGIN VIDEO CAROUSEL SLICE
     // ------------------------------
     if (slice.variation === `videoCarousel`) {
-        console.log(slice);
         return (
             <section className={`mx-auto my-24 max-w-screen-xl`}>
                 {slice.primary.content && (
@@ -36,11 +35,15 @@ const Carousell = ({slice}) => {
                 {/*grid grid-container--fit*/}
                 <div className="vidCarousel">
                     {/*This PrismicRichText Field is limited to embed only*/}
-                    {slice.items.map((item, index) => (
-                        <div key={index} className={``}>
-                            <PrismicRichText field={item.youtube_vid_link}/>
-                        </div>
-                    ))}
+                    {slice.items.map((item, index) => {
+                        console.log("Item:", item);
+                        return (
+                            <div key={index} className={`vidCarousel__inner`}>
+                                <PrismicRichText field={item.youtube_vid_link} />
+                                <Heading as="h2" className={`!text-base`}>{item.youtube_vid_link[0]?.oembed?.title}</Heading>
+                            </div>
+                        );
+                    })}
                 </div>
             </section>
         );
