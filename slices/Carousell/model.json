@@ -53,8 +53,8 @@
           "config": {
             "label": "YouTube Vid Link",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "embed"
+            "allowTargetBlank": false,
+            "multi": "embed"
           }
         }
       }
