@@ -381,12 +381,62 @@ export type CarousellSliceVideoCarousel = prismicT.SharedSliceVariation<
   Simplify<CarousellSliceVideoCarouselItem>
 >;
 /**
+ * Item in Carousell → Items
+ *
+ */
+export interface CarousellSliceLocationsItem {
+  /**
+   * Location Item field in *Carousell → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Add the location here
+   * - **API ID Path**: carousell.items[].location_item
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  location_item: prismicT.RichTextField;
+  /**
+   * Link field in *Carousell → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousell.items[].link
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  link: prismicT.LinkField;
+  /**
+   * Link Text field in *Carousell → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousell.items[].link_text
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  link_text: prismicT.KeyTextField;
+}
+/**
+ * Locations variation for Carousell Slice
+ *
+ * - **API ID**: `locations`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CarousellSliceLocations = prismicT.SharedSliceVariation<
+  "locations",
+  Record<string, never>,
+  Simplify<CarousellSliceLocationsItem>
+>;
+/**
  * Slice variation for *Carousell*
  *
  */
 type CarousellSliceVariation =
   | CarousellSliceDefault
-  | CarousellSliceVideoCarousel;
+  | CarousellSliceVideoCarousel
+  | CarousellSliceLocations;
 /**
  * Carousell Shared Slice
  *
@@ -1144,6 +1194,8 @@ declare module "@prismicio/client" {
       CarousellSliceVideoCarouselPrimary,
       CarousellSliceVideoCarouselItem,
       CarousellSliceVideoCarousel,
+      CarousellSliceLocationsItem,
+      CarousellSliceLocations,
       CarousellSliceVariation,
       CarousellSlice,
       ContentSliceDefaultPrimary,

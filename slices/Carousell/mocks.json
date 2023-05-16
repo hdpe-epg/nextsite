@@ -189,5 +189,414 @@
 				]
 			}
 		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "locations",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"location_item",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "British Columbia ",
+										"spans": []
+									},
+									"direction": "ltr"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "EPG Pacific",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 0,
+												"end": 11
+											}
+										]
+									},
+									"direction": "ltr"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "4-20030 Steward Crescent\nMaple Ridge, British Columbia\nV2X 0T4",
+										"spans": []
+									},
+									"direction": "ltr"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Phone: 604-539-0108\nFax: 604-539-0884",
+										"spans": []
+									},
+									"direction": "ltr"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "epglangley@epgpipe.come",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"link_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Contact BC"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"location_item",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "British Columbia ",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "EPG Pacific",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 0,
+												"end": 11
+											}
+										]
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "4-20030 Steward Crescent\nMaple Ridge, British Columbia\nV2X 0T4",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Phone: 604-539-0108\nFax: 604-539-0884",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "epglangley@epgpipe.come",
+										"spans": []
+									},
+									"direction": "rtl"
+								}
+							]
+						}
+					],
+					[
+						"link_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Contact BC"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"location_item",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "British Columbia ",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "EPG Pacific",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 0,
+												"end": 11
+											}
+										]
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "4-20030 Steward Crescent\nMaple Ridge, British Columbia\nV2X 0T4",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Phone: 604-539-0108\nFax: 604-539-0884",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "epglangley@epgpipe.come",
+										"spans": []
+									},
+									"direction": "rtl"
+								}
+							]
+						}
+					],
+					[
+						"link_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Contact BC"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"location_item",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "British Columbia ",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "EPG Pacific",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 0,
+												"end": 11
+											}
+										]
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "4-20030 Steward Crescent\nMaple Ridge, British Columbia\nV2X 0T4",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Phone: 604-539-0108\nFax: 604-539-0884",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "epglangley@epgpipe.come",
+										"spans": []
+									},
+									"direction": "rtl"
+								}
+							]
+						}
+					],
+					[
+						"link_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Contact BC"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"location_item",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "British Columbia ",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "EPG Pacific",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 0,
+												"end": 11
+											}
+										]
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "4-20030 Steward Crescent\nMaple Ridge, British Columbia\nV2X 0T4",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Phone: 604-539-0108\nFax: 604-539-0884",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "epglangley@epgpipe.come",
+										"spans": []
+									},
+									"direction": "rtl"
+								}
+							]
+						}
+					],
+					[
+						"link_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Contact BC"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"location_item",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "British Columbia ",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "EPG Pacific",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 0,
+												"end": 11
+											}
+										]
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "4-20030 Steward Crescent\nMaple Ridge, British Columbia\nV2X 0T4",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Phone: 604-539-0108\nFax: 604-539-0884",
+										"spans": []
+									},
+									"direction": "rtl"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "epglangley@epgpipe.come",
+										"spans": []
+									},
+									"direction": "rtl"
+								}
+							]
+						}
+					],
+					[
+						"link_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Contact BC"
+						}
+					]
+				]
+			}
+		]
 	}
 ]

@@ -58,6 +58,34 @@
           }
         }
       }
+    },
+    {
+      "id": "locations",
+      "name": "Locations",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "location_item": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Location Item",
+            "placeholder": "Add the location here",
+            "allowTargetBlank": true,
+            "multi": "heading2,strong,paragraph"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": { "label": "Link", "placeholder": "", "select": null }
+        },
+        "link_text": {
+          "type": "Text",
+          "config": { "label": "Link Text", "placeholder": "" }
+        }
+      }
     }
   ]
 }
