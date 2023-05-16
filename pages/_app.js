@@ -46,30 +46,30 @@ const richTextComponents = {
         </Heading>
     ),
     paragraph: ({children}) => (
-        <p className="commonTextMargins commonTextStyles last:mb-0">{children}</p>
+        <p className="commonTextMargins commonTextStyles pStyles">{children}</p>
     ),
     oList: ({children}) => (
-        <ol className="commonTextMargins commonTextStyles pl-4 last:mb-0 md:pl-6">
+        <ol className="commonTextMargins commonTextStyles listStyles">
             {children}
         </ol>
     ),
     oListItem: ({children}) => (
-        <li className="commonTextMargins commonTextStyles mb-1 list-decimal pl-1 last:mb-0 md:pl-2">
+        <li className="commonTextMargins commonTextStyles listItemStyles">
             {children}
         </li>
     ),
     list: ({children}) => (
-        <ul className="commonTextMargins commonTextStyles pl-4 last:mb-0 md:pl-6">
+        <ul className="commonTextMargins commonTextStyles listStyles">
             {children}
         </ul>
     ),
     listItem: ({children}) => (
-        <li className="commonTextMargins commonTextStyles mb-1 list-disc pl-1 last:mb-0 md:pl-2">
+        <li className="commonTextMargins commonTextStyles listItemStyles">
             {children}
         </li>
     ),
     preformatted: ({children}) => (
-        <pre className="commonTextMargins rounded bg-slate-100 p-4 text-sm last:mb-0 md:p-8 md:text-lg">
+        <pre className="commonTextMargins preFormattedStyles">
       <code>{children}</code>
     </pre>
     ),
@@ -79,14 +79,14 @@ const richTextComponents = {
     hyperlink: ({children, node}) => (
         <PrismicLink
             field={node.data}
-            className="text-xl text-brand-font-color underline decoration-1 underline-offset-2"
+            className="linkStyles"
         >
             {children}
         </PrismicLink>
     ),
     embed: ({node, children}) => {
         return (
-            <div className="mx-auto max-w-screen-xs overflow-hidden rounded shadow-xl">
+            <div className="oEmbedStyles">
                 <div
                     className="aspect-w-16 aspect-h-9"
                     dangerouslySetInnerHTML={{__html: node.oembed.html}}
