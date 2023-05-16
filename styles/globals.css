@@ -32,12 +32,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
-ul,
-ol,
-li {
-  /*@apply px-4;*/
+h6 {
+  /*@apply text-center;*/
 }
 
 .pStyles {
@@ -71,10 +67,23 @@ li {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.image169 {
+ @apply w-full h-0 aspect-w-16 aspect-h-9;
+}
+
+.image169__inner {
+  @apply object-contain w-full h-full;
+}
+
 .vidCarousel__inner {
   @apply text-center mt-4 pb-4;
 }
 
 .vidCarousel h2 {
   @apply text-center mt-4;
+}
+
+/* hr */
+.seperator {
+  @apply mx-auto h-px max-w-screen-xl border-none bg-gradient-to-r from-transparent via-gray-500 to-transparent bg-center bg-no-repeat bg-repeat-x;
 }
