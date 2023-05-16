@@ -14,34 +14,29 @@ const Carousell = ({slice}) => {
         // BEGIN LOCATIONS SLICE
         // ------------------------------
         return (
-            <section
-                className={`my-24 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 max-w-screen-xl mx-auto`}>
+            <section className="my-24 grid grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 max-w-screen-xl mx-auto">
                 {slice.items.map((item, index) => (
-                    <div key={index} className={`mb-4`}>
+                    <div key={index} className="mb-4">
                         <PrismicRichText
                             field={item.location_item}
                             components={{
-                                heading2: ({children}) => (
+                                heading2: ({ children }) => (
                                     <Heading as="h2" size="4xl" className="text-center mb-4">
                                         {children}
                                     </Heading>
                                 ),
-                                paragraph: ({children}) => (
-                                    <p className={``}>{children}</p>
-                                ),
+                                paragraph: ({ children }) => <p className="">{children}</p>,
                             }}
                         />
-                        <div className={`mt-8 text-center`}>
-                            <PrismicNextLink
-                                field={item.link}
-                                className={`button`}
-                            >
+                        <div className="mt-8 text-center">
+                            <PrismicNextLink field={item.link} className="button">
                                 {item.link_text}
                             </PrismicNextLink>
                         </div>
                     </div>
                 ))}
             </section>
+
         )
     } else if (slice.variation === `videoCarousel`) {
         // ------------------------------
