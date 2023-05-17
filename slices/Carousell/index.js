@@ -21,7 +21,7 @@ const Carousell = ({slice}) => {
                             field={item.location_item}
                             components={{
                                 heading2: ({ children }) => (
-                                    <Heading as="h2" size="4xl" className="text-center mb-4">
+                                    <Heading as="h2" size="4xl" className="!ml-0 mb-4">
                                         {children}
                                     </Heading>
                                 ),
