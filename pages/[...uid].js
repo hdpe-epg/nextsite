@@ -85,6 +85,7 @@ const Page = ({ page, siteMetadata, navigation }) => {
               <PrismicRichText field={data.title} />
             </header>
           )}
+
           {data?.slices?.length > 0 && (
             <SliceZone slices={data?.slices} components={components} />
           )}

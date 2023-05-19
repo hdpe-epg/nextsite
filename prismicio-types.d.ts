@@ -162,6 +162,18 @@ interface PageDocumentData {
    */
   subdirectory: prismicT.RelationField<"subdirectory">;
   /**
+   * Hide Page Title field in *Page*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: true
+   * - **API ID Path**: page.hidepagetitle
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  hidepagetitle: prismicT.BooleanField;
+  /**
    * Slice Zone field in *Page*
    *
    * - **Field Type**: Slice Zone
