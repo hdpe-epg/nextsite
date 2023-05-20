@@ -1,0 +1,57 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "linktext": {
+        "__TYPE__": "FieldContent",
+        "value": "green",
+        "type": "Text"
+      },
+      "linktarget": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://google.com"
+        }
+      }
+    },
+    "items": []
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "menuItemWithDropdown",
+    "primary": {
+      "linktext": {
+        "__TYPE__": "FieldContent",
+        "value": "tell",
+        "type": "Text"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "linktext",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "lesson",
+              "type": "Text"
+            }
+          ],
+          [
+            "linktarget",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://slicemachine.dev"
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

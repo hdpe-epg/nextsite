@@ -4,11 +4,11 @@ const nextConfig = {
   trailingSlash: false,
   images: {
     domains: [
-      'images.prismic.io',
-      'images.unsplash.com',
-      'prismic-io.s3.amazonaws.com',
+      "images.prismic.io",
+      "images.unsplash.com",
+      "prismic-io.s3.amazonaws.com",
     ],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

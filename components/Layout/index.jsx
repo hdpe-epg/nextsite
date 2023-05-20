@@ -11,7 +11,7 @@ const Layout = ({ children, footer, navigation }) => {
         Press Enter to Skip to Main Content
       </a>
       <div className={`flex min-h-screen flex-col`}>
-        <Navbar />
+        <Navbar {...navigation?.data} />
         <main id="main-content">{children}</main>
         <Footer {...footer} />
       </div>

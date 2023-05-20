@@ -23,6 +23,15 @@
           "customtypes": ["subdirectory"]
         }
       },
+      "hidepagetitle": {
+        "type": "Boolean",
+        "config": {
+          "label": "Hide Page Title",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": true
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

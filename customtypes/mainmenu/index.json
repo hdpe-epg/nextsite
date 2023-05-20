@@ -3,5 +3,33 @@
   "label": "MainMenu",
   "repeatable": false,
   "status": true,
-  "json": { "Main": {} }
+  "json": {
+    "Main": {
+      "submenu": {
+        "type": "Group",
+        "config": {
+          "label": "SubMenu",
+          "fields": {
+            "linktext": {
+              "type": "Text",
+              "config": { "label": "LinkText", "placeholder": "" }
+            },
+            "linktarget": {
+              "type": "Link",
+              "config": {
+                "label": "LinkTarget",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": { "choices": { "menu_item": { "type": "SharedSlice" } } }
+      }
+    }
+  }
 }
