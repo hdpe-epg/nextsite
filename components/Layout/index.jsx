@@ -8,7 +8,6 @@ import { Navbar } from './Navbar'
 const Layout = ({ children, footer, navigation }) => {
   const [open, setOpen] = useState(false)
   const { data } = navigation
-  console.log('data ====> ', data)
   return (
     <div className="relative">
       <a
