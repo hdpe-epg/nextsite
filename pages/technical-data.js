@@ -14,6 +14,8 @@ import { createClient } from '@/prismicio'
 import Head from 'next/head'
 import Link from 'next/link'
 
+import Heading from "@/components/Heading";
+
 const TechnicalDataPage = ({ siteMetadata, navigation }) => {
   const {
     data: { sitetitle, sitemetaimage },
@@ -77,8 +79,17 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
 
       <section className={`mx-auto my-24 max-w-screen-xl`}>
         <div>
+        <Heading as="h1" size="4xl">
+          Technical Data Reference Material
+          </Heading>
+          <p className='commonTextStyles commonTextMargins'>
+            This page is a collection of technical data for the products we
+            sell. Please contact us if you have any questions.
+          </p>
+        </div>
+        <div>
           {/* Articles */}
-          <details className={`detailsClass`}>
+          <Details>
             <summary>Articles</summary>
             {articles.map((article, index) => (
               <div key={index}>
@@ -91,10 +102,10 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
                 </Link>
               </div>
             ))}
-          </details>
+          </Details>
 
           {/* Electrofusion */}
-          <details className={`detailsClass`}>
+          <Details>
             <summary>Electrofusion</summary>
             {electrofusion.map((file, index) => (
               <div key={index}>
@@ -107,10 +118,10 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
                 </Link>
               </div>
             ))}
-          </details>
+          </Details>
 
           {/* HDPE */}
-          <details className={`detailsClass`}>
+          <Details>
             <summary>HDPE Chemical Resistance</summary>
             {hdpe.map((file, index) => (
               <div key={index}>
@@ -123,10 +134,10 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
                 </Link>
               </div>
             ))}
-          </details>
+          </Details>
 
           {/* McElroy */}
-          <details className={`detailsClass`}>
+          <Details>
             <summary>McElroy</summary>
             {mcelroy.map((file, index) => (
               <div key={index}>
@@ -139,10 +150,10 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
                 </Link>
               </div>
             ))}
-          </details>
+          </Details>
 
           {/* Performance Pipe */}
-          <details className={`detailsClass`}>
+          <Details>
             <summary>Performance Pipe</summary>
             {performancePipe.map((file, index) => (
               <div key={index}>
@@ -155,10 +166,10 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
                 </Link>
               </div>
             ))}
-          </details>
+          </Details>
 
           {/* Uponer */}
-          <details className={`detailsClass`}>
+          <Details>
             <summary>Uponer</summary>
             {uponer.map((file, index) => (
               <div key={index}>
@@ -171,7 +182,25 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
                 </Link>
               </div>
             ))}
-          </details>
+          </Details>
+        </div>
+        {/* provide classnames using tailwind to make the text 14px and italisized */}
+        <div className="my-24 text-xs italic">
+        
+        {/* Disclaimer Div */}
+        <Heading as='h3'>Disclaimer:</Heading>
+        <p className='commonTextStyles commonTextMargins'>
+          The information contained herein is provided in good faith, and every
+          reasonable effort is made to ensure it is correct and up-to-date.
+          However, HDPE.ca assumes no responsibility for any errors or omissions
+          which may occur. Further, HDPE.ca assumes no responsibility for any
+          damages or losses suffered by any person or entity as a result of the
+          information contained herein. This information is provided as is,
+          with no warranties whatsoever, including any warranty of
+          merchantability, non-infringement, fitness for any particular purpose,
+          or any warranty otherwise arising out of any proposal, specification,
+          or sample.
+        </p>
         </div>
       </section>
     </Layout>
@@ -192,6 +221,16 @@ export async function getStaticProps({ previewData }) {
     },
   }
 }
+
+// Details component in page
+
+const Details = ({ children }) => {
+    return (
+      <details className={`commonTextStyles commonTextMargins detailsClass`}>
+        {children}
+      </details>
+    );
+  };
 
 // Create an array that holds the information from /public/assets/data/articles
 
