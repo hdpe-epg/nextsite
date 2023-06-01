@@ -85,6 +85,7 @@ const Page = ({ page, siteMetadata, navigation }) => {
               <PrismicRichText field={data.title} />
             </header>
           )}
+
           {data?.slices?.length > 0 && (
             <SliceZone slices={data?.slices} components={components} />
           )}
@@ -104,12 +105,12 @@ export async function getStaticProps({ params, previewData }) {
       fetchLinks: ['subdirectory'],
     }
   )
-  // const navigation = await client.getSingle('mainmenu')
+  const navigation = await client.getSingle('mainmenu')
   return {
     props: {
       page,
       siteMetadata,
-      // navigation,
+      navigation,
     },
   }
 }

@@ -23,10 +23,11 @@ module.exports = {
         'brand-accent': 'rgb(55, 113, 82)',
         'brand-dark': '#0F2202',
       },
-    }
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
+    require('@headlessui/tailwindcss'),
   ],
 }

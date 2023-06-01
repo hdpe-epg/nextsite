@@ -3,11 +3,27 @@
 @tailwind utilities;
 
 .headroom-wrapper > div {
-  @apply bg-white shadow-sm;
+  @apply z-20 bg-white shadow-sm;
 }
 
 .button {
   @apply mx-4 mt-1 bg-brand-primary px-4 py-2 uppercase text-white hover:bg-blue-800;
+}
+
+.styledH1 {
+  @apply mb-7 mt-12 first:mt-0;
+}
+
+.commonHeadingStyles {
+  @apply mb-7 font-bold last:mb-0;
+}
+
+.commonTextMargins {
+  @apply mx-4;
+}
+
+.commonTextStyles {
+  @apply mb-7 text-xl text-brand-font-color;
 }
 
 h1,
@@ -15,10 +31,61 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
-ul,
-ol,
-li {
-  /*@apply px-4;*/
+h6 {
+  /*@apply text-center;*/
+}
+
+.pStyles {
+  @apply last:mb-0;
+}
+
+.listStyles {
+  @apply pl-4 last:mb-0 md:pl-6;
+}
+
+.listItemStyles {
+  @apply mb-1 list-disc pl-1 last:mb-0 md:pl-2;
+}
+
+.linkStyles {
+  @apply text-xl text-brand-font-color underline decoration-1 underline-offset-2;
+}
+
+.preFormattedStyles {
+  @apply rounded bg-slate-100 p-4 text-sm last:mb-0 md:p-8 md:text-lg;
+}
+
+.oEmbedStyles {
+  @apply mx-auto max-w-screen-sm overflow-hidden rounded shadow-xl;
+}
+
+.vidCarousel {
+  @apply mx-auto max-w-screen-xl gap-16;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.image169 {
+  @apply aspect-h-9 aspect-w-16 h-0 w-full;
+}
+
+.image169__inner {
+  @apply h-full w-full object-contain;
+}
+
+.vidCarousel__inner {
+  @apply mt-4 pb-4 text-center;
+}
+
+.vidCarousel h2 {
+  @apply mt-4 text-center;
+}
+
+.locationsStyle {
+}
+
+/* hr */
+.seperator {
+  @apply mx-auto h-px max-w-screen-xl border-none bg-gradient-to-r from-transparent via-gray-500 to-transparent bg-center bg-repeat-x;
 }

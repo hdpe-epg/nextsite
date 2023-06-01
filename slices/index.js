@@ -6,5 +6,6 @@ export const components = {
   carousell: dynamic(() => import("./Carousell")),
   content: dynamic(() => import("./Content")),
   heros: dynamic(() => import("./Heros")),
+  menu_item: dynamic(() => import("./MenuItem")),
   seperator: dynamic(() => import("./Separator")),
 };

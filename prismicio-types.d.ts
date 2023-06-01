@@ -67,7 +67,61 @@ export type HomepageDocument<Lang extends string = string> =
     Lang
   >;
 /** Content for MainMenu documents */
-type MainmenuDocumentData = Record<string, never>;
+interface MainmenuDocumentData {
+  /**
+   * SubMenu field in *MainMenu*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mainmenu.submenu[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/group
+   *
+   */
+  submenu: prismicT.GroupField<Simplify<MainmenuDocumentDataSubmenuItem>>;
+  /**
+   * Slice Zone field in *MainMenu*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mainmenu.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+   *
+   */
+  slices: prismicT.SliceZone<MainmenuDocumentDataSlicesSlice>;
+}
+/**
+ * Item in MainMenu → SubMenu
+ *
+ */
+export interface MainmenuDocumentDataSubmenuItem {
+  /**
+   * LinkText field in *MainMenu → SubMenu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mainmenu.submenu[].linktext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  linktext: prismicT.KeyTextField;
+  /**
+   * LinkTarget field in *MainMenu → SubMenu*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mainmenu.submenu[].linktarget
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  linktarget: prismicT.LinkField;
+}
+/**
+ * Slice for *MainMenu → Slice Zone*
+ *
+ */
+type MainmenuDocumentDataSlicesSlice = MenuItemSlice;
 /**
  * MainMenu document from Prismic
  *
@@ -107,6 +161,18 @@ interface PageDocumentData {
    *
    */
   subdirectory: prismicT.RelationField<"subdirectory">;
+  /**
+   * Hide Page Title field in *Page*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: true
+   * - **API ID Path**: page.hidepagetitle
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  hidepagetitle: prismicT.BooleanField;
   /**
    * Slice Zone field in *Page*
    *
@@ -282,10 +348,107 @@ export type CarousellSliceDefault = prismicT.SharedSliceVariation<
   Simplify<CarousellSliceDefaultItem>
 >;
 /**
+ * Primary content in Carousell → Primary
+ *
+ */
+interface CarousellSliceVideoCarouselPrimary {
+  /**
+   * content field in *Carousell → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Optional Title / Paragraph
+   * - **API ID Path**: carousell.primary.content
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  content: prismicT.RichTextField;
+}
+/**
+ * Item in Carousell → Items
+ *
+ */
+export interface CarousellSliceVideoCarouselItem {
+  /**
+   * YouTube Vid Link field in *Carousell → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousell.items[].youtube_vid_link
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  youtube_vid_link: prismicT.RichTextField;
+}
+/**
+ * Video Carousel variation for Carousell Slice
+ *
+ * - **API ID**: `videoCarousel`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CarousellSliceVideoCarousel = prismicT.SharedSliceVariation<
+  "videoCarousel",
+  Simplify<CarousellSliceVideoCarouselPrimary>,
+  Simplify<CarousellSliceVideoCarouselItem>
+>;
+/**
+ * Item in Carousell → Items
+ *
+ */
+export interface CarousellSliceLocationsItem {
+  /**
+   * Location Item field in *Carousell → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Add the location here
+   * - **API ID Path**: carousell.items[].location_item
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  location_item: prismicT.RichTextField;
+  /**
+   * Link field in *Carousell → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousell.items[].link
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  link: prismicT.LinkField;
+  /**
+   * Link Text field in *Carousell → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousell.items[].link_text
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  link_text: prismicT.KeyTextField;
+}
+/**
+ * Locations variation for Carousell Slice
+ *
+ * - **API ID**: `locations`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type CarousellSliceLocations = prismicT.SharedSliceVariation<
+  "locations",
+  Record<string, never>,
+  Simplify<CarousellSliceLocationsItem>
+>;
+/**
  * Slice variation for *Carousell*
  *
  */
-type CarousellSliceVariation = CarousellSliceDefault;
+type CarousellSliceVariation =
+  | CarousellSliceDefault
+  | CarousellSliceVideoCarousel
+  | CarousellSliceLocations;
 /**
  * Carousell Shared Slice
  *
@@ -854,6 +1017,119 @@ type HerosSliceVariation = HerosSliceDefault;
  */
 export type HerosSlice = prismicT.SharedSlice<"heros", HerosSliceVariation>;
 /**
+ * Primary content in MenuItem → Primary
+ *
+ */
+interface MenuItemSliceDefaultPrimary {
+  /**
+   * LinkText field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_item.primary.linktext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  linktext: prismicT.KeyTextField;
+  /**
+   * LinkTarget field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_item.primary.linktarget
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  linktarget: prismicT.LinkField;
+}
+/**
+ * Default variation for MenuItem Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type MenuItemSliceDefault = prismicT.SharedSliceVariation<
+  "default",
+  Simplify<MenuItemSliceDefaultPrimary>,
+  never
+>;
+/**
+ * Primary content in MenuItem → Primary
+ *
+ */
+interface MenuItemSliceMenuItemWithDropdownPrimary {
+  /**
+   * LinkText field in *MenuItem → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_item.primary.linktext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  linktext: prismicT.KeyTextField;
+}
+/**
+ * Item in MenuItem → Items
+ *
+ */
+export interface MenuItemSliceMenuItemWithDropdownItem {
+  /**
+   * LinkText field in *MenuItem → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_item.items[].linktext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  linktext: prismicT.KeyTextField;
+  /**
+   * LinkTarget field in *MenuItem → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_item.items[].linktarget
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  linktarget: prismicT.LinkField;
+}
+/**
+ * MenuItemWithDropdown variation for MenuItem Slice
+ *
+ * - **API ID**: `menuItemWithDropdown`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type MenuItemSliceMenuItemWithDropdown = prismicT.SharedSliceVariation<
+  "menuItemWithDropdown",
+  Simplify<MenuItemSliceMenuItemWithDropdownPrimary>,
+  Simplify<MenuItemSliceMenuItemWithDropdownItem>
+>;
+/**
+ * Slice variation for *MenuItem*
+ *
+ */
+type MenuItemSliceVariation =
+  | MenuItemSliceDefault
+  | MenuItemSliceMenuItemWithDropdown;
+/**
+ * MenuItem Shared Slice
+ *
+ * - **API ID**: `menu_item`
+ * - **Description**: `MenuItem`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type MenuItemSlice = prismicT.SharedSlice<
+  "menu_item",
+  MenuItemSliceVariation
+>;
+/**
  * Primary content in Separator → Primary
  *
  */
@@ -913,6 +1189,8 @@ declare module "@prismicio/client" {
       HomepageDocumentDataSlicesSlice,
       HomepageDocument,
       MainmenuDocumentData,
+      MainmenuDocumentDataSubmenuItem,
+      MainmenuDocumentDataSlicesSlice,
       MainmenuDocument,
       PageDocumentData,
       PageDocumentDataSlicesSlice,
@@ -925,6 +1203,11 @@ declare module "@prismicio/client" {
       CarousellSliceDefaultPrimary,
       CarousellSliceDefaultItem,
       CarousellSliceDefault,
+      CarousellSliceVideoCarouselPrimary,
+      CarousellSliceVideoCarouselItem,
+      CarousellSliceVideoCarousel,
+      CarousellSliceLocationsItem,
+      CarousellSliceLocations,
       CarousellSliceVariation,
       CarousellSlice,
       ContentSliceDefaultPrimary,
@@ -941,6 +1224,13 @@ declare module "@prismicio/client" {
       HerosSliceDefault,
       HerosSliceVariation,
       HerosSlice,
+      MenuItemSliceDefaultPrimary,
+      MenuItemSliceDefault,
+      MenuItemSliceMenuItemWithDropdownPrimary,
+      MenuItemSliceMenuItemWithDropdownItem,
+      MenuItemSliceMenuItemWithDropdown,
+      MenuItemSliceVariation,
+      MenuItemSlice,
       SeperatorSliceDefaultPrimary,
       SeperatorSliceDefault,
       SeperatorSliceVariation,
