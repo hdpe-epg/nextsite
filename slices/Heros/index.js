@@ -21,9 +21,7 @@ export default Heros;
 
 function DefaultHeroRender(index, slice) {
   return (
-    <section
-      className={`relative flex min-h-screen items-center justify-start`}
-    >
+    <section className={`relative flex h-[100dvh] items-center justify-start`}>
       <div className={`mx-auto max-w-screen-2xl`}>
         <div className={`absolute inset-0 z-[-2]`}>
           {slice.primary.bgimage && (

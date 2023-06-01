@@ -227,8 +227,8 @@ function DefaultRender(slice) {
         <section
             data-slice-type={slice.slice_type}
             data-slice-variation={slice.variation}
+            className={`mx-auto my-24 max-w-screen-xl`}
         >
-            Placeholder component for content (variation: {slice.variation}) Slices
             <PrismicRichText field={slice.primary.content}/>
         </section>
     );
