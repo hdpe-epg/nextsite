@@ -89,3 +89,16 @@ h6 {
 .seperator {
   @apply mx-auto h-px max-w-screen-xl border-none bg-gradient-to-r from-transparent via-gray-500 to-transparent bg-center bg-repeat-x;
 }
+
+
+.detailsClass {
+
+}
+
+details summary {
+  @apply mt-4 cursor-pointer text-xl text-brand-font-color underline decoration-1 underline-offset-2;
+}
+
+details a  {
+  @apply pl-8 cursor-pointer text-xl text-brand-font-color underline decoration-1 underline-offset-2;
+}
