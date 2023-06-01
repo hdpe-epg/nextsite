@@ -89,3 +89,30 @@ h6 {
 .seperator {
   @apply mx-auto h-px max-w-screen-xl border-none bg-gradient-to-r from-transparent via-gray-500 to-transparent bg-center bg-repeat-x;
 }
+
+
+/* technical data page styles, which is hard coded */
+
+.detailsClass {
+
+}
+
+details summary {
+  @apply mt-4 cursor-pointer text-xl text-brand-font-color underline decoration-1 underline-offset-2;
+}
+
+details div:first-of-type {
+  @apply mt-4;
+}
+
+details div {
+  @apply mb-4;
+}
+
+details div:not:last-of-type {
+  @apply mb-0;
+}
+
+details a  {
+  @apply pl-8 cursor-pointer text-xl text-brand-font-color underline decoration-1 underline-offset-2;
+}
