@@ -2,7 +2,7 @@ import { Fragment, useState } from 'react'
 import { usePopper } from 'react-popper'
 import { Popover, Transition } from '@headlessui/react'
 import { HiChevronDown } from 'react-icons/hi'
-import { PrismicLink } from '@prismicio/react'
+import { PrismicNextLink } from '@prismicio/next'
 
 /**
  * @typedef {import("@prismicio/client").Content.MenuItemSlice} MenuItemSlice
@@ -61,14 +61,14 @@ const MenuItem = ({ slice }) => {
                   >
                     <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                       <div className="relative grid gap-8 bg-white p-7 capitalize lg:grid-cols-2">
-                        {items.map((item) => (
-                          <PrismicLink
+                        {items.map(item => (
+                          <PrismicNextLink
                             key={item.linktarget.url}
                             field={item.linktarget}
                             className="rounded-md px-3 py-2 text-xl font-semibold text-brand-primary hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-secondary focus-visible:ring-opacity-75"
                           >
                             {item.linktext}
-                          </PrismicLink>
+                          </PrismicNextLink>
                         ))}
                       </div>
                       {/* <div className="bg-gray-50 p-4">
@@ -100,12 +100,12 @@ const MenuItem = ({ slice }) => {
           data-slice-type={slice.slice_type}
           data-slice-variation={slice.variation}
         >
-          <PrismicLink
+          <PrismicNextLink
             field={linktarget}
             className="group inline-flex items-center rounded-md px-3 py-2 text-xl font-semibold text-brand-primary hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-secondary focus-visible:ring-opacity-75"
           >
             {linktext}
-          </PrismicLink>
+          </PrismicNextLink>
         </li>
       )
   }

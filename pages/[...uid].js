@@ -120,8 +120,14 @@ export async function getStaticPaths() {
   const pages = await client.getAllByType('page', {
     fetchLinks: ['subdirectory'],
   })
+  let paths = []
+  pages.forEach(page => {
+    if (page.uid !== 'technical-data') {
+      paths.push(prismicH.asLink(page))
+    }
+  })
   return {
-    paths: pages.map((page) => prismicH.asLink(page)),
+    paths,
     fallback: false,
   }
 }

@@ -24,19 +24,21 @@ export const Navbar = ({ slices, submenu, open, setOpen }) => {
             <SliceZone slices={slices} components={components} />
           </ul>
         </nav>
-        <button
-          className="flex flex-col items-end justify-self-end text-brand-primary lg:hidden"
-          onClick={handleclick}
-        >
-          <HiMenu className=" h-12 w-12" />
-          <span className="sr-only">menu</span>
-        </button>
-        <Link
-          href="/"
-          className="hidden shrink-0 rounded-md border-2 border-brand-secondary px-3 py-2 text-sm transition-transform duration-75 ease-in-out focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:ring-offset-1 active:scale-95 lg:block"
-        >
-          Contact Us
-        </Link>
+        <div className="lg:min-w-[225px]">
+          <button
+            className="flex flex-col items-end justify-self-end text-brand-primary lg:hidden"
+            onClick={handleclick}
+          >
+            <HiMenu className=" h-12 w-12" />
+            <span className="sr-only">menu</span>
+          </button>
+          <Link
+            href="/"
+            className="hidden shrink-0 rounded-md border-2 border-brand-secondary px-3 py-2 text-center text-sm transition-transform duration-75 ease-in-out focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:ring-offset-1 active:scale-95 lg:block"
+          >
+            Contact Us
+          </Link>
+        </div>
       </div>
       <div className="flex items-center justify-center bg-brand-secondary text-white">
         {/*secondary nav*/}
