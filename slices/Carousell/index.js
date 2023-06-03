@@ -86,14 +86,14 @@ const Carousell = ({ slice }) => {
         {slice.items.map((item, index) => (
           <div key={index} className="mb-8">
             {item.first_last_name && (
-              <p className={`font-bold text-brand-secondary`}>
+              <p className={`commonTextStyles commonTextMargins font-bold text-brand-secondary !mb-0 !pb-0`}>
                 {item.first_last_name}
               </p>
             )}
-            {item.job_title && <p>{item.job_title}</p>}
+            {item.job_title && <p className='commonTextStyles commonTextMargins !mb-0 !pb-0'>{item.job_title}</p>}
             {item.phone_number && (
               <a
-                // only return this if its has content
+                className='commonTextStyles commonTextMargins linkStyles'
                 href={`tel:${item.phone_number}`}
                 title={`${item.first_last_name} +  ${item.phone_number}`}
               >
