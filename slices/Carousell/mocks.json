@@ -630,6 +630,14 @@
 							"type": "Text",
 							"value": "Loves Icecream"
 						}
+					],
+					[
+						"email",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "some@email.ca"
+						}
 					]
 				]
 			},
@@ -659,6 +667,14 @@
 							"type": "Text",
 							"value": "Loves Coffee"
 						}
+					],
+					[
+						"email",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "some@email.ca"
+						}
 					]
 				]
 			},
@@ -687,6 +703,14 @@
 							"__TYPE__": "FieldContent",
 							"type": "Text",
 							"value": "Loves Doughnuts"
+						}
+					],
+					[
+						"email",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "some@email.ca"
 						}
 					]
 				]

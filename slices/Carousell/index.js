@@ -92,13 +92,26 @@ const Carousell = ({ slice }) => {
             )}
             {item.job_title && <p className='commonTextStyles commonTextMargins !mb-0 !pb-0'>{item.job_title}</p>}
             {item.phone_number && (
-              <a
-                className='commonTextStyles commonTextMargins linkStyles'
-                href={`tel:${item.phone_number}`}
-                title={`${item.first_last_name} +  ${item.phone_number}`}
-              >
-                {item.phone_number}
-              </a>
+              <p className='commonTextStyles commonTextMargins !mb-0 !pd-0'>
+                  <a
+                    className='linkStyles'
+                    href={`tel:${item.phone_number}`}
+                    title={`${item.first_last_name} +  ${item.phone_number}`}
+                  >
+                    {item.phone_number}
+                  </a>
+              </p>
+            )}
+            {item.email && (
+              <p className='commonTextStyles commonTextMargins '>
+                  <a
+                    className='linkStyles'
+                    href={`mailto:${item.email}`}
+                    title={`Email ${item.first_last_name}`}
+                  >
+                    {item.email}
+                  </a>
+              </p>
             )}
           </div>
         ))}
