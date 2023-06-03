@@ -7,8 +7,6 @@ ruin their SEO as far as the files themselves go.
  */
 
 import * as React from 'react'
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
 import Layout from '@/components/Layout'
 import { createClient } from '@/prismicio'
 import Head from 'next/head'
@@ -20,25 +18,6 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
   const {
     data: { sitetitle, sitemetaimage },
   } = siteMetadata
-
-  const router = useRouter()
-
-  useEffect(() => {
-    const handleRouteChange = url => {
-      // Track file download event using Google Analytics or Google Tag Manager
-      // Replace 'YOUR_EVENT_CATEGORY' and 'YOUR_EVENT_ACTION' with appropriate values
-      gtag('event', 'File Downloads', {
-        event_category: 'File Downloads',
-        event_label: url,
-      })
-    }
-
-    router.events.on('routeChangeComplete', handleRouteChange)
-
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [router.events])
 
   return (
     <Layout navigation={navigation}>
@@ -236,7 +215,7 @@ const Details = ({ children }) => {
 const articles = [
   {
     title: 'Regina Opts for Easier, Cheaper Way to Access Deep Sewers',
-    link: 'assets/data/articles/M0416_Online-Exclusive_Regina-Opts-for-Easier-Cheaper-Way-to-Access-Dee....pdf',
+    link: 'assets/data/articles/M0416_Online-Exclusive_Regina-Opts-for-Easier-Cheaper-Way-to-Access-Deep-sewers.pdf',
   },
   {
     title: 'North Vancouver Pipe Burst Requires Careful Planning',
