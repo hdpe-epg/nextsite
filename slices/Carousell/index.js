@@ -82,20 +82,25 @@ const Carousell = ({ slice }) => {
     // BEGIN locationMembers SLICE
     // ------------------------------
     return (
-      <section className="mx-auto my-24 grid max-w-screen-xl justify-between grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+      <section className="mx-auto my-24 grid max-w-screen-xl grid-cols-1 justify-between gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         {slice.items.map((item, index) => (
           <div key={index} className="mb-8">
-            <p className={`font-bold text-brand-secondary`}>
-              {item.first_last_name}
-            </p>
-            <p>{item.job_title}</p>
-            <a
-              href={`tel:${item.phone_number}`}
-              title={`${item.first_last_name} +  ${item.phone_number}`}
-            >
-              {item.phone_number}
-            </a>
-            </div>
+            {item.first_last_name && (
+              <p className={`font-bold text-brand-secondary`}>
+                {item.first_last_name}
+              </p>
+            )}
+            {item.job_title && <p>{item.job_title}</p>}
+            {item.phone_number && (
+              <a
+                // only return this if its has content
+                href={`tel:${item.phone_number}`}
+                title={`${item.first_last_name} +  ${item.phone_number}`}
+              >
+                {item.phone_number}
+              </a>
+            )}
+          </div>
         ))}
       </section>
     )
