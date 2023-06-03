@@ -184,6 +184,39 @@ interface PageDocumentData {
    *
    */
   slices: prismicT.SliceZone<PageDocumentDataSlicesSlice>
+  /**
+   * MetaDescription field in *Page*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page.metadescription
+   * - **Tab**: SEO
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  metadescription: prismicT.KeyTextField
+  /**
+   * MetaImage field in *Page*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page.metaimage
+   * - **Tab**: SEO
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  metaimage: prismicT.ImageField<never>
+  /**
+   * canonical field in *Page*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page.canonical
+   * - **Tab**: SEO
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  canonical: prismicT.KeyTextField
 }
 /**
  * Slice for *Page → Slice Zone*
