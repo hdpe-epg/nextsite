@@ -14,7 +14,7 @@ import { createClient } from '@/prismicio'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Heading from "@/components/Heading";
+import Heading from '@/components/Heading'
 
 const TechnicalDataPage = ({ siteMetadata, navigation }) => {
   const {
@@ -38,7 +38,7 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
-  }, [])
+  }, [router.events])
 
   return (
     <Layout navigation={navigation}>
@@ -79,10 +79,10 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
 
       <section className={`mx-auto my-24 max-w-screen-xl`}>
         <div>
-        <Heading as="h1" size="4xl">
-          Technical Data Reference Material
+          <Heading as="h1" size="4xl">
+            Technical Data Reference Material
           </Heading>
-          <p className='commonTextStyles commonTextMargins'>
+          <p className="commonTextStyles commonTextMargins">
             This page is a collection of technical data for the products we
             sell. Please contact us if you have any questions.
           </p>
@@ -186,21 +186,20 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
         </div>
         {/* provide classnames using tailwind to make the text 14px and italisized */}
         <div className="my-24 text-xs italic">
-        
-        {/* Disclaimer Div */}
-        <Heading as='h3'>Disclaimer:</Heading>
-        <p className='commonTextStyles commonTextMargins'>
-          The information contained herein is provided in good faith, and every
-          reasonable effort is made to ensure it is correct and up-to-date.
-          However, HDPE.ca assumes no responsibility for any errors or omissions
-          which may occur. Further, HDPE.ca assumes no responsibility for any
-          damages or losses suffered by any person or entity as a result of the
-          information contained herein. This information is provided as is,
-          with no warranties whatsoever, including any warranty of
-          merchantability, non-infringement, fitness for any particular purpose,
-          or any warranty otherwise arising out of any proposal, specification,
-          or sample.
-        </p>
+          {/* Disclaimer Div */}
+          <Heading as="h3">Disclaimer:</Heading>
+          <p className="commonTextStyles commonTextMargins">
+            The information contained herein is provided in good faith, and
+            every reasonable effort is made to ensure it is correct and
+            up-to-date. However, HDPE.ca assumes no responsibility for any
+            errors or omissions which may occur. Further, HDPE.ca assumes no
+            responsibility for any damages or losses suffered by any person or
+            entity as a result of the information contained herein. This
+            information is provided as is, with no warranties whatsoever,
+            including any warranty of merchantability, non-infringement, fitness
+            for any particular purpose, or any warranty otherwise arising out of
+            any proposal, specification, or sample.
+          </p>
         </div>
       </section>
     </Layout>
@@ -225,12 +224,12 @@ export async function getStaticProps({ previewData }) {
 // Details component in page
 
 const Details = ({ children }) => {
-    return (
-      <details className={`commonTextStyles commonTextMargins detailsClass`}>
-        {children}
-      </details>
-    );
-  };
+  return (
+    <details className={`commonTextStyles commonTextMargins detailsClass`}>
+      {children}
+    </details>
+  )
+}
 
 // Create an array that holds the information from /public/assets/data/articles
 

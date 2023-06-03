@@ -598,5 +598,99 @@
 				]
 			}
 		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "locationMembers",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"first_last_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Jim Bob"
+						}
+					],
+					[
+						"phone_number",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "555-555-5555"
+						}
+					],
+					[
+						"job_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Loves Icecream"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"first_last_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Mike Bob"
+						}
+					],
+					[
+						"phone_number",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "555-555-5555"
+						}
+					],
+					[
+						"job_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Loves Coffee"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"first_last_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Jerry Bob"
+						}
+					],
+					[
+						"phone_number",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "555-555-5555"
+						}
+					],
+					[
+						"job_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Loves Doughnuts"
+						}
+					]
+				]
+			}
+		]
 	}
 ]
