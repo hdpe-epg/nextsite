@@ -107,6 +107,10 @@
         "job_title": {
           "type": "Text",
           "config": { "label": "Job Title", "placeholder": "" }
+        },
+        "email": {
+          "type": "Text",
+          "config": { "label": "Email", "placeholder": "" }
         }
       }
     }

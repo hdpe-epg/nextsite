@@ -476,6 +476,16 @@ export interface CarousellSliceLocationMembersItem {
    *
    */
   job_title: prismicT.KeyTextField
+  /**
+   * Email field in *Carousell → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousell.items[].email
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  email: prismicT.KeyTextField
 }
 /**
  * locationMembers variation for Carousell Slice
