@@ -111,18 +111,18 @@ export async function getStaticProps({ params, previewData }) {
 }
 
 export async function getStaticPaths() {
-  const client = createClient()
+  const client = createClient();
   const pages = await client.getAllByType('page', {
     fetchLinks: ['subdirectory'],
-  })
-  let paths = []
-  pages.forEach(page => {
-    if (page.uid !== 'technical-data' || 'fittings') {
-      paths.push(prismicH.asLink(page))
-    }
-  })
+  });
+
+  const paths = pages
+    .filter(page => page.uid !== 'technical-data' && page.uid !== 'fittings')
+    .map(page => prismicH.asLink(page));
+
   return {
     paths,
     fallback: false,
-  }
+  };
 }
+
