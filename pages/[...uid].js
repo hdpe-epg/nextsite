@@ -117,7 +117,7 @@ export async function getStaticPaths() {
   })
   let paths = []
   pages.forEach(page => {
-    if (page.uid !== 'technical-data') {
+    if (page.uid !== 'technical-data' || 'fittings') {
       paths.push(prismicH.asLink(page))
     }
   })
