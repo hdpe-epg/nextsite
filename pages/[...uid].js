@@ -25,6 +25,10 @@ const Page = ({ page, siteMetadata, navigation }) => {
               rel="canonical"
               href={data?.canonicalurl || `${siteurl}${page.url}`}
             />
+            <meta
+              property="og:title"
+              content={`${prismicH.asText(page?.data?.title)}`}
+            />
             {data?.metadescription ||
               (sitemetadescription && (
                 <meta
