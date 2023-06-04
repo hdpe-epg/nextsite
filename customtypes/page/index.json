@@ -44,6 +44,20 @@
           }
         }
       }
+    },
+    "SEO": {
+      "metadescription": {
+        "type": "Text",
+        "config": { "label": "MetaDescription", "placeholder": "" }
+      },
+      "metaimage": {
+        "type": "Image",
+        "config": { "label": "MetaImage", "constraint": {}, "thumbnails": [] }
+      },
+      "canonical": {
+        "type": "Text",
+        "config": { "label": "canonical", "placeholder": "" }
+      }
     }
   }
 }
