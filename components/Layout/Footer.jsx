@@ -1,6 +1,7 @@
 // import { PrismicLink } from '@prismicio/react'
 import * as React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Footer = () => {
   React.useEffect(() => {
@@ -57,23 +58,22 @@ export const Footer = () => {
               <div className={`text-center md:text-left `}>
                 <h2 className="mb-4 font-bold">LINKS</h2>
                 <ul className="m-0 list-none p-0 uppercase">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Services</li>
-                  <li>Technical Data</li>
-                  <li>Contact</li>
-                  <li>Careers</li>
+                  <li><Link href="/" title="Home/" target="_blank">Home</Link></li>
+                  <li><Link href="/pipe/" title="Pipe" target="_blank">Pipe</Link></li>
+                  <li><Link href="/fusion-services/" title="Fusion Services" target="_blank">Fusion Services</Link></li>
+                  <li><Link href="/technical-data/" title="Technical Data" target="_blank">Technical Data</Link></li>
+                  <li><Link href="/locations/" title="Contact HDPE" target="_blank">Contact</Link></li>
+                  {/* <li><Link href="" title="Careers" target="_blank">Careers</Link></li> */}
                 </ul>
               </div>
               <div className={`text-center md:text-left `}>
                 <h2 className="mb-4 font-bold">LOCATIONS</h2>
                 <ul className="m-0 list-none p-0 uppercase">
-                  <li>British Columbia</li>
-                  <li>Alberta</li>
-                  <li>Saskatchewan</li>
-                  <li>Quebec</li>
-                  <li>Maritime Provinces</li>
-                  <li>Careers</li>
+                  <li><Link href="/langley-engineered-pipe-group/" title="British Columbia Engineered Pipe Group" target="_blank">British Columbia</Link></li>
+                  <li><Link href="/edmonton-engineered-pipe-group/" title="Alberta Egineered Pipe Group" target="_blank">Alberta</Link></li>
+                  <li><Link href="/saskatoon-engineered-pipe-group/" title="Saskatchewan Engineered Pipe Group" target="_blank">Saskatchewan</Link></li>
+                  <li><Link href="/laval-engineered-pipe-group/" title="Quebec Engineered Pipe Group" target="_blank">Quebec</Link></li>
+                  <li><Link href="/maritime-engineered-pipe-group/" title="Maritime or Atlantic Contact for  Engineered Pipe Group" target="_blank">Maritime Provinces</Link></li>
                 </ul>
               </div>
             </div>
