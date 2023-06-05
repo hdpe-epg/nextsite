@@ -16,7 +16,9 @@ export const Navbar = ({ slices, submenu, open, setOpen }) => {
   return (
     <Headroom>
       <div className="relative mx-auto flex max-w-screen-xl items-center justify-between px-4 py-6">
-        <HeaderLogo className={`h-10 lg:col-span-2 lg:h-12`} />
+        <Link href="/" title="HDPE EPG Homepage">
+          <HeaderLogo className={`h-10 lg:col-span-2 lg:h-12`} />
+        </Link>
         {/*top nav*/}
         <nav>
           {/*HIDDEN hides the top nav on mobile, revealing it at large*/}
