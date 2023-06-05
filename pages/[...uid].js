@@ -117,7 +117,7 @@ export async function getStaticPaths() {
   });
 
   const paths = pages
-    .filter(page => page.uid !== 'technical-data' && page.uid !== 'fittings')
+    .filter(page => !['technical-data', 'fittings', 'geosynthetics'].includes(page.uid))
     .map(page => prismicH.asLink(page));
 
   return {
