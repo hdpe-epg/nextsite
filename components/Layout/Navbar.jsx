@@ -1,7 +1,7 @@
 // import { PrismicLink } from '@prismicio/react'
 import Link from 'next/link'
 import Headroom from 'react-headroom'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 import { components } from '@/slices'
 import { PrismicLink, SliceZone } from '@prismicio/react'
@@ -16,17 +16,19 @@ export const Navbar = ({ slices, submenu, open, setOpen }) => {
   return (
     <Headroom>
       <div className="relative mx-auto flex max-w-screen-xl items-center justify-between px-4 py-6">
-        <HeaderLogo className={`h-10 lg:col-span-2 lg:h-12`} />
+        <Link href="/" title="HDPE EPG Homepage">
+          <HeaderLogo className={`h-10 lg:col-span-2 lg:h-12`} />
+        </Link>
         {/*top nav*/}
         <nav>
           {/*HIDDEN hides the top nav on mobile, revealing it at large*/}
-          <ul className="hidden gap-x-3 lg:grid lg:grid-flow-col">
+          <ul className="hidden gap-x-3 xlg:grid xlg:grid-flow-col">
             <SliceZone slices={slices} components={components} />
           </ul>
         </nav>
         <div className="lg:min-w-[225px]">
           <button
-            className="flex flex-col items-end justify-self-end text-brand-primary lg:hidden"
+            className="flex flex-col items-end justify-self-end text-brand-primary xlg:hidden"
             onClick={handleclick}
           >
             <HiMenu className=" h-12 w-12" />
@@ -34,7 +36,7 @@ export const Navbar = ({ slices, submenu, open, setOpen }) => {
           </button>
           <Link
             href="/"
-            className="hidden shrink-0 rounded-md border-2 border-brand-secondary px-3 py-2 text-center text-sm transition-transform duration-75 ease-in-out focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:ring-offset-1 active:scale-95 lg:block"
+            className="hidden shrink-0 rounded-md border-2 border-brand-secondary px-3 py-2 text-center text-sm transition-transform duration-75 ease-in-out focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:ring-offset-1 active:scale-95 xlg:block"
           >
             Contact Us
           </Link>
