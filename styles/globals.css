@@ -116,3 +116,13 @@ details div:not:last-of-type {
 details a  {
   @apply pl-8 cursor-pointer text-xl text-brand-font-color underline decoration-1 underline-offset-2;
 }
+
+
+
+
+
+/* "arrowParens": "avoid",
+"semi": false,
+"singleQuote": true,
+"jsxSingleQuote": false */
+    
