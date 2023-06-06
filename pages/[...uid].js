@@ -116,6 +116,7 @@ export async function getStaticPaths() {
     fetchLinks: ['subdirectory'],
   });
 
+  // some pages are static, so we don't want to generate a route for them. 
   const paths = pages
     .filter(page => !['technical-data', 'fittings', 'geosynthetics'].includes(page.uid))
     .map(page => prismicH.asLink(page));
