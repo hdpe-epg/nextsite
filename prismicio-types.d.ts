@@ -1006,6 +1006,35 @@ export type ContentSliceQuarters = prismicT.SharedSliceVariation<
   never
 >
 /**
+ * Item in Content → Items
+ *
+ */
+export interface ContentSliceResourcesItem {
+  /**
+   * content field in *Content → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Subtitle and Description
+   * - **API ID Path**: content.items[].content
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  content: prismicT.RichTextField
+}
+/**
+ * resources variation for Content Slice
+ *
+ * - **API ID**: `resources`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ContentSliceResources = prismicT.SharedSliceVariation<
+  'resources',
+  Record<string, never>,
+  Simplify<ContentSliceResourcesItem>
+>
+/**
  * Slice variation for *Content*
  *
  */
@@ -1014,6 +1043,7 @@ type ContentSliceVariation =
   | ContentSliceHalfHalf
   | ContentSliceOneThirdTwoThird
   | ContentSliceQuarters
+  | ContentSliceResources
 /**
  * Content Shared Slice
  *
@@ -1313,6 +1343,8 @@ declare module '@prismicio/client' {
       ContentSliceOneThirdTwoThird,
       ContentSliceQuartersPrimary,
       ContentSliceQuarters,
+      ContentSliceResourcesItem,
+      ContentSliceResources,
       ContentSliceVariation,
       ContentSlice,
       HerosSliceDefaultPrimary,

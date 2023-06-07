@@ -343,6 +343,26 @@
         }
       },
       "items": {}
+    },
+    {
+      "id": "resources",
+      "name": "resources",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "content",
+            "placeholder": "Subtitle and Description",
+            "allowTargetBlank": true,
+            "multi": "heading2,paragraph"
+          }
+        }
+      }
     }
   ]
 }
