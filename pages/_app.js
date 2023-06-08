@@ -11,61 +11,37 @@ const richTextComponents = {
   // see global.js temporarily to modify these styles. Working on DRY.
 
   heading1: ({ children }) => (
-    <Heading
-      as="h1"
-      size="5xl"
-      className="styledH1 commonHeadingStyles commonTextMargins"
-    >
+    <Heading as="h1" className="styledH1">
       {children}
     </Heading>
   ),
   heading2: ({ children }) => (
-    <Heading
-      as="h2"
-      size="4xl"
-      className="commonHeadingStyles commonTextMargins"
-    >
+    <Heading as="h2" className="">
       {children}
     </Heading>
   ),
   heading3: ({ children }) => (
-    <Heading
-      as="h3"
-      size="2xl"
-      className="commonHeadingStyles commonTextMargins"
-    >
+    <Heading as="h3" className="">
       {children}
     </Heading>
   ),
   heading4: ({ children }) => (
-    <Heading
-      as="h4"
-      size="2xl"
-      className="commonHeadingStyles commonTextMargins"
-    >
+    <Heading as="h4" className="">
       {children}
     </Heading>
   ),
   heading5: ({ children }) => (
-    <Heading
-      as="h5"
-      size="2xl"
-      className="commonHeadingStyles commonTextMargins"
-    >
+    <Heading as="h5" className="">
       {children}
     </Heading>
   ),
   heading6: ({ children }) => (
-    <Heading
-      as="h6"
-      size="2xl"
-      className="commonHeadingStyles commonTextMargins"
-    >
+    <Heading as="h6" className="">
       {children}
     </Heading>
   ),
   paragraph: ({ children }) => (
-    <p className="commonTextMargins commonTextStyles pStyles">{children}</p>
+    <p className={''}>{children}</p>
   ),
   oList: ({ children }) => (
     <ol className="commonTextMargins commonTextStyles listStyles">

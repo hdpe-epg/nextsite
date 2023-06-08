@@ -58,7 +58,7 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
 
       <section className={`mx-auto my-24 max-w-screen-xl`}>
         <div>
-          <Heading as="h1" size="4xl">
+          <Heading as="h1" >
             Technical Data Reference Material
           </Heading>
           <p className="commonTextStyles commonTextMargins">
