@@ -14,21 +14,21 @@ const Carousell = ({ slice }) => {
     // BEGIN LOCATIONS SLICE
     // ------------------------------
     return (
-      <section className="mx-auto my-24 grid max-w-screen-xl grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+      <section className="mx-auto my-24 grid max-w-screen-xl grid-cols-1 gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 text-center sm:text-left">
         {slice.items.map((item, index) => (
           <div key={index} className="mb-4">
             <PrismicRichText
               field={item.location_item}
               components={{
                 heading2: ({ children }) => (
-                  <Heading as="h2" size="4xl" className="!ml-0 mb-4">
+                  <Heading as="h2" size="4xl" className="commonHeadingStyles commonTextMargins">
                     {children}
                   </Heading>
                 ),
-                paragraph: ({ children }) => <p className="">{children}</p>,
+                paragraph: ({ children }) => <p className="commonTextStyles commonTextMargins">{children}</p>,
               }}
             />
-            <div className="mt-8 text-center">
+            <div className="mt-8 text-center sm:text-left">
               <PrismicNextLink field={item.link} className="button">
                 {item.link_text}
               </PrismicNextLink>
@@ -49,12 +49,12 @@ const Carousell = ({ slice }) => {
               field={slice.primary.content}
               components={{
                 heading2: ({ children }) => (
-                  <Heading as="h2" size="4xl" className="text-center">
+                  <Heading as="h2" size="4xl" className="commonHeadingStyles commonTextMargins text-center">
                     {children}
                   </Heading>
                 ),
                 paragraph: ({ children }) => (
-                  <p className={`text-center`}>{children}</p>
+                  <p className={`commonTextStyles commonTextMargins text-center`}>{children}</p>
                 ),
               }}
             />
@@ -68,7 +68,7 @@ const Carousell = ({ slice }) => {
             return (
               <div key={index} className={`vidCarousel__inner`}>
                 <PrismicRichText field={youtube_vid_link} />
-                <Heading as="h2" size="base">
+                <Heading as="h2" size="base" className={`commonHeadingStyles commonTextMargins`}>
                   {oembed?.title}
                 </Heading>
               </div>
@@ -129,12 +129,12 @@ const Carousell = ({ slice }) => {
             field={slice.primary.content}
             components={{
               heading2: ({ children }) => (
-                <Heading as="h2" size="4xl" className="text-center">
+                <Heading as="h2" size="4xl" className="commonHeadingStyles commonTextMargins text-center">
                   {children}
                 </Heading>
               ),
               paragraph: ({ children }) => (
-                <p className={`text-center`}>{children}</p>
+                <p className={`commonTextStyles commonTextMargins text-center`}>{children}</p>
               ),
             }}
           />

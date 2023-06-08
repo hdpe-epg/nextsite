@@ -26,14 +26,14 @@
   @apply mb-7 text-xl text-brand-font-color;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6 { */
   /*@apply text-center;*/
-}
+/* } */
 
 .pStyles {
   @apply last:mb-0;
@@ -93,9 +93,9 @@ h6 {
 
 /* technical data page styles, which is hard coded */
 
-.detailsClass {
+/* .detailsClass {
 
-}
+} */
 
 details summary {
   @apply mt-4 cursor-pointer text-xl text-brand-font-color underline decoration-1 underline-offset-2;
