@@ -15,28 +15,28 @@ export const Navbar = ({ slices, submenu, open, setOpen }) => {
 
   return (
     <Headroom>
-      <div className="relative mx-auto flex max-w-screen-xl items-center justify-between px-4 py-6">
+      <div className="relative mx-auto flex max-w-screen-2xl items-center justify-between px-4 py-6">
         <Link href="/" title="HDPE EPG Homepage">
           <HeaderLogo className={`h-10 lg:col-span-2 lg:h-12`} />
         </Link>
         {/*top nav*/}
         <nav>
           {/*HIDDEN hides the top nav on mobile, revealing it at large*/}
-          <ul className="hidden gap-x-3 xlg:grid xlg:grid-flow-col">
+          <ul className="hidden gap-x-3 2xl:grid 2xl:grid-flow-col">
             <SliceZone slices={slices} components={components} />
           </ul>
         </nav>
-        <div className="lg:min-w-[225px]">
+        <div className="flex justify-end lg:min-w-[225px]">
           <button
-            className="flex flex-col items-end justify-self-end text-brand-primary xlg:hidden"
+            className="flex flex-col items-end justify-self-end text-brand-primary 2xl:hidden"
             onClick={handleclick}
           >
             <HiMenu className=" h-12 w-12" />
             <span className="sr-only">menu</span>
           </button>
           <Link
-            href="/"
-            className="hidden shrink-0 rounded-md border-2 border-brand-secondary px-3 py-2 text-center text-sm transition-transform duration-75 ease-in-out focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:ring-offset-1 active:scale-95 xlg:block"
+            href="/locations"
+            className="hidden shrink-0 rounded-md border-2 border-brand-secondary px-3 py-2 text-center text-sm transition-transform duration-75 ease-in-out focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:ring-offset-1 active:scale-95 2xl:block"
           >
             Contact Us
           </Link>
