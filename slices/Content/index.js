@@ -208,13 +208,13 @@ function QuartersRender(slice) {
       )}
       {/*inner row -----------*/}
       <div
-        className={`mx-auto grid max-w-screen-xl justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-4`}
+        className={`mx-auto flex max-w-screen-xl flex-col flex-wrap justify-center gap-8 gap-y-12 lg:flex-row lg:gap-y-0`}
       >
         {quarters.map(quarter => {
           return (
-            <div key={nanoid()}>
+            <div key={nanoid()} className="shrink-0">
               {quarter.image.url && (
-                <div>
+                <div className="flex justify-center">
                   <PrismicNextImage
                     field={quarter.image}
                     className="z-[-2] object-cover"
@@ -226,7 +226,7 @@ function QuartersRender(slice) {
                   field={quarter.content}
                   components={{
                     heading2: ({ children }) => (
-                      <Heading as="h2"  className="text-center">
+                      <Heading as="h2" className="text-center">
                         {children}
                       </Heading>
                     ),
