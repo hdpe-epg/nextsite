@@ -226,7 +226,7 @@ function QuartersRender(slice) {
                   field={quarter.content}
                   components={{
                     heading2: ({ children }) => (
-                      <Heading as="h2" size="4xl" className="text-center">
+                      <Heading as="h2"  className="text-center">
                         {children}
                       </Heading>
                     ),

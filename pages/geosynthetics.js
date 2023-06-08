@@ -58,7 +58,7 @@ const GeosyntheticsPage = ({ siteMetadata, navigation }) => {
 
       <section className={`mx-auto my-24 max-w-screen-xl`}>
         <div>
-          <Heading as="h1" size="4xl">
+          <Heading as="h1" >
             Geosynthetics Data Reference Material
           </Heading>
           <p className="commonTextStyles commonTextMargins">
