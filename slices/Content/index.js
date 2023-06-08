@@ -1,9 +1,8 @@
 // import Image from 'next/image'
-import { PrismicNextLink } from '@prismicio/next'
+import { PrismicNextImage, PrismicNextLink } from '@prismicio/next'
 import { PrismicRichText } from '@prismicio/react'
 import Heading from '@/components/Heading'
 import { nanoid } from 'nanoid'
-import { PrismicNextImage } from '@prismicio/next'
 
 /**
  * @typedef {import("@prismicio/client").Content.ContentSlice} ContentSlice
@@ -17,11 +16,41 @@ const Content = ({ slice }) => {
     return OneThirdTwoThirdRender(slice)
   } else if (slice.variation === `quarters`) {
     return QuartersRender(slice)
-  } 
+  } else if (slice.variation === `resources`) {
+    return ResourcesRender(slice)
+  }
   return DefaultRender(slice)
 }
 
 export default Content
+
+function ResourcesRender(slice) {
+  return (
+    <section>
+      <div
+        className={`mx-auto my-24 flex max-w-screen-xl flex-col justify-between gap-y-12 lg:flex-row lg:gap-y-0`}
+      >
+        {slice?.items?.map((item, i) => {
+          return (
+            <article
+              key={slice.id + i}
+              className={`flex flex-1 flex-col gap-4 text-center`}
+            >
+              <PrismicRichText field={item.heading} />
+              {item.buttonlink.url && (
+                <p>
+                  <PrismicNextLink field={item.buttonlink} className={`button`}>
+                    {item.buttontext}
+                  </PrismicNextLink>
+                </p>
+              )}
+            </article>
+          )
+        })}
+      </div>
+    </section>
+  )
+}
 
 function HalfHalfRender(slice) {
   // TODO: {slice.primary.hascolor}

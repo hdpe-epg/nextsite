@@ -1011,15 +1011,35 @@ export type ContentSliceQuarters = prismicT.SharedSliceVariation<
  */
 export interface ContentSliceResourcesItem {
   /**
-   * content field in *Content → Items*
+   * heading field in *Content → Items*
    *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: Subtitle and Description
-   * - **API ID Path**: content.items[].content
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.items[].heading
    * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
    *
    */
-  content: prismicT.RichTextField
+  heading: prismicT.TitleField
+  /**
+   * buttontext field in *Content → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.items[].buttontext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  buttontext: prismicT.KeyTextField
+  /**
+   * buttonlink field in *Content → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content.items[].buttonlink
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  buttonlink: prismicT.LinkField
 }
 /**
  * resources variation for Content Slice

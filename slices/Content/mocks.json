@@ -552,17 +552,115 @@
 				"__TYPE__": "GroupItemContent",
 				"value": [
 					[
-						"content",
+						"heading",
 						{
 							"__TYPE__": "StructuredTextContent",
 							"value": [
 								{
-									"type": "paragraph",
+									"type": "heading2",
 									"content": {
-										"text": "Quis sint irure minim consectetur dolore pariatur nulla eu reprehenderit incididunt. Amet qui nostrud duis anim fugiat et occaecat consectetur tempor culpa tempor velit et tempor reprehenderit."
-									}
+										"text": "Resource 1",
+										"spans": []
+									},
+									"direction": "ltr"
 								}
 							]
+						}
+					],
+					[
+						"buttontext",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Button 1"
+						}
+					],
+					[
+						"buttonlink",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"heading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "Resource 2",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"buttontext",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Button 2"
+						}
+					],
+					[
+						"buttonlink",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"heading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "Resource 3",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"buttontext",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Button 3"
+						}
+					],
+					[
+						"buttonlink",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
 						}
 					]
 				]
