@@ -226,6 +226,7 @@ type PageDocumentDataSlicesSlice =
   | HerosSlice
   | SeperatorSlice
   | CarousellSlice
+  | FormsSlice
 /**
  * Page document from Prismic
  *
