@@ -25,7 +25,7 @@ const Forms = ({ slice }) => {
           {slice.primary.title && (<Heading as="h2" className={`h3 text-center`}>{slice.primary.title}</Heading>)}
           <iframe
               src="https://link.rawmedia.ca/widget/form/iYDgpOJMUo5WORWOU7y1"
-              className={`w-screen h-screen border-0 rounded-none`}
+              className={`w-full h-screen border-0 rounded-none`}
               id="inline-iYDgpOJMUo5WORWOU7y1"
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
