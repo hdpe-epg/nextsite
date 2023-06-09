@@ -226,7 +226,7 @@ function QuartersRender(slice) {
                   field={quarter.content}
                   components={{
                     heading2: ({ children }) => (
-                      <Heading as="h2" className="text-center">
+                      <Heading as="h2" className="text-center mt-4">
                         {children}
                       </Heading>
                     ),
@@ -235,7 +235,7 @@ function QuartersRender(slice) {
                 />
               )}
               {quarter.buttonText && (
-                <div className={`mt-12 text-center`}>
+                <div className={`mt-6 text-center`}>
                   <PrismicNextLink
                     alt={quarter.buttonText}
                     field={quarter.buttonLink}
