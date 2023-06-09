@@ -41,7 +41,8 @@
             "content": { "type": "SharedSlice" },
             "heros": { "type": "SharedSlice" },
             "seperator": { "type": "SharedSlice" },
-            "carousell": { "type": "SharedSlice" }
+            "carousell": { "type": "SharedSlice" },
+            "forms": { "type": "SharedSlice" }
           }
         }
       }
