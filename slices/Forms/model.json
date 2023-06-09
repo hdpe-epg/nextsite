@@ -1,0 +1,23 @@
+{
+  "id": "forms",
+  "type": "SharedSlice",
+  "name": "Forms",
+  "description": "Forms",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "Optional Title" }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
