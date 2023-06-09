@@ -1073,6 +1073,49 @@ type ContentSliceVariation =
  */
 export type ContentSlice = prismic.SharedSlice<'content', ContentSliceVariation>
 /**
+ * Primary content in Forms → Primary
+ *
+ */
+interface FormsSliceDefaultPrimary {
+  /**
+   * Title field in *Forms → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Optional Title
+   * - **API ID Path**: forms.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  title: prismic.KeyTextField
+}
+/**
+ * Default variation for Forms Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type FormsSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<FormsSliceDefaultPrimary>,
+  never
+>
+/**
+ * Slice variation for *Forms*
+ *
+ */
+type FormsSliceVariation = FormsSliceDefault
+/**
+ * Forms Shared Slice
+ *
+ * - **API ID**: `forms`
+ * - **Description**: `Forms`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type FormsSlice = prismic.SharedSlice<'forms', FormsSliceVariation>
+/**
  * Primary content in Heros → Primary
  *
  */
@@ -1155,6 +1198,36 @@ type HerosSliceVariation = HerosSliceDefault
  *
  */
 export type HerosSlice = prismic.SharedSlice<'heros', HerosSliceVariation>
+/**
+ * Default variation for Locations Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type LocationsSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Record<string, never>,
+  never
+>
+/**
+ * Slice variation for *Locations*
+ *
+ */
+type LocationsSliceVariation = LocationsSliceDefault
+/**
+ * Locations Shared Slice
+ *
+ * - **API ID**: `locations`
+ * - **Description**: `Locations`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type LocationsSlice = prismic.SharedSlice<
+  'locations',
+  LocationsSliceVariation
+>
 /**
  * Primary content in MenuItem → Primary
  *
@@ -1363,10 +1436,17 @@ declare module '@prismicio/client' {
       ContentSliceResources,
       ContentSliceVariation,
       ContentSlice,
+      FormsSliceDefaultPrimary,
+      FormsSliceDefault,
+      FormsSliceVariation,
+      FormsSlice,
       HerosSliceDefaultPrimary,
       HerosSliceDefault,
       HerosSliceVariation,
       HerosSlice,
+      LocationsSliceDefault,
+      LocationsSliceVariation,
+      LocationsSlice,
       MenuItemSliceDefaultPrimary,
       MenuItemSliceDefault,
       MenuItemSliceMenuItemWithDropdownPrimary,
