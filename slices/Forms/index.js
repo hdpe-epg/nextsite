@@ -4,21 +4,21 @@
  * @param {FormsProps}
  */
 import Heading from "@/components/Heading";
-import { useState} from "react";
+// import { useState} from "react";
 import Script from "next/script";
 
 const Forms = ({ slice }) => {
 
-    const [hasError, setHasError] = useState(false);
-    const [isLoaded, setIsLoaded] = useState(false);
-
-    const handleError = () => {
-        setHasError(true);
-    };
-
-    const handleLoad = () => {
-        setIsLoaded(true);
-    };
+    // const [hasError, setHasError] = useState(false);
+    // const [isLoaded, setIsLoaded] = useState(false);
+    //
+    // const handleError = () => {
+    //     setHasError(true);
+    // };
+    //
+    // const handleLoad = () => {
+    //     setIsLoaded(true);
+    // };
 
   return (
       <section className={`relative`}>
