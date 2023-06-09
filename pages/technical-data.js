@@ -147,10 +147,10 @@ const TechnicalDataPage = ({ siteMetadata, navigation }) => {
             ))}
           </Details>
 
-          {/* Uponer */}
+          {/* Infra Pipe */}
           <Details>
-            <summary>Uponer</summary>
-            {uponer.map((file, index) => (
+            <summary>Infra Pipe</summary>
+            {infraPipe.map((file, index) => (
               <div key={index}>
                 <Link
                   href={file.link}
@@ -696,61 +696,61 @@ const performancePipe = [
   },
 ]
 
-const uponer = [
+const infraPipe = [
   {
     title: 'Sclairpipe Model Specification',
-    link: 'assets/data/technical-data/uponer/sclairpipe-model-specification.pdf',
+    link: 'assets/data/technical-data/infra-pipe/sclairpipe-model-specification.pdf',
   },
   {
     title: 'Design and Selection of Plastic Pressure Pipe',
-    link: 'assets/data/technical-data/uponer/tsb-design-and-selection-of-plastic-pressure-pipe_r201601.pdf',
+    link: 'assets/data/technical-data/infra-pipe/tsb-design-and-selection-of-plastic-pressure-pipe_r201601.pdf',
   },
   {
     title: 'Sclairpipe DIPS Pipe Sizes and Pressure Ratings PE4710',
-    link: 'assets/data/technical-data/uponer/uponor-sclair-dips-pe4710_r201505.pdf',
+    link: 'assets/data/technical-data/infra-pipe/uponor-sclair-dips-pe4710_r201505.pdf',
   },
   {
     title: 'Sclair Factory Mutual(FM) Approved Pipe',
-    link: 'assets/data/technical-data/uponer/uponor-sclair-fm-approved-pipe_r201506.pdf',
+    link: 'assets/data/technical-data/infra-pipe/uponor-sclair-fm-approved-pipe_r201506.pdf',
   },
   {
     title: 'Sclair IPS Pipe Sizes and Pressure Ratings PE3608',
-    link: 'assets/data/technical-data/uponer/uponor-sclair-ips-pe3608_r201505.pdf',
+    link: 'assets/data/technical-data/infra-pipe/uponor-sclair-ips-pe3608_r201505.pdf',
   },
   {
     title: 'Sclair IPS Pipe Sizes and Pressure Ratings PE4710',
-    link: 'assets/data/technical-data/uponer/uponor-sclair-ips-pe4710_r201505.pdf',
+    link: 'assets/data/technical-data/infra-pipe/uponor-sclair-ips-pe4710_r201505.pdf',
   },
   {
     title: 'Weholite General Info',
-    link: 'assets/data/technical-data/uponer/weholite-general-info.pdf',
+    link: 'assets/data/technical-data/infra-pipe/weholite-general-info.pdf',
   },
   {
     title: 'Sclairpipe Flow of Water',
-    link: 'assets/data/technical-data/uponer/4695_flowofwater.pdf',
+    link: 'assets/data/technical-data/infra-pipe/4695_flowofwater.pdf',
   },
   {
     title: 'Butt Fusion Joining Procedure and Qualification Guide',
-    link: 'assets/data/technical-data/uponer/butt-fusion-procedure_r201505.pdf',
+    link: 'assets/data/technical-data/infra-pipe/butt-fusion-procedure_r201505.pdf',
   },
   {
-    title: 'Engineered Systems Genearl Information Brochure',
-    link: 'assets/data/technical-data/uponer/engineered-systems-general-information-brochure-web-copy.pdf',
+    title: 'Engineered Systems General Information Brochure',
+    link: 'assets/data/technical-data/infra-pipe/engineered-systems-general-information-brochure-web-copy.pdf',
   },
   {
     title: 'Sclairpipe Marine Pipeline Installation',
-    link: 'assets/data/technical-data/uponer/Sclairpipe-marine.pdf',
+    link: 'assets/data/technical-data/infra-pipe/Sclairpipe-marine.pdf',
   },
   {
     title: 'Sclairpipe Systems Design',
-    link: 'assets/data/technical-data/uponer/Sclairpipe-systemdesign.pdf',
+    link: 'assets/data/technical-data/infra-pipe/Sclairpipe-systemdesign.pdf',
   },
   {
     title: 'Sclairpipe Construction',
-    link: 'assets/data/technical-data/uponer/SclairpipeConstruction.pdf',
+    link: 'assets/data/technical-data/infra-pipe/SclairpipeConstruction.pdf',
   },
   {
     title: 'Sclairpipe General Info',
-    link: 'assets/data/technical-data/uponer/sclairpipe-general-info.pdf',
+    link: 'assets/data/technical-data/infra-pipe/sclairpipe-general-info.pdf',
   },
 ]
