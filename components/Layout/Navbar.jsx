@@ -35,7 +35,7 @@ export const Navbar = ({ slices, submenu, open, setOpen }) => {
             <span className="sr-only">menu</span>
           </button>
           <Link
-            href="/locations"
+            href="/locations/"
             className="hidden shrink-0 rounded-md border-2 border-brand-secondary px-3 py-2 text-center text-sm transition-transform duration-75 ease-in-out focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:ring-offset-1 active:scale-95 2xl:block"
           >
             Contact Us
