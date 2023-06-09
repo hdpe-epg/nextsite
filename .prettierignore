@@ -4,3 +4,5 @@ package-lock.json
 public
 yarn.lock
 .next
+node_modules
+out

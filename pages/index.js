@@ -17,28 +17,26 @@ export default function Home({ page, navigation, siteMetadata }) {
           rel="canonical"
           href={siteMetadata?.data?.sitecanonicalurl || `https://www.hdpe.ca`}
         />
-        {page?.data?.metadescription ||
-          (siteMetadata?.data?.sitemetadescription && (
-            <meta
-              name="description"
-              content={
-                page?.data?.metadescription ||
-                siteMetadata?.data?.sitemetadescription
-              }
-            />
-          ))}
-        {page?.data?.metadescription ||
-          (siteMetadata?.data?.sitemetadescription && (
-            <>
-              <meta
-                property="og:description"
-                content={
-                  page?.data?.metadescription ||
-                  siteMetadata?.data?.sitemetadescription
-                }
-              />
-            </>
-          ))}
+
+        <meta
+          name="description"
+          content={
+            page?.data?.metadescription ||
+            siteMetadata?.data?.sitemetadescription
+          }
+        />
+
+        <meta
+          property="og:description"
+          content={
+            page?.data?.metadescription ||
+            siteMetadata?.data?.sitemetadescription
+          }
+        />
+        <meta
+          property="og:title"
+          content={`${prismicH.asText(page?.data?.title)}`}
+        />
         <meta
           property="og:url"
           content={
@@ -47,30 +45,20 @@ export default function Home({ page, navigation, siteMetadata }) {
         />
         <meta property="og:type" content="website" />
 
-        {page?.data?.metaimage?.url ||
-          (siteMetadata?.data?.sitemetaimage?.url && (
-            <meta
-              property="og:image"
-              content={
-                page?.data?.metaimage?.url ||
-                siteMetadata?.data?.sitemetaimage?.url
-              }
-            />
-          ))}
+        <meta
+          property="og:image"
+          content={
+            page?.data?.metaimage?.url || siteMetadata?.data?.sitemetaimage?.url
+          }
+        />
 
-        {page?.data?.metaimage?.url ||
-          (siteMetadata?.data?.sitemetaimage?.url && (
-            <>
-              <meta property="twitter:card" content="summary_large_image" />
-              <meta
-                property="twitter:image"
-                content={
-                  page?.data?.metaimage?.url ||
-                  siteMetadata?.data?.sitemetaimage?.url
-                }
-              />
-            </>
-          ))}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:image"
+          content={
+            page?.data?.metaimage?.url || siteMetadata?.data?.sitemetaimage?.url
+          }
+        />
       </Head>
       <div className="grid grid-cols-1 gap-y-4 md:gap-y-0">
         <SliceZone slices={page.data.slices} components={components} />

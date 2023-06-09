@@ -86,6 +86,33 @@
           "config": { "label": "Link Text", "placeholder": "" }
         }
       }
+    },
+    {
+      "id": "locationMembers",
+      "name": "locationMembers",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "first_last_name": {
+          "type": "Text",
+          "config": { "label": "First Last Name", "placeholder": "" }
+        },
+        "phone_number": {
+          "type": "Text",
+          "config": { "label": "phone number", "placeholder": "" }
+        },
+        "job_title": {
+          "type": "Text",
+          "config": { "label": "Job Title", "placeholder": "" }
+        },
+        "email": {
+          "type": "Text",
+          "config": { "label": "Email", "placeholder": "" }
+        }
+      }
     }
   ]
 }

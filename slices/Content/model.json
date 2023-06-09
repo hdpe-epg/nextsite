@@ -343,6 +343,34 @@
         }
       },
       "items": {}
+    },
+    {
+      "id": "resources",
+      "name": "resources",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3,heading4,heading5,heading6"
+          }
+        },
+        "buttontext": {
+          "type": "Text",
+          "config": { "label": "buttontext", "placeholder": "" }
+        },
+        "buttonlink": {
+          "type": "Link",
+          "config": { "label": "buttonlink", "placeholder": "", "select": null }
+        }
+      }
     }
   ]
 }

@@ -4,12 +4,14 @@ import { HiChevronRight, HiX } from 'react-icons/hi'
 import { PrismicLink } from '@prismicio/react'
 import Footer from './Footer'
 import { Navbar } from './Navbar'
+import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'] })
 
 const Layout = ({ children, footer, navigation }) => {
   const [open, setOpen] = useState(false)
   const { data } = navigation
   return (
-    <div className="relative">
+    <div className={`relative ${inter.className}`}>
       <a
         href="#main-content"
         className=" btn-warning btn fixed -left-[320px] top-12 z-10 transform opacity-50 focus:translate-x-[380px] focus:opacity-100 "
@@ -80,6 +82,9 @@ const Layout = ({ children, footer, navigation }) => {
                                 <PrismicLink
                                   key={item.id}
                                   field={item.primary.linktarget}
+                                  onClick={() => {
+                                    setOpen(false)
+                                  }}
                                   className="rounded px-2 font-semibold text-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:ring-offset-2"
                                 >
                                   {item.primary.linktext}
@@ -117,6 +122,9 @@ const Layout = ({ children, footer, navigation }) => {
                                             <PrismicLink
                                               key={item.id + j}
                                               field={subitem.linktarget}
+                                              onClick={() => {
+                                                setOpen(false)
+                                              }}
                                               className="rounded px-2 focus:outline-none focus:ring-2 focus:ring-brand-secondary focus:ring-offset-2"
                                             >
                                               {subitem.linktext}

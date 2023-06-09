@@ -21,7 +21,8 @@ export default Heros;
 
 function DefaultHeroRender(index, slice) {
   return (
-    <section className={`relative flex h-[100dvh] items-center justify-start`}>
+    <section
+    className={`relative flex items-center justify-start hero`}>
       <div className={`mx-auto max-w-screen-2xl`}>
         <div className={`absolute inset-0 z-[-2]`}>
           {slice.primary.bgimage && (
@@ -35,18 +36,18 @@ function DefaultHeroRender(index, slice) {
             />
           )}
         </div>
-        <div className="z-1 absolute inset-0 bg-brand-primary opacity-50" />
+        <div className="z-1 absolute inset-0 bg-brand-primary opacity-60" />
         <div className={`relative mx-auto max-w-screen-xl`}>
           {slice.primary.heading && (
             <PrismicRichText
               components={{
                 heading1: ({ children }) => (
-                  <Heading as="h1" size="7xl" className={`text-white`}>
+                  <Heading as="h1"  className={`text-white `}>
                     {children}
                   </Heading>
                 ),
                 heading2: ({ children }) => (
-                  <Heading as="h2" size="7xl" className={`text-white`}>
+                  <Heading as="h2"  className={`text-white`}>
                     {children}
                   </Heading>
                 ),
@@ -58,13 +59,13 @@ function DefaultHeroRender(index, slice) {
             <PrismicRichText
               components={{
                 heading2: ({ children }) => (
-                  <Heading as="h2" size="7xl" className={`text-white`}>
+                  <Heading as="h2"  className={`text-white`}>
                     {children}
                   </Heading>
                 ),
                 paragraph: ({ children }) => (
                     // margin partially controled in global.css
-                  <p className={`commonTextMargins text-4xl text-white md:w-2/3`}>{children}</p>
+                  <p className={`text-white md:text-3xl md:w-2/3`}>{children}</p>
                 ),
               }}
               field={slice.primary.description}

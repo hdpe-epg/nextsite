@@ -5,7 +5,7 @@ import { createClient } from "../prismicio";
 const SitemapIndex = () => null;
 
 const Sitemap = ({ pages }) => {
-  const origin = "https://www.erinkellogg.com";
+  const origin = "https://hdpe.ca";
   return (
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       {pages?.map((page, index) => {

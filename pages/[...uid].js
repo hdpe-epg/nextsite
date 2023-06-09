@@ -12,7 +12,7 @@ import Layout from '@/components/Layout'
 const Page = ({ page, siteMetadata, navigation }) => {
   const { data } = page
   const {
-    data: { sitetitle, siteurl, sitedescription, sitemetaimage },
+    data: { sitetitle, siteurl, sitemetadescription, sitemetaimage },
   } = siteMetadata
 
   if (page.url !== '/blog') {
@@ -25,23 +25,24 @@ const Page = ({ page, siteMetadata, navigation }) => {
               rel="canonical"
               href={data?.canonicalurl || `${siteurl}${page.url}`}
             />
-            {page?.data?.metadescription ||
-              (siteMetadata?.data?.sitemetadescription && (
+            <meta
+              property="og:title"
+              content={`${prismicH.asText(page?.data?.title)}`}
+            />
+            {data?.metadescription ||
+              (sitemetadescription && (
                 <meta
                   name="description"
-                  content={
-                    page?.data?.metadescription ||
-                    siteMetadata?.data?.sitemetadescription
-                  }
+                  content={data?.metadescription || sitemetadescription}
                 />
               ))}
-            {page?.data?.metadescription ||
+            {data?.metadescription ||
               (siteMetadata?.data?.sitemetadescription && (
                 <>
                   <meta
                     property="og:description"
                     content={
-                      page?.data?.metadescription ||
+                      data?.metadescription ||
                       siteMetadata?.data?.sitemetadescription
                     }
                   />
@@ -55,27 +56,21 @@ const Page = ({ page, siteMetadata, navigation }) => {
             />
             <meta property="og:type" content="website" />
 
-            {page?.data?.metaimage?.url ||
-              (siteMetadata?.data?.sitemetaimage?.url && (
+            {data?.metaimage?.url ||
+              (sitemetaimage?.url && (
                 <meta
                   property="og:image"
-                  content={
-                    page?.data?.metaimage?.url ||
-                    siteMetadata?.data?.sitemetaimage?.url
-                  }
+                  content={data?.metaimage?.url || sitemetaimage?.url}
                 />
               ))}
 
-            {page?.data?.metaimage?.url ||
+            {data?.metaimage?.url ||
               (siteMetadata?.data?.sitemetaimage?.url && (
                 <>
                   <meta property="twitter:card" content="summary_large_image" />
                   <meta
                     property="twitter:image"
-                    content={
-                      page?.data?.metaimage?.url ||
-                      siteMetadata?.data?.sitemetaimage?.url
-                    }
+                    content={data?.metaimage?.url || sitemetaimage?.url}
                   />
                 </>
               ))}
@@ -116,12 +111,19 @@ export async function getStaticProps({ params, previewData }) {
 }
 
 export async function getStaticPaths() {
-  const client = createClient()
+  const client = createClient();
   const pages = await client.getAllByType('page', {
     fetchLinks: ['subdirectory'],
-  })
+  });
+
+  // some pages are static, so we don't want to generate a route for them. 
+  const paths = pages
+    .filter(page => !['technical-data', 'fittings', 'geosynthetics'].includes(page.uid))
+    .map(page => prismicH.asLink(page));
+
   return {
-    paths: pages.map((page) => prismicH.asLink(page)),
+    paths,
     fallback: false,
-  }
+  };
 }
+
