@@ -42,8 +42,8 @@ const Forms = ({ slice }) => {
           />
           <Script
               src="https://link.rawmedia.ca/js/form_embed.js"
-              onError={handleError}
-              onLoad={handleLoad}
+              // onError={handleError}
+              // onLoad={handleLoad}
           />
 
           {/*Error checking*/}
