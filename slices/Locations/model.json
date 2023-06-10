@@ -10,7 +10,96 @@
       "docURL": "...",
       "version": "initial",
       "description": "Default",
-      "imageUrl": ""
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "uid": {
+          "type": "Text",
+          "config": { "label": "uid", "placeholder": "" }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item"
+          }
+        },
+        "address": {
+          "type": "StructuredText",
+          "config": {
+            "label": "address",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "phone": {
+          "type": "StructuredText",
+          "config": {
+            "label": "phone",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "email": {
+          "type": "StructuredText",
+          "config": {
+            "label": "email",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink,strong,em"
+          }
+        }
+      },
+      "items": {
+        "employee": {
+          "type": "StructuredText",
+          "config": {
+            "label": "employee",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3,heading4,heading5,heading6,paragraph"
+          }
+        },
+        "role": {
+          "type": "StructuredText",
+          "config": {
+            "label": "role",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "phone": {
+          "type": "StructuredText",
+          "config": {
+            "label": "phone",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "email": {
+          "type": "StructuredText",
+          "config": {
+            "label": "email",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,hyperlink,strong,em"
+          }
+        }
+      }
     }
   ]
 }
