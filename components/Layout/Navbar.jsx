@@ -12,6 +12,8 @@ export const Navbar = ({ slices, submenu, open, setOpen }) => {
   const handleclick = () => {
     open ? setOpen(false) : setOpen(true)
   }
+  console.log('NAVBAR SLICES ==> ', slices)
+  const navItems = slices.filter(item => item.primary.linktext !== 'Contact Us')
 
   return (
     <Headroom>
@@ -23,7 +25,7 @@ export const Navbar = ({ slices, submenu, open, setOpen }) => {
         <nav>
           {/*HIDDEN hides the top nav on mobile, revealing it at large*/}
           <ul className="hidden gap-x-3 2xl:grid 2xl:grid-flow-col">
-            <SliceZone slices={slices} components={components} />
+            <SliceZone slices={navItems} components={components} />
           </ul>
         </nav>
         <div className="flex justify-end lg:min-w-[225px]">
