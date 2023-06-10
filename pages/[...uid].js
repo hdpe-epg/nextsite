@@ -5,12 +5,21 @@ import Head from 'next/head'
 import { createClient } from '@/prismicio'
 import { components } from '@/slices'
 import Layout from '@/components/Layout'
+import Heading from '@/components/Heading'
+import Link from 'next/link'
+import { asText } from '@prismicio/client'
 // import BlogCard from '@/components/BlogCard'
 // import Pagination from '@/components/Pagination'
 // import EventCard from '@/components/EventCard'
 
 const Page = ({ page, siteMetadata, navigation }) => {
   const { data } = page
+  let locationSlices
+  if (page.tags.indexOf('location') > -1) {
+    locationSlices = data?.slices.filter(
+      slice => slice.slice_type === 'locations'
+    )
+  }
   const {
     data: { sitetitle, siteurl, sitemetadescription, sitemetaimage },
   } = siteMetadata
@@ -80,7 +89,22 @@ const Page = ({ page, siteMetadata, navigation }) => {
               <PrismicRichText field={data.title} />
             </header>
           )}
-
+          {locationSlices.length > 1 && (
+            <div className={`mx-auto my-16 flex justify-center gap-x-12`}>
+              {locationSlices.map((location, i) => {
+                return (
+                  <div key={location.id + i}>
+                    <Link href={`#${location?.primary?.uid}`}>
+                      {/*classname h3 is used to resize it to h3 but maintaining h2 priority*/}
+                      <Heading as="h2" className={`h3 text-center`}>
+                        {asText(location?.primary?.title)}
+                      </Heading>
+                    </Link>
+                  </div>
+                )
+              })}
+            </div>
+          )}
           {data?.slices?.length > 0 && (
             <SliceZone slices={data?.slices} components={components} />
           )}
@@ -111,19 +135,21 @@ export async function getStaticProps({ params, previewData }) {
 }
 
 export async function getStaticPaths() {
-  const client = createClient();
+  const client = createClient()
   const pages = await client.getAllByType('page', {
     fetchLinks: ['subdirectory'],
-  });
+  })
 
-  // some pages are static, so we don't want to generate a route for them. 
+  // some pages are static, so we don't want to generate a route for them.
   const paths = pages
-    .filter(page => !['technical-data', 'fittings', 'geosynthetics'].includes(page.uid))
-    .map(page => prismicH.asLink(page));
+    .filter(
+      page =>
+        !['technical-data', 'fittings', 'geosynthetics'].includes(page.uid)
+    )
+    .map(page => prismicH.asLink(page))
 
   return {
     paths,
     fallback: false,
-  };
+  }
 }
-
