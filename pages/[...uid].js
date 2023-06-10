@@ -15,7 +15,7 @@ import { asText } from '@prismicio/client'
 const Page = ({ page, siteMetadata, navigation }) => {
   const { data } = page
   let locationSlices
-  if (page.tags.indexOf('location') > -1) {
+  if (page?.tags?.indexOf('location') > -1) {
     locationSlices = data?.slices.filter(
       slice => slice.slice_type === 'locations'
     )
@@ -89,7 +89,7 @@ const Page = ({ page, siteMetadata, navigation }) => {
               <PrismicRichText field={data.title} />
             </header>
           )}
-          {locationSlices.length > 1 && (
+          {locationSlices?.length > 1 && (
             <div className={`mx-auto my-16 flex justify-center gap-x-12`}>
               {locationSlices.map((location, i) => {
                 return (
