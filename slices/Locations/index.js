@@ -32,7 +32,7 @@ const Locations = ({ slice }) => {
               items.map((item, i) => {
                 return (
                   <div key={slice.id + i}>
-                    <Heading as="h3" className={'mb-0 pb-0'}>
+                    <Heading as="h2" className={'mb-0 pb-0 text-xl'}>
                       {asText(item.employee)}
                     </Heading>
                     <PrismicRichText
