@@ -18,7 +18,7 @@ const Locations = ({ slice }) => {
         {/*Left Side*/}
         <div>
           <div>
-            <Heading as="h2" id={primary.uid}>
+            <Heading as="h1" id={primary.uid}>
               {asText(primary.title)}
             </Heading>
             <PrismicRichText field={slice.primary.address} />
