@@ -42,7 +42,8 @@
             "heros": { "type": "SharedSlice" },
             "seperator": { "type": "SharedSlice" },
             "carousell": { "type": "SharedSlice" },
-            "forms": { "type": "SharedSlice" }
+            "forms": { "type": "SharedSlice" },
+            "locations": { "type": "SharedSlice" }
           }
         }
       }

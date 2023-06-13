@@ -12,7 +12,6 @@ export const Navbar = ({ slices, submenu, open, setOpen }) => {
   const handleclick = () => {
     open ? setOpen(false) : setOpen(true)
   }
-  console.log('NAVBAR SLICES ==> ', slices)
   const navItems = slices.filter(item => item.primary.linktext !== 'Contact Us')
 
   return (

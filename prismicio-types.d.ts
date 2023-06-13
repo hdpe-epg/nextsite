@@ -227,6 +227,7 @@ type PageDocumentDataSlicesSlice =
   | SeperatorSlice
   | CarousellSlice
   | FormsSlice
+  | LocationsSlice
 /**
  * Page document from Prismic
  *
@@ -1200,6 +1201,118 @@ type HerosSliceVariation = HerosSliceDefault
  */
 export type HerosSlice = prismic.SharedSlice<'heros', HerosSliceVariation>
 /**
+ * Primary content in Locations → Primary
+ *
+ */
+interface LocationsSliceDefaultPrimary {
+  /**
+   * title field in *Locations → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: locations.primary.title
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  title: prismic.TitleField
+  /**
+   * uid field in *Locations → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: locations.primary.uid
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  uid: prismic.KeyTextField
+  /**
+   * description field in *Locations → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: locations.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  description: prismic.RichTextField
+  /**
+   * address field in *Locations → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: locations.primary.address
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  address: prismic.RichTextField
+  /**
+   * phone field in *Locations → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: locations.primary.phone
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  phone: prismic.RichTextField
+  /**
+   * email field in *Locations → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: locations.primary.email
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  email: prismic.RichTextField
+}
+/**
+ * Item in Locations → Items
+ *
+ */
+export interface LocationsSliceDefaultItem {
+  /**
+   * employee field in *Locations → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: locations.items[].employee
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  employee: prismic.RichTextField
+  /**
+   * role field in *Locations → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: locations.items[].role
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  role: prismic.RichTextField
+  /**
+   * phone field in *Locations → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: locations.items[].phone
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  phone: prismic.RichTextField
+  /**
+   * email field in *Locations → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: locations.items[].email
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  email: prismic.RichTextField
+}
+/**
  * Default variation for Locations Slice
  *
  * - **API ID**: `default`
@@ -1209,8 +1322,8 @@ export type HerosSlice = prismic.SharedSlice<'heros', HerosSliceVariation>
  */
 export type LocationsSliceDefault = prismic.SharedSliceVariation<
   'default',
-  Record<string, never>,
-  never
+  Simplify<LocationsSliceDefaultPrimary>,
+  Simplify<LocationsSliceDefaultItem>
 >
 /**
  * Slice variation for *Locations*
@@ -1445,6 +1558,8 @@ declare module '@prismicio/client' {
       HerosSliceDefault,
       HerosSliceVariation,
       HerosSlice,
+      LocationsSliceDefaultPrimary,
+      LocationsSliceDefaultItem,
       LocationsSliceDefault,
       LocationsSliceVariation,
       LocationsSlice,
