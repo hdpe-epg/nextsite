@@ -18,7 +18,7 @@ const Locations = ({ slice }) => {
         {/*Left Side*/}
         <div>
           <div>
-            <Heading as="h2" id={primary.uid}>
+            <Heading as="h1" id={primary.uid}>
               {asText(primary.title)}
             </Heading>
             <PrismicRichText field={slice.primary.address} />
@@ -32,7 +32,7 @@ const Locations = ({ slice }) => {
               items.map((item, i) => {
                 return (
                   <div key={slice.id + i}>
-                    <Heading as="h3" className={'mb-0 pb-0'}>
+                    <Heading as="h2" className={'mb-0 pb-0 text-xl'}>
                       {asText(item.employee)}
                     </Heading>
                     <PrismicRichText
