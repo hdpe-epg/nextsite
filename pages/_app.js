@@ -40,9 +40,7 @@ const richTextComponents = {
       {children}
     </Heading>
   ),
-  paragraph: ({ children }) => (
-    <p className={''}>{children}</p>
-  ),
+  paragraph: ({ children }) => <p className={''}>{children}</p>,
   oList: ({ children }) => (
     <ol className="commonTextMargins commonTextStyles listStyles">
       {children}
@@ -89,7 +87,7 @@ const richTextComponents = {
   image: ({ node }) => {
     return (
       <div className="not-prose my-4 flex justify-center" data-tip={node.alt}>
-        <PrismicNextImage field={node} className="rounded" />
+        <PrismicNextImage field={node} className="rounded" fallbackAlt="" />
       </div>
     )
   },
