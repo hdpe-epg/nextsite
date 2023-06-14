@@ -47,7 +47,7 @@ const Locations = ({ slice }) => {
                       field={item.phone}
                       components={{
                         paragraph: ({ children }) => (
-                          <p className="-mt-6">{children}</p>
+                          <p className="">{children}</p>
                         ),
                       }}
                     />
@@ -55,7 +55,7 @@ const Locations = ({ slice }) => {
                       field={item.email}
                       components={{
                         paragraph: ({ children }) => (
-                          <p className="-mt-6">{children}</p>
+                          <p className="">{children}</p>
                         ),
                       }}
                     />
