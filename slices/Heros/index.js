@@ -101,13 +101,13 @@ function DefaultHeroRender(index, slice) {
 function HeroVersionTwo(index, slice) {
     return (
         <section>
-            <div>
+            <div className={`relative  h-[500px]`}>
                 {slice.primary.bgimage && (
                     <PrismicNextImage
                         priority={index === 0 ? true : false}
                         field={slice.primary.bgimage}
-                        // fill={true}
-                        className="z-[-2]"
+                        fill={true}
+                        className="z-[-2] object-cover"
                     />
                 )}
             </div>
