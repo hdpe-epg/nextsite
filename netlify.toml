@@ -1,0 +1,24 @@
+[[redirects]]
+from = "/uploads/2016/03/ACT3_operating_manual.pdf"
+to = "/assets/data/technical-data/electrofusion/ACT3_operating_manual.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/Brochure-MSA-340.pdf"
+to = "/assets/data/technical-data/electrofusion/Brochure-MSA-340.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/EF-checklist.pdf"
+to = "/assets/data/technical-data/electrofusion/EF-checklist.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/Gensis-F3-Processor-Operator-Guide.pdf"
+to = "/assets/data/technical-data/electrofusion/Gensis-F3-Processor-Operator-Guide.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/GFCP-EF-Installation-Booklet.pdf"
+to = "/assets/data/technical-data/electrofusion/GFCP-EF-Installation-Booklet.pdf"
+status = 301
