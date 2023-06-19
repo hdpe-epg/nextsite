@@ -22,3 +22,1013 @@ status = 301
 from = "/uploads/2016/03/GFCP-EF-Installation-Booklet.pdf"
 to = "/assets/data/technical-data/electrofusion/GFCP-EF-Installation-Booklet.pdf"
 status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/250PitBull.pdf"
+to = "/assets/data/technical-data/mcelroy/250PitBull.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/250Rolling.pdf"
+to = "/assets/data/technical-data/mcelroy/250Rolling.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/250TracStar.pdf"
+to = "/assets/data/technical-data/mcelroy/250TracStar.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/500PitBull.pdf"
+to = "/assets/data/technical-data/mcelroy/500PitBull.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/500TracStar.pdf"
+to = "/assets/data/technical-data/mcelroy/500TracStar.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/DataLogger4.pdf"
+to = "/assets/data/technical-data/mcelroy/DataLogger4.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/DataLogger5spec.pdf"
+to = "/assets/data/technical-data/mcelroy/DataLogger5spec.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/DynaMc28HP.pdf"
+to = "/assets/data/technical-data/mcelroy/DynaMc28HP.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/DynaMc250HP.pdf"
+to = "/assets/data/technical-data/mcelroy/DynaMc250HP.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/DynaMc412HP.pdf"
+to = "/assets/data/technical-data/mcelroy/DynaMc412HP.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/FieldTensileTester.pdf"
+to = "/assets/data/technical-data/mcelroy/FieldTensileTester.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/GuidedSideBendTester-prod-manual.pdf"
+to = "/assets/data/technical-data/mcelroy/GuidedSideBendTester-prod-manual.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/GuidedSideBendTester.pdf"
+to = "/assets/data/technical-data/mcelroy/GuidedSideBendTester.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/hydraulicclampingretrofit.pdf"
+to = "/assets/data/technical-data/mcelroy/hydraulicclampingretrofit.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/LargeDiameterBrochure.pdf"
+to = "/assets/data/technical-data/mcelroy/LargeDiameterBrochure.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/lowprofilerollers.pdf"
+to = "/assets/data/technical-data/mcelroy/lowprofilerollers.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/McElroy-2013-Catalog.pdf"
+to = "/assets/data/technical-data/mcelroy/McElroy-2013-Catalog.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/McElroy-DataLogger.pdf"
+to = "/assets/data/technical-data/mcelroy/McElroy-DataLogger.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/McElroyUniversity.pdf"
+to = "/assets/data/technical-data/mcelroy/McElroyUniversity.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/MegaMc824.pdf"
+to = "/assets/data/technical-data/mcelroy/MegaMc824.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/MegaMc1236.pdf"
+to = "/assets/data/technical-data/mcelroy/MegaMc1236.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/MegaMc1600FJ2009.pdf"
+to = "/assets/data/technical-data/mcelroy/MegaMc1600FJ2009.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/MegaMc1648.pdf"
+to = "/assets/data/technical-data/mcelroy/MegaMc1648.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/MegaMcPipeStands.pdf"
+to = "/assets/data/technical-data/mcelroy/MegaMcPipeStands.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/MegaMcPolyHorse.pdf"
+to = "/assets/data/technical-data/mcelroy/MegaMcPolyHorse.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/No14PitBull.pdf"
+to = "/assets/data/technical-data/mcelroy/No14PitBull.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/No28PitBull.pdf"
+to = "/assets/data/technical-data/mcelroy/No28PitBull.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/No28Rolling.pdf"
+to = "/assets/data/technical-data/mcelroy/No28Rolling.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/No28RollingHP.pdf"
+to = "/assets/data/technical-data/mcelroy/No28RollingHP.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/No28TracStar.pdf"
+to = "/assets/data/technical-data/mcelroy/No28TracStar.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/No412PitBull.pdf"
+to = "/assets/data/technical-data/mcelroy/No412PitBull.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/No412Rolling.pdf"
+to = "/assets/data/technical-data/mcelroy/No412Rolling.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/No412TracStar.pdf"
+to = "/assets/data/technical-data/mcelroy/No412TracStar.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/No618PitBull.pdf"
+to = "/assets/data/technical-data/mcelroy/No618PitBull.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/No618Rolling.pdf"
+to = "/assets/data/technical-data/mcelroy/No618Rolling.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/No618TracStar.pdf"
+to = "/assets/data/technical-data/mcelroy/No618TracStar.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/polyporter.pdf"
+to = "/assets/data/technical-data/mcelroy/polyporter.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/Productivity-09.pdf"
+to = "/assets/data/technical-data/mcelroy/Productivity-09.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/QuickCampspec.pdf"
+to = "/assets/data/technical-data/mcelroy/QuickCampspec.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/SmallDiameterBrochure.pdf"
+to = "/assets/data/technical-data/mcelroy/SmallDiameterBrochure.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/stubendholders2009.pdf"
+to = "/assets/data/technical-data/mcelroy/stubendholders2009.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/T500SpecSeries3.pdf"
+to = "/assets/data/technical-data/mcelroy/T500SpecSeries3.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/Talon2000.pdf"
+to = "/assets/data/technical-data/mcelroy/Talon2000.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/TracStar630.pdf"
+to = "/assets/data/technical-data/mcelroy/TracStar630.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/TracStar900.pdf"
+to = "/assets/data/technical-data/mcelroy/TracStar900.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/VerticalFusionMachine.pdf"
+to = "/assets/data/technical-data/mcelroy/VerticalFusionMachine.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/1LC.pdf"
+to = "/assets/data/technical-data/mcelroy/1LC.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/2CU.pdf"
+to = "/assets/data/technical-data/mcelroy/2CU.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/2LC.pdf"
+to = "/assets/data/technical-data/mcelroy/2LC.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/26PitBull.pdf"
+to = "/assets/data/technical-data/mcelroy/26PitBull.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/HDPE-Advantages.pdf"
+to = "/assets/data/technical-data/performance-pipe/HDPE-Advantages.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/HDPE-MSDS.pdf"
+to = "/assets/data/technical-data/performance-pipe/HDPE-MSDS.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/HDPE-Products-and-Markets.pdf"
+to = "/assets/data/technical-data/performance-pipe/HDPE-Products-and-Markets.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/HDPE-PVC-working-pressure.pdf"
+to = "/assets/data/technical-data/performance-pipe/HDPE-PVC-working-pressure.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/How-to-Read-a-PP-Gas-Pipe-Printline-Rev2-7-1-10.pdf"
+to = "/assets/data/technical-data/performance-pipe/How-to-Read-a-PP-Gas-Pipe-Printline-Rev2-7-1-10.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PE4710-DATASHEET.pdf"
+to = "/assets/data/technical-data/performance-pipe/PE4710-DATASHEET.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PE4710-IPS-SIZES.pdf"
+to = "/assets/data/technical-data/performance-pipe/PE4710-IPS-SIZES.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PEpipingMunicipalIndustrialApplications.pdf"
+to = "/assets/data/technical-data/performance-pipe/PEpipingMunicipalIndustrialApplications.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PEpipingUndergroundFireMainSystems.pdf"
+to = "/assets/data/technical-data/performance-pipe/PEpipingUndergroundFireMainSystems.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/performance-model-spec.pdf"
+to = "/assets/data/technical-data/performance-pipe/performance-model-spec.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/Potable-Water-Mains-Model-Specs.pdf"
+to = "/assets/data/technical-data/performance-pipe/Potable-Water-Mains-Model-Specs.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-101-4000-4100.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-101-4000-4100.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-152-4710-IPS-Size-and-Dimension-Sheet.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-152-4710-IPS-Size-and-Dimension-Sheet.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-302-8100-Gas-BROCHURE.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-302-8100-Gas-BROCHURE.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-303-8300-Gas-BROCHURE.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-303-8300-Gas-BROCHURE.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-310-GAS-Brochure.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-310-GAS-Brochure.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-410-5100-Series-Flyer.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-410-5100-Series-Flyer.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-415-DriscoPlex-5100-UltraLine.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-415-DriscoPlex-5100-UltraLine.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-507-Water-Wastewater-Service-Model-Specification.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-507-Water-Wastewater-Service-Model-Specification.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-508-Model-Spec-Sanitary-Sewer-and-Force-Main-07-2008.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-508-Model-Spec-Sanitary-Sewer-and-Force-Main-07-2008.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-509-Model-Specifications-for-Gravity-Sewer-Revised-July-2008.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-509-Model-Specifications-for-Gravity-Sewer-Revised-July-2008.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-523-1700-Series-Mining-Pipe.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-523-1700-Series-Mining-Pipe.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-524-4000-4100-Series-Multi-Purpose-Pipe.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-524-4000-4100-Series-Multi-Purpose-Pipe.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-524-F-4000-4100-Series-Flyer_French.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-524-F-4000-4100-Series-Flyer_French.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-525-4000-4100-FM-Series-Flyer.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-525-4000-4100-FM-Series-Flyer.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-526-Industrial-and-Mining-Brochure.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-526-Industrial-and-Mining-Brochure.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-529-1000-Series-Large-Diameter-Non-Potable-Water-Pipe.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-529-1000-Series-Large-Diameter-Non-Potable-Water-Pipe.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-803-TN-Pull-In-Applications-Nov.02.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-803-TN-Pull-In-Applications-Nov.02.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-813-TN-Poisson-Effects.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-813-TN-Poisson-Effects.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-815-TN-Above-Grade-Pipe-Support-03-05-2007.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-815-TN-Above-Grade-Pipe-Support-03-05-2007.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-816-TN-PE3608-PE4710-Designation-Code-and-Pressure-Rating.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-816-TN-PE3608-PE4710-Designation-Code-and-Pressure-Rating.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-819-TN-Field-Bending-of-PE-Pipe-J-2010.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-819-TN-Field-Bending-of-PE-Pipe-J-2010.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-820-TN-Design-Factor-for-HDPE-Pipe-J-2010.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-820-TN-Design-Factor-for-HDPE-Pipe-J-2010.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-831-TN-Compressed-Air.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-831-TN-Compressed-Air.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP-838-TN-Preventing-RCP-in-Fused-Water-Pipelines-10-2010.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP-838-TN-Preventing-RCP-in-Fused-Water-Pipelines-10-2010.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP51-How-to-Read-A-Fitting-Label.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP51-How-to-Read-A-Fitting-Label.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP101-4000-4100-Series.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP101-4000-4100-Series.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP102-4600-4700-Series.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP102-4600-4700-Series.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP104-4000-4100-FM-Series.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP104-4000-4100-FM-Series.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP402-HDPE-vs-PVC-Fatigue.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP402-HDPE-vs-PVC-Fatigue.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP407-HDPE-vs-PVC-Bend-Radius.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP407-HDPE-vs-PVC-Bend-Radius.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP408-RCP.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP408-RCP.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP409-HDPE-Tough-Enough-to-Handle-Chlorine.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP409-HDPE-Tough-Enough-to-Handle-Chlorine.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP515-Product-Submittal-Sheet.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP515-Product-Submittal-Sheet.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP750-FusionProcedures.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP750-FusionProcedures.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP801-TN-Squeeze-Off.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP801-TN-Squeeze-Off.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP802-TN-Leak-Test.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP802-TN-Leak-Test.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP803-TN-Pull-In-Applications.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP803-TN-Pull-In-Applications.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP813-TN-Mechanical-Restraint-and-Poisson-Effects.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP813-TN-Mechanical-Restraint-and-Poisson-Effects.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP814-TN-Thermal-Effects.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP814-TN-Thermal-Effects.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP818-TN-PENT-Slow-Crack-Growth-Resistance.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP818-TN-PENT-Slow-Crack-Growth-Resistance.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP819-TN-Field-Bending-of-PE-Pipe-J-2010.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP819-TN-Field-Bending-of-PE-Pipe-J-2010.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/PP831-TN-PE-3408-Pipe-in-Compressed-Air-or-Compressed-Gas-Service.pdf"
+to = "/assets/data/technical-data/performance-pipe/PP831-TN-PE-3408-Pipe-in-Compressed-Air-or-Compressed-Gas-Service.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/T.1.1-Truckload-Tables-MIE-2-12-INCH-IPS-DIPS-10_2010.pdf"
+to = "/assets/data/technical-data/performance-pipe/T.1.1-Truckload-Tables-MIE-2-12-INCH-IPS-DIPS-10_2010.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/T.1.2-Truckload-Tables-MIE-4-36-INCH-DIPS-Rev-12_2010.pdf"
+to = "/assets/data/technical-data/performance-pipe/T.1.2-Truckload-Tables-MIE-4-36-INCH-DIPS-Rev-12_2010.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/T.1.3-14-54-INCH-IPS-MIE-TRUCKLOAD-TABLE.pdf"
+to = "/assets/data/technical-data/performance-pipe/T.1.3-14-54-INCH-IPS-MIE-TRUCKLOAD-TABLE.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/C.2.a-Recommendations-to-Customers-Unloading.pdf"
+to = "/assets/data/technical-data/performance-pipe/C.2.a-Recommendations-to-Customers-Unloading.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/C.2.b-Recommendations-to-Customers-Receiving.pdf"
+to = "/assets/data/technical-data/performance-pipe/C.2.b-Recommendations-to-Customers-Receiving.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/Driscoplex-piping-for-municiapl-applications-cont.pdf"
+to = "/assets/data/technical-data/performance-pipe/Driscoplex-piping-for-municiapl-applications-cont.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/Driscoplex-piping-for-municipal-applications.pdf"
+to = "/assets/data/technical-data/performance-pipe/Driscoplex-piping-for-municipal-applications.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/FAQ-Municipal-water.pdf"
+to = "/assets/data/technical-data/performance-pipe/FAQ-Municipal-water.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/FAQ-Performance-pipe.pdf"
+to = "/assets/data/technical-data/performance-pipe/FAQ-Performance-pipe.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/sclairpipe-model-specification.pdf"
+to = "/assets/data/technical-data/infra-pipe/sclairpipe-model-specification.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/tsb-design-and-selection-of-plastic-pressure-pipe_r201601.pdf"
+to = "/assets/data/technical-data/infra-pipe/tsb-design-and-selection-of-plastic-pressure-pipe_r201601.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/uponor-sclair-dips-pe4710_r201505.pdf"
+to = "/assets/data/technical-data/infra-pipe/uponor-sclair-dips-pe4710_r201505.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/uponor-sclair-fm-approved-pipe_r201506.pdf"
+to = "/assets/data/technical-data/infra-pipe/uponor-sclair-fm-approved-pipe_r201506.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/uponor-sclair-ips-pe3608_r201505.pdf"
+to = "/assets/data/technical-data/infra-pipe/uponor-sclair-ips-pe3608_r201505.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/uponor-sclair-ips-pe4710_r201505.pdf"
+to = "/assets/data/technical-data/infra-pipe/uponor-sclair-ips-pe4710_r201505.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/weholite-general-info.pdf"
+to = "/assets/data/technical-data/infra-pipe/weholite-general-info.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/4695_flowofwater.pdf"
+to = "/assets/data/technical-data/infra-pipe/4695_flowofwater.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/butt-fusion-procedure_r201505.pdf"
+to = "/assets/data/technical-data/infra-pipe/butt-fusion-procedure_r201505.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/engineered-systems-general-information-brochure-web-copy.pdf"
+to = "/assets/data/technical-data/infra-pipe/engineered-systems-general-information-brochure-web-copy.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/Sclairpipe-marine.pdf"
+to = "/assets/data/technical-data/infra-pipe/Sclairpipe-marine.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/Sclairpipe-systemdesign.pdf"
+to = "/assets/data/technical-data/infra-pipe/Sclairpipe-systemdesign.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/SclairpipeConstruction.pdf"
+to = "/assets/data/technical-data/infra-pipe/SclairpipeConstruction.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/sclairpipe-general-info.pdf"
+to = "/assets/data/technical-data/infra-pipe/sclairpipe-general-info.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/HDPE_CRC1.pdf"
+to = "/assets/data/technical-data/hdpe-chemical-resistance/HDPE_CRC1.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/M0416_Online-Exclusive_Regina-Opts-for-Easier-Cheaper-Way-to-Access-Dee....pdf"
+to = "/assets/data/technical-data/articles/M0416_Online-Exclusive_Regina-Opts-for-Easier-Cheaper-Way-to-Access-Dee....pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/page-8-12-CUI-JanFeb2016.pdf"
+to = "/assets/data/technical-data/articles/page-8-12-CUI-JanFeb2016.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/03/page-36-37-CUI-JanFeb2016.pdf"
+to = "/assets/data/technical-data/articles/page-36-37-CUI-JanFeb2016.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-12-IPS-MOLDED-CAP-REV-611.xlsx"
+to = "/assets/data/fittings/molded-fittings/EPG-12-IPS-MOLDED-CAP-REV-611.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-13E-IPS-MOLDED-REDUCER-REV-6-11.xlsx"
+to = "/assets/data/fittings/molded-fittings/EPG-13E-IPS-MOLDED-REDUCER-REV-6-11.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14J-IPS-MOLDED-90-ELL-REV-6-11.xlsx"
+to = "/assets/data/fittings/molded-fittings/EPG-14J-IPS-MOLDED-90-ELL-REV-6-11.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14K-DIPS-MOLDED-90.xlsx"
+to = "/assets/data/fittings/molded-fittings/EPG-14K-DIPS-MOLDED-90.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14L-IPS-MOLDED-45-REV-6-11.xlsx"
+to = "/assets/data/fittings/molded-fittings/EPG-14L-IPS-MOLDED-45-REV-6-11.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14M-DIPS-MOLDED-45-ELL.xlsx"
+to = "/assets/data/fittings/molded-fittings/EPG-14M-DIPS-MOLDED-45-ELL.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-15D-IPS-MOLDED-TEE-REV-6-11.xlsx"
+to = "/assets/data/fittings/molded-fittings/EPG-15D-IPS-MOLDED-TEE-REV-6-11.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-15E-DIPS-MOLDED-TEES.xlsx"
+to = "/assets/data/fittings/molded-fittings/EPG-15E-DIPS-MOLDED-TEES.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14I-DIPS-FAB-3-SEG-90-ELL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-14I-DIPS-FAB-3-SEG-90-ELL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-15A-IPS-FAB-BS-RED-TEE-REV2.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-15A-IPS-FAB-BS-RED-TEE-REV2.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-15C-DIPS-FAB-TEE-REV2.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-15C-DIPS-FAB-TEE-REV2.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-16A-DIPS-FAB-CROSSES-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-16A-DIPS-FAB-CROSSES-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-17A-IPS-FAB-RED-LATERAL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-17A-IPS-FAB-RED-LATERAL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-8-IPS-HDPE-BLIND-FLANGE-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-8-IPS-HDPE-BLIND-FLANGE-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-9A-DIPS-FAB-MJ-ADAPTER-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-9A-DIPS-FAB-MJ-ADAPTER-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-10B-DIPS-FAB-WALL-ANCHOR-WATER-STOP-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-10B-DIPS-FAB-WALL-ANCHOR-WATER-STOP-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-12A-IPS-FAB-CAPS.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-12A-IPS-FAB-CAPS.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-13B-IPS-FAB-ECC-REDUCER-REV2.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-13B-IPS-FAB-ECC-REDUCER-REV2.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-13D-DIPS-FAB-SWAGE-REDUCER-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-13D-DIPS-FAB-SWAGE-REDUCER-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14A-IPS-FAB-2-SEG-30-ELL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-14A-IPS-FAB-2-SEG-30-ELL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14C-IPS-FAB-3SEG-45-ELL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-14C-IPS-FAB-3SEG-45-ELL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14E-IPS-FAB-5SEG-90-ELL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-14E-IPS-FAB-5SEG-90-ELL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14H-DIPS-FAB-2-SEG-45-ELL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-14H-DIPS-FAB-2-SEG-45-ELL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-15-IPS-FAB-TEES-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-15-IPS-FAB-TEES-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-15B-DIPS-FAB-BRANCH-SADDLE-RED-TEE-REV1.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-15B-DIPS-FAB-BRANCH-SADDLE-RED-TEE-REV1.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-16-IPS-FAB-CROSSES-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-16-IPS-FAB-CROSSES-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-17-IPS-FAB-LATERAL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-17-IPS-FAB-LATERAL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-17C-DIPS-FAB-LATERAL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-17C-DIPS-FAB-LATERAL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-9-IPS-FAB-MJ-ADPATER.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-9-IPS-FAB-MJ-ADPATER.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-10-IPS-FAB-WALL-ANCHOR-WATER-STOP-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-10-IPS-FAB-WALL-ANCHOR-WATER-STOP-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-11-IPS-DIPS-FAB-TRANSITION-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-11-IPS-DIPS-FAB-TRANSITION-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-13A-IPS-FAB-SWAGE-RED-REV1.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-13A-IPS-FAB-SWAGE-RED-REV1.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-13C-DIPS-FAB-CONC-REDUCER-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-13C-DIPS-FAB-CONC-REDUCER-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14-IPS-FAB-2SEG-22.5-ELL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-14-IPS-FAB-2SEG-22.5-ELL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14B-IPS-FAB-2SEG-45-ELL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-14B-IPS-FAB-2SEG-45-ELL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14C-IPS-FAB-3SEG-45-ELL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-14C-IPS-FAB-3SEG-45-ELL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14E-IPS-FAB-5SEG-90-ELL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-14E-IPS-FAB-5SEG-90-ELL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-14H-DIPS-FAB-2-SEG-45-ELL-REV.xlsx"
+to = "/assets/data/fittings/hdpe-fabricated-fittings/EPG-14H-DIPS-FAB-2-SEG-45-ELL-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/EPG-18A-EF-COUP-DIM-IPS-SMALL-DIA-version-1.xlsx"
+to = "/assets/data/fittings/electrofusion/EPG-18A-EF-COUP-DIM-IPS-SMALL-DIA-version-1.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/EPG-18B-EF-COUP-DIM-DIPS-4-12-version-1.xlsx"
+to = "/assets/data/fittings/electrofusion/EPG-18B-EF-COUP-DIM-DIPS-4-12-version-1.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/EPG-18C-EF-IPS-LARGE-DIA-COUPLIING-14-26-version-1.xlsx"
+to = "/assets/data/fittings/electrofusion/EPG-18C-EF-IPS-LARGE-DIA-COUPLIING-14-26-version-1.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/EPG-18F-DIPS-14-24-EF-COUPLING-version-1.xlsx"
+to = "/assets/data/fittings/electrofusion/EPG-18F-DIPS-14-24-EF-COUPLING-version-1.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-6-IPS-FLANGE-ADPAPTER-MOLD-AND-FAB-REV.xlsx"
+to = "/assets/data/fittings/flangeBackupStubEnds/EPG-6-IPS-FLANGE-ADPAPTER-MOLD-AND-FAB-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-8-IPS-HDPE-BLIND-FLANGE-REV-1.xlsx"
+to = "/assets/data/fittings/flangeBackupStubEnds/EPG-8-IPS-HDPE-BLIND-FLANGE-REV-1.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-8A-IPF-CONVOLUTED-BU-FLG-REV.xlsx"
+to = "/assets/data/fittings/flangeBackupStubEnds/EPG-8A-IPF-CONVOLUTED-BU-FLG-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2015/12/EPG-7A-DIPS-FAB-STUB-END-REV.xlsx"
+to = "/assets/data/fittings/flangeBackupStubEnds/EPG-7A-DIPS-FAB-STUB-END-REV.xlsx"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Geotex-2x2HF-Product-Data-Sheet.pdf"
+to = "/assets/data/geosynthetics/woven-geotextiles/Geotex-2x2HF-Product-Data-Sheet.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/GEOTEX-3X3HF-PD.pdf"
+to = "/assets/data/geosynthetics/woven-geotextiles/GEOTEX-3X3HF-PD.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/GEOTEX-4X4-PD.pdf"
+to = "/assets/data/geosynthetics/woven-geotextiles/GEOTEX-4X4-PD.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/GEOTEX-200ST-PD.pdf"
+to = "/assets/data/geosynthetics/woven-geotextiles/GEOTEX-200ST-PD.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/GEOTEX-315ST-PD.pdf"
+to = "/assets/data/geosynthetics/woven-geotextiles/GEOTEX-315ST-PD.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/GEOTEX-350ST-PD.pdf"
+to = "/assets/data/geosynthetics/woven-geotextiles/GEOTEX-350ST-PD.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Geotex-401.pdf"
+to = "/assets/data/geosynthetics/non-woven-geotextiles/Geotex-401.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Geotex-601-Product-Data-Sheet.pdf"
+to = "/assets/data/geosynthetics/non-woven-geotextiles/Geotex-601-Product-Data-Sheet.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Geotex-801-Product-Data-Sheet-Mullen-Burst-and-Puncture-and-Weight.pdf"
+to = "/assets/data/geosynthetics/non-woven-geotextiles/Geotex-801-Product-Data-Sheet-Mullen-Burst-and-Puncture-and-Weight.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Geotex-861-Product-Data-Sheet-Mullen-Burst-and-Puncture.pdf"
+to = "/assets/data/geosynthetics/non-woven-geotextiles/Geotex-861-Product-Data-Sheet-Mullen-Burst-and-Puncture.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Geotex-1001-Product-Data-Sheet.pdf"
+to = "/assets/data/geosynthetics/non-woven-geotextiles/Geotex-1001-Product-Data-Sheet.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Geotex-1071-Product-Data-Sheet.pdf"
+to = "/assets/data/geosynthetics/non-woven-geotextiles/Geotex-1071-Product-Data-Sheet.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Geotex-1201-Product-Data-Sheet-with-Mullen-Burst-and-Typical-Weight.pdf"
+to = "/assets/data/geosynthetics/non-woven-geotextiles/Geotex-1201-Product-Data-Sheet-with-Mullen-Burst-and-Typical-Weight.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Geotex-1291-Product-Data-Sheet.pdf"
+to = "/assets/data/geosynthetics/non-woven-geotextiles/Geotex-1291-Product-Data-Sheet.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Geotex-1601-Product-Data-Sheet.pdf"
+to = "/assets/data/geosynthetics/non-woven-geotextiles/Geotex-1601-Product-Data-Sheet.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Geotex-1701-Product-Data-Sheet.pdf"
+to = "/assets/data/geosynthetics/non-woven-geotextiles/Geotex-1701-Product-Data-Sheet.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/MacGrid-EG-TDS-Spec.pdf"
+to = "/assets/data/geosynthetics/geogrid-biaxial/MacGrid-EG-TDS-Spec.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/C32.pdf"
+to = "/assets/data/geosynthetics/erosion-control-blankets/C32.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/C32BD.pdf"
+to = "/assets/data/geosynthetics/erosion-control-blankets/C32BD.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/S32.pdf"
+to = "/assets/data/geosynthetics/erosion-control-blankets/S32.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/S32BD.pdf"
+to = "/assets/data/geosynthetics/erosion-control-blankets/S32BD.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/SC32.pdf"
+to = "/assets/data/geosynthetics/erosion-control-blankets/SC32.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/SC32-BD.pdf"
+to = "/assets/data/geosynthetics/erosion-control-blankets/SC32-BD.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Landlok-300-Product-Data-Sheet.pdf"
+to = "/assets/data/geosynthetics/turf-reinforcement-mats/Landlok-300-Product-Data-Sheet.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Landlok-TRM-450-Product-Data-Sheet.pdf"
+to = "/assets/data/geosynthetics/turf-reinforcement-mats/Landlok-TRM-450-Product-Data-Sheet.pdf"
+status = 301
+
+[[redirects]]
+from = "/uploads/2016/02/Pyramat-Product-Data-Sheet.pdf"
+to = "/assets/data/geosynthetics/turf-reinforcement-mats/Pyramat-Product-Data-Sheet.pdf"
+status = 301
