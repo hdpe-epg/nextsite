@@ -1187,10 +1187,79 @@ export type HerosSliceDefault = prismic.SharedSliceVariation<
   never
 >
 /**
+ * Primary content in Heros → Primary
+ *
+ */
+interface HerosSliceHeroVersion2Primary {
+  /**
+   * bgImage field in *Heros → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: heros.primary.bgimage
+   * - **Documentation**: https://prismic.io/docs/core-concepts/image
+   *
+   */
+  bgimage: prismic.ImageField<never>
+  /**
+   * heading field in *Heros → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: heros.primary.heading
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  heading: prismic.TitleField
+  /**
+   * description field in *Heros → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: What are we saying here?
+   * - **API ID Path**: heros.primary.description
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  description: prismic.RichTextField
+  /**
+   * buttonLink field in *Heros → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: heros.primary.buttonlink
+   * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+   *
+   */
+  buttonlink: prismic.LinkField
+  /**
+   * buttonText field in *Heros → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: heros.primary.buttontext
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+   *
+   */
+  buttontext: prismic.KeyTextField
+}
+/**
+ * Hero Version 2 variation for Heros Slice
+ *
+ * - **API ID**: `heroVersion2`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HerosSliceHeroVersion2 = prismic.SharedSliceVariation<
+  'heroVersion2',
+  Simplify<HerosSliceHeroVersion2Primary>,
+  never
+>
+/**
  * Slice variation for *Heros*
  *
  */
-type HerosSliceVariation = HerosSliceDefault
+type HerosSliceVariation = HerosSliceDefault | HerosSliceHeroVersion2
 /**
  * Heros Shared Slice
  *
@@ -1556,6 +1625,8 @@ declare module '@prismicio/client' {
       FormsSlice,
       HerosSliceDefaultPrimary,
       HerosSliceDefault,
+      HerosSliceHeroVersion2Primary,
+      HerosSliceHeroVersion2,
       HerosSliceVariation,
       HerosSlice,
       LocationsSliceDefaultPrimary,

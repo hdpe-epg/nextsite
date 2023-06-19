@@ -1,66 +1,127 @@
 [
-  {
-    "__TYPE__": "SharedSliceContent",
-    "variation": "default",
-    "primary": {
-      "bgimage": {
-        "origin": {
-          "id": "X-NAMq6uP3Q",
-          "url": "https://images.unsplash.com/photo-1559510981-10719ce4266a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxwaXBlbGluZXxlbnwwfHx8fDE2ODM3NTQ3MjZ8MA&ixlib=rb-4.0.3&q=85",
-          "width": 5760,
-          "height": 3840
-        },
-        "url": "https://images.unsplash.com/photo-1559510981-10719ce4266a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxwaXBlbGluZXxlbnwwfHx8fDE2ODM3NTQ3MjZ8MA&ixlib=rb-4.0.3&q=85",
-        "width": 5760,
-        "height": 3840,
-        "edit": {
-          "background": "transparent",
-          "zoom": 1,
-          "crop": {
-            "x": 0,
-            "y": 0
-          }
-        },
-        "credits": null,
-        "alt": null,
-        "__TYPE__": "ImageContent",
-        "thumbnails": {}
-      },
-      "buttonlink": {
-        "__TYPE__": "LinkContent",
-        "value": {
-          "__TYPE__": "ExternalLink",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      "buttontext": {
-        "__TYPE__": "FieldContent",
-        "value": "essential",
-        "type": "Text"
-      },
-      "heading": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "heading1",
-            "content": {
-              "text": "Continent"
-            }
-          }
-        ]
-      },
-      "description": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Velit veniam anim non cillum qui fugiat officia ullamco velit."
-            }
-          }
-        ]
-      }
-    },
-    "items": []
-  }
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"bgimage": {
+				"origin": {
+					"id": "X-NAMq6uP3Q",
+					"url": "https://images.unsplash.com/photo-1559510981-10719ce4266a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxwaXBlbGluZXxlbnwwfHx8fDE2ODM3NTQ3MjZ8MA&ixlib=rb-4.0.3&q=85",
+					"width": 5760,
+					"height": 3840
+				},
+				"url": "https://images.unsplash.com/photo-1559510981-10719ce4266a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxwaXBlbGluZXxlbnwwfHx8fDE2ODM3NTQ3MjZ8MA&ixlib=rb-4.0.3&q=85",
+				"width": 5760,
+				"height": 3840,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"buttonlink": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev"
+				}
+			},
+			"buttontext": {
+				"__TYPE__": "FieldContent",
+				"value": "essential",
+				"type": "Text"
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Continent"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Velit veniam anim non cillum qui fugiat officia ullamco velit."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "heroVersion2",
+		"primary": {
+			"bgimage": {
+				"origin": {
+					"id": "VLgLMTSYjVw",
+					"url": "https://images.unsplash.com/photo-1563108351-1cb8f266e96e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMXx8cGVvcGxlJTIwd2lkZXxlbnwwfHx8fDE2ODY4NTk0NjR8MA&ixlib=rb-4.0.3&q=85",
+					"width": 4272,
+					"height": 2848
+				},
+				"url": "https://images.unsplash.com/photo-1563108351-1cb8f266e96e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMXx8cGVvcGxlJTIwd2lkZXxlbnwwfHx8fDE2ODY4NTk0NjR8MA&ixlib=rb-4.0.3&q=85",
+				"width": 4272,
+				"height": 2848,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Fusion Equipment",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Industry leading fusion equipment for sale, rent & training.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
 ]
