@@ -360,19 +360,19 @@ const electrofusion = [
 const flangBackupStubEnds = [
   {
     title: 'IPS Flange Adapter Molded and Fabricated',
-    link: 'assets/data/fittings/flangBackupStubEnds/EPG-6-IPS-FLANGE-ADPAPTER-MOLD-AND-FAB-REV.xlsx',
+    link: 'assets/data/fittings/flangeBackupStubEnds/EPG-6-IPS-FLANGE-ADPAPTER-MOLD-AND-FAB-REV.xlsx',
   },
   {
     title: 'IPS HDPE Blind Flang',
-    link: 'assets/data/fittings/flangBackupStubEnds/EPG-8-IPS-HDPE-BLIND-FLANGE-REV-1.xlsx',
+    link: 'assets/data/fittings/flangeBackupStubEnds/EPG-8-IPS-HDPE-BLIND-FLANGE-REV-1.xlsx',
   },
   {
     title: 'IPF Convoluted Backup Flange',
-    link: 'assets/data/fittings/flangBackupStubEnds/EPG-8A-IPF-CONVOLUTED-BU-FLG-REV.xlsx',
+    link: 'assets/data/fittings/flangeBackupStubEnds/EPG-8A-IPF-CONVOLUTED-BU-FLG-REV.xlsx',
   },
   {
     title: 'DIPS Fabricated Stub End',
-    link: 'assets/data/fittings/flangBackupStubEnds/EPG-7A-DIPS-FAB-STUB-END-REV.xlsx',
+    link: 'assets/data/fittings/flangeBackupStubEnds/EPG-7A-DIPS-FAB-STUB-END-REV.xlsx',
   },
 ]
 
