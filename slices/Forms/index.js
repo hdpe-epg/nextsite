@@ -20,7 +20,7 @@ const Forms = ({ slice }) => {
   React.useEffect(() => {
     if (formInteraction) {
       const recaptchaScript = document.createElement('script')
-      recaptchaScript.src = `https://www.google.com/recaptcha/api.js?render=6LeNpYQmAAAAAJZBts23HPXkhaJQpntrJTkDV1sD`
+      recaptchaScript.src = `https://www.google.com/recaptcha/api.js?render=6LeZkXgpAAAAAMvNfVT2vhw6ud03HpwYkQHTYarc`
       recaptchaScript.async = true
       recaptchaScript.defer = true
       document.head.appendChild(recaptchaScript)
@@ -138,7 +138,7 @@ const Forms = ({ slice }) => {
     console.log('formData', formData)
     window.grecaptcha.ready(() => {
       window.grecaptcha
-        .execute('6LeNpYQmAAAAAJZBts23HPXkhaJQpntrJTkDV1sD', {
+        .execute('6LeZkXgpAAAAAMvNfVT2vhw6ud03HpwYkQHTYarc', {
           action: 'submit',
         })
         .then(token => {
@@ -293,7 +293,7 @@ const Forms = ({ slice }) => {
             value={!isDisabled ? `Submit` : `Sending...`}
             disabled={isDisabled}
           />
-          <p className="prose prose-sm mx-auto text-center dark:prose-invert prose-a:no-underline hover:prose-a:underline">
+          <p className="prose prose-sm mx-auto text-center prose-a:text-brand-primary prose-a:no-underline hover:prose-a:underline">
             This site is protected by reCAPTCHA and the{' '}
             <a href="https://policies.google.com/privacy">
               Google Privacy Policy
