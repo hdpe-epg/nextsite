@@ -1,6 +1,5 @@
 const nodemailer = require('nodemailer')
 import axios from 'axios'
-import { getNamedMiddlewareRegex } from 'next/dist/shared/lib/router/utils/route-regex'
 
 const recaptchaValidation = async token => {
   const result = await (async () => {
