@@ -110,6 +110,7 @@ const GetNavigationItems = () => {
     { href: "/fusion-services/", title: "Fusion Services", target: "_blank" },
     { href: "/resources/", title: "Resources", target: "_blank" },
     { href: "/locations/", title: "Contact", target: "_blank" },
+    { href: "https://emco.ca/cloud/uploads/EN-Emco-Corporation-Modern-Slavery-Report.pdf", title: "Modern Slavery Report", target: "_blank" },
   ];
 
   return linksItems.map((item, index) => (
